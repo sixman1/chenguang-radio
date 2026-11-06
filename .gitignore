@@ -1,3 +1,5 @@
 audio/
 .DS_Store
 __pycache__/
+.venv/
+.radio-cache/

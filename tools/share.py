@@ -11,7 +11,7 @@ usage: python3 tools/share.py [STATION_DIR] [--url BASE_URL] [--font FONT] [--al
   STATION_DIR  the station folder (default: this repository)
   --url        where the station is published, e.g. https://you.github.io/station/ (default: station.json "url").
                Cards need a full URL to show on SNS
-  --font       a font with Japanese (default: env SHARE_FONT, else fonts/NotoSansJP.ttf in the station folder);
+  --font       a CJK font (default: env SHARE_FONT, else fonts/NotoSansJP.ttf, then Windows Chinese fonts);
                Noto Sans JP (SIL OFL): https://github.com/google/fonts/tree/main/ofl/notosansjp
   --all        make every card again (default: only the missing ones)
   --front      also put the tags into index.html, so a link to the station itself shows a card (the newest episode's).
@@ -24,6 +24,7 @@ from PIL import Image, ImageDraw, ImageFont
 W, H = 1200, 630
 INK, CAM, TEXT, MUTED, YELLOW, TEAL = (12, 14, 20), (22, 26, 38), (242, 243, 247), (141, 147, 168), (255, 208, 40), (63, 224, 220)
 WEEK_JA = "月火水木金土日"
+WEEK_ZH = "一二三四五六日"
 
 
 def arg(name, default=None):
@@ -80,7 +81,16 @@ def logo_image(path, height):
 def date_text(d, lang):
     t = datetime.date.fromisoformat(d)
     if lang == "ja": return f"{t.year}年{t.month}月{t.day}日（{WEEK_JA[t.weekday()]}）"
+    if lang.lower().startswith("zh"): return f"{t.year}年{t.month}月{t.day}日（星期{WEEK_ZH[t.weekday()]}）"
     return t.strftime("%a, %b ") + f"{t.day}, {t.year}"
+
+
+def font_path(root):
+    explicit = arg("--font", os.environ.get("SHARE_FONT"))
+    if explicit: return explicit
+    candidates = [os.path.join(root, "fonts", "NotoSansJP.ttf"),
+                  "C:/Windows/Fonts/msyh.ttc", "C:/Windows/Fonts/simhei.ttf"]
+    return next((path for path in candidates if os.path.isfile(path)), candidates[0])
 
 
 def card(station, st, ep, lang, char, logo, fpath):
@@ -137,7 +147,7 @@ def page(st, ep, lang, stem, target, base):
     desc = " / ".join(f"{j + 1:02d} {n['label']}" for j, n in enumerate(ep["news"]))
     url = lambda p: base + p if base else p
     e = lambda s: html.escape(s, quote=True)
-    locale = {"ja": "ja_JP", "en": "en_US"}.get(lang, lang)
+    locale = {"ja": "ja_JP", "en": "en_US", "zh": "zh_CN", "zh-CN": "zh_CN", "zh-TW": "zh_TW"}.get(lang, lang)
     return f"""<!doctype html>
 <html lang="{e(lang)}">
 <head>
@@ -168,7 +178,7 @@ def front(root, station, base, newest):
     if not newest or not os.path.exists(ix): return
     e = lambda s: html.escape(s or "", quote=True)
     lang = station.get("language", "ja")
-    locale = {"ja": "ja_JP", "en": "en_US"}.get(lang, lang)
+    locale = {"ja": "ja_JP", "en": "en_US", "zh": "zh_CN", "zh-CN": "zh_CN", "zh-TW": "zh_TW"}.get(lang, lang)
     tags = f"""<!-- share:front -->
 <meta name="description" content="{e(station.get('description'))}">
 <meta property="og:type" content="website">
@@ -183,39 +193,39 @@ def front(root, station, base, newest):
 <meta name="twitter:card" content="summary_large_image">
 <!-- /share:front -->
 """
-    s = re.sub(r"<!-- share:front -->.*?<!-- /share:front -->\n?", "", open(ix).read(), flags=re.S)
-    open(ix, "w").write(s.replace("</head>", tags + "</head>", 1))
+    s = re.sub(r"<!-- share:front -->.*?<!-- /share:front -->\n?", "", open(ix, encoding="utf-8").read(), flags=re.S)
+    open(ix, "w", encoding="utf-8").write(s.replace("</head>", tags + "</head>", 1))
     print(f"share: index.html shows {newest}")
 
 
 def main():
     args = [a for i, a in enumerate(sys.argv[1:], 1) if not a.startswith("--") and sys.argv[i - 1] not in ("--url", "--font")]
     root = os.path.abspath(args[0] if args else os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-    station = json.load(open(os.path.join(root, "station.json")))
+    station = json.load(open(os.path.join(root, "station.json"), encoding="utf-8"))
     base = arg("--url", station.get("url") or "")
     if base and not base.endswith("/"): base += "/"
     if not base: print("note: no --url / station.json url: SNS need a full URL for the card image")
-    fpath = arg("--font", os.environ.get("SHARE_FONT", os.path.join(root, "fonts", "NotoSansJP.ttf")))
+    fpath = font_path(root)
     pack = station.get("character", {}).get("pack")
     char = None
     if pack and os.path.exists(os.path.join(root, pack)):
-        cj = json.load(open(os.path.join(root, pack)))
+        cj = json.load(open(os.path.join(root, pack), encoding="utf-8"))
         if cj.get("base"): char = Image.open(os.path.join(root, os.path.dirname(pack), cj["base"])).convert("RGBA")
     os.makedirs(os.path.join(root, "share"), exist_ok=True)
     made, newest = 0, None
-    for entry in json.load(open(os.path.join(root, station.get("episodes", "episodes.json")))):   # newest first
+    for entry in json.load(open(os.path.join(root, station.get("episodes", "episodes.json")), encoding="utf-8")):   # newest first
         date = entry["date"]
         langs = [k for k in entry if k != "date" and isinstance(entry[k], dict)] or [None]
         for lang in langs:
             stem = f"{date}-{lang}" if lang else date
             if not ("--all" in sys.argv) and os.path.exists(os.path.join(root, "share", f"{stem}.html")): continue
-            ep = json.load(open(os.path.join(root, "episodes", f"{stem}.json")))
+            ep = json.load(open(os.path.join(root, "episodes", f"{stem}.json"), encoding="utf-8"))
             L = lang or ep.get("lang") or station.get("language", "ja")
             st = lambda k: station.get("i18n", {}).get(L, {}).get(k, station.get(k))
             logo = logo_image(os.path.join(root, station["logo"]) if station.get("logo") else None, 40)
             card(station, st, ep, L, char, logo, fpath).save(os.path.join(root, "share", f"{stem}.jpg"), quality=88, optimize=True)
             target = f"../#{date}/{lang}" if lang else f"../#{date}"
-            open(os.path.join(root, "share", f"{stem}.html"), "w").write(page(st, ep, L, stem, target, base))
+            open(os.path.join(root, "share", f"{stem}.html"), "w", encoding="utf-8").write(page(st, ep, L, stem, target, base))
             made += 1
         if newest is None:
             pick = station.get("language") if station.get("language") in langs else langs[0]

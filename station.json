@@ -1,53 +1,31 @@
 {
- "format": "myradio/station-1",
- "name": "ものラジオ",
- "description": "電子工作・3Dプリンター・AI の、きのうの気になるニュースを、毎朝 90 秒で。",
- "tagline": "AI・3D 朝のニュース",
- "logo": "logo.svg",
- "url": "https://monoradio102.github.io/myradio/",
- "repo": "https://github.com/monoradio102/myradio",
- "language": "ja",
- "languages": [
-  "ja",
-  "en"
- ],
- "schedule": {
-  "every": "day",
-  "time": "06:10",
-  "timezone": "Asia/Tokyo"
- },
- "episodes": "episodes.json",
- "character": {
-  "pack": "character/character.json",
-  "thumbnail": "character/base.png",
-  "note": "AIで生成したキャラクターです"
- },
- "credits": [
-  "声：COEIROINK:リリンちゃん"
- ],
- "caster": "声：COEIROINK:リリンちゃん",
- "audio": {
-  "dir": "audio",
-  "keep_days": 30
- },
- "weather": true,
- "comments": {
-  "giscus": {
-   "repo": "monoradio102/myradio",
-   "repoId": "R_kgDOVjfh2A",
-   "category": "Comments",
-   "categoryId": "DIC_kwDOVjfh2M4DKdQF"
-  }
- },
- "i18n": {
-  "en": {
-   "name": "Mono Radio",
-   "tagline": "Morning news on AI and 3D",
-   "description": "The news worth knowing in electronics, 3D printing and AI, every morning in 90 seconds.",
-   "credits": [
-    "Voice: Kokoro (af_heart)"
-   ],
-   "caster": "Voice: Kokoro (af_heart)"
-  }
- }
+  "format": "myradio/station-1",
+  "name": "晨光电台",
+  "description": "一位虚拟主播，陪你听见值得关注的新想法。中文电台开台试播。",
+  "tagline": "用声音，开启新的一天",
+  "logo": "logo.svg",
+  "url": "https://sixman1.github.io/chenguang-radio/",
+  "repo": "https://github.com/sixman1/chenguang-radio",
+  "language": "zh",
+  "languages": [
+    "zh"
+  ],
+  "episodes": "episodes.json",
+  "character": {
+    "pack": "character/character.json",
+    "thumbnail": "character/base.png",
+    "note": "沿用 myradio 原项目的 AI 生成角色"
+  },
+  "credits": [
+    "播放器：myradio · MIT License",
+    "角色：myradio 原项目素材（AI 生成）",
+    "配音：Microsoft Edge TTS · 晓晓（zh-CN-XiaoxiaoNeural）"
+  ],
+  "caster": "中文主播 · 晓晓",
+  "audio": {
+    "dir": "audio",
+    "keep_days": 30
+  },
+  "weather": false,
+  "i18n": {}
 }
