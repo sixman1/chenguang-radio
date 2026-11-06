@@ -532,6 +532,12 @@ const dateFmt = d => LANG === "ja" || !UI[LANG] ? dateJp(d)
 // Keep each station's listening preferences separate, including when several previews share a host.
 const storageKey = k => `myradio-zh:${location.pathname.replace(/index\.html$/, "")}:${k}`;
 const langsOf = e => e ? Object.keys(e).filter(k => k !== "date" && e[k]?.title) : [];   // [] for the older list
+// several episodes a day: an entry may carry an "id" (YYYY-MM-DD-HHmm-<column>) with "time" and "column"; its files are
+// episodes/<id>-<lang>.json and audio/<id>-<lang>.mp3. Entries without an id (older ones) are named by their date.
+const epKey = e => e?.id || e?.date || "";
+const COLUMNS = { ai: "AI 日报", acg: "二次元／游戏" };
+const slotText = e => e?.time ? `${e.time}${e.column ? " · " + (e.column_name || COLUMNS[e.column] || e.column) : ""}` : "";
+let curKey = "";
 const info = e => e?.[LANG] || e?.[langsOf(e)[0]] || e;   // {title, seconds} of an entry in the current language
 const dateJp = d => { const t = new Date(d + "T00:00:00"); return `${t.getFullYear()}年${t.getMonth() + 1}月${t.getDate()}日（${WEEK[t.getDay()]}）`; };
 const mmss = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
@@ -731,7 +737,7 @@ function spriteFrame(t, now, speaking, kind) {
 // ---------- slides ----------
 function partHtml(p) {
   if (p.kind === "opening")
-    return `<div class="tag">${tr("today")}</div><div class="big">${headCopy(/^https:\/\//.test(STATION.repo || "") ? STATION.repo : "", (STATION.logo ? '<i class="logo"></i>' : "") + esc(st("name")))}</div><div class="sub">${esc(st("tagline") || "")}</div><div class="date">${esc(dateFmt(ep.date))}</div>
+    return `<div class="tag">${tr("today")}</div><div class="big">${headCopy(/^https:\/\//.test(STATION.repo || "") ? STATION.repo : "", (STATION.logo ? '<i class="logo"></i>' : "") + esc(st("name")))}</div><div class="sub">${esc(st("tagline") || "")}</div><div class="date">${esc(dateFmt(ep.date) + (slotText(ep) ? " " + slotText(ep) : ""))}</div>
       <ol>${ep.news.map((n, j) => `<li data-n="${String(j + 1).padStart(2, "0")}" data-seg="${newsSeg(j)}" style="animation-delay:${0.25 + j * 0.12}s">${esc(n.label)}</li>`).join("")}</ol>`;
   if (p.kind === "closing")
     return `<div class="tag">${tr("seeYou")}</div><div class="big">${tr("bye")}</div><div class="closing-title">${esc(ep.title)}</div>${pickHtml()}`;
@@ -814,7 +820,7 @@ document.addEventListener("click", e => {
 }, true);
 // the episode picker (the date in the header), and one episode back / forward beside it
 let EPS = [];
-const epStep = d => { const e = EPS[EPS.findIndex(x => x.date === ep?.date) + d]; if (e) { epOpen(false); audio.pause(); load(e.date); } };
+const epStep = d => { const e = EPS[EPS.findIndex(x => epKey(x) === curKey) + d]; if (e) { epOpen(false); audio.pause(); load(epKey(e)); } };
 $("epPrev").onclick = () => epStep(1); $("epNext").onclick = () => epStep(-1);
 function epOpen(on) {
   $("epsel").classList.toggle("open", on); $("sdate").setAttribute("aria-expanded", on);
@@ -824,7 +830,7 @@ $("sdate").onclick = () => epOpen(!$("epsel").classList.contains("open"));
 $("eplist").onclick = e => {
   const b = e.target.closest("[data-date]"); if (!b) return;
   epOpen(false); $("sdate").focus();
-  if (b.dataset.date !== ep?.date) { audio.pause(); load(b.dataset.date); }
+  if (b.dataset.date !== curKey) { audio.pause(); load(b.dataset.date); }
 };
 $("eplist").onkeydown = e => {
   const opts = [...$("eplist").querySelectorAll("[data-date]")], i = opts.indexOf(document.activeElement);
@@ -916,7 +922,7 @@ function savePos(force) {
   savedAt = performance.now();
   const t = audio.currentTime, pos = store("pos"), heard = store("heard");
   const closing = ep.segments.find(s => s.kind === "closing");
-  if (closing && t >= closing.start || audio.ended) { delete pos[curName]; heard[ep.date] = 1; }   // heard to the goodbye
+  if (closing && t >= closing.start || audio.ended) { delete pos[curName]; heard[curKey] = 1; }   // heard to the goodbye
   else if (t > 3) pos[curName] = Math.round(t * 10) / 10;
   store("pos", pos); store("heard", heard);
 }
@@ -1002,10 +1008,11 @@ try { const s = JSON.parse(localStorage.getItem(SOUND_KEY) || "null"); if (s) { 
 showSound();
 
 // ---------- episodes ----------
-async function load(date, lang = LANG, at = 0) {
-  const entry = EPS.find(e => e.date === date), langs = langsOf(entry);
+async function load(key, lang = LANG, at = 0) {
+  const entry = EPS.find(e => epKey(e) === key) || EPS.find(e => e.date === key), langs = langsOf(entry);
+  if (entry) key = epKey(entry);
   const L = langs.length ? (langs.includes(lang) ? lang : langs[0]) : null;
-  const name = L ? `${date}-${L}` : date;
+  const name = L ? `${key}-${L}` : key, date = entry?.date || key;
   savePos(true);   // the episode being left: where it stopped
   ep = await (await fetch(`episodes/${name}.json`, { cache: "no-store" })).json();
   setLang(L || ep.lang || STATION.language || LANG);
@@ -1017,13 +1024,13 @@ async function load(date, lang = LANG, at = 0) {
   }
   curPart = -1;
   // an episode can be remade under the same name: the made_at stamp keeps the browser from playing a cached older voice
-  curName = name;
+  curName = name; curKey = key;
   audio.src = (ep.audio || `audio/${name}.mp3`) + `?v=${encodeURIComponent(ep.made_at || "")}`;
-  $("sdate").querySelector("span").textContent = dateFmt(date);
+  $("sdate").querySelector("span").textContent = dateFmt(date) + (slotText(entry) ? " " + slotText(entry) : "");
   $("langsw").hidden = langs.length < 2;
   $("langsw").innerHTML = langs.map(l => `<button data-lang="${l}" aria-pressed="${l === L}" title="${NAMES[l] || l}">${l === "zh" ? "中文" : l.toUpperCase()}</button>`).join("");
-  $("eplist").querySelectorAll("[data-date]").forEach(b => b.setAttribute("aria-selected", b.dataset.date === date));
-  const k = EPS.findIndex(e => e.date === date);   // EPS is newest first
+  $("eplist").querySelectorAll("[data-date]").forEach(b => b.setAttribute("aria-selected", b.dataset.date === key));
+  const k = EPS.findIndex(e => epKey(e) === key);   // EPS is newest first
   $("epPrev").disabled = k < 0 || k >= EPS.length - 1; $("epNext").disabled = k <= 0;
   talkShow();
   $("scriptText").textContent = [...ep.opening, ...ep.news.flatMap(n => [`\n■ ${n.label}`, ...n.lines]), "", ...ep.closing].map(l => typeof l === "string" ? l : l.show).join("\n");
@@ -1037,11 +1044,12 @@ async function load(date, lang = LANG, at = 0) {
     return `<article class="item"><button class="jump" data-seg="${newsSeg(j)}" title="${tr("jump")}"><span class="d">${String(j + 1).padStart(2, "0")}</span><b>${esc(n.label)}</b><i>${mmss(ep.segments[newsSeg(j)]?.start || 0)}</i></button>`
       + (img ? `<a class="pic" href="${esc(n.link.url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(n.link.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : "")
       + `<ul class="pts">${n.points.map((x, k) => `<li><b>${esc(x)}</b>${n.details?.[k] ? `<span>${esc(n.details[k])}</span>` : ""}</li>`).join("")}</ul>`
+      + (n.meta ? `<div class="srcs meta"><small>${esc([n.meta.date, n.meta.region, n.meta.platform].filter(Boolean).join(tr("sep")))}</small></div>` : "")
       + `<div class="srcs">${src ? linkLine(src, tr("source") + tr("colon")) : ""}${n.link?.found_by ? linkLine(n.link, tr("related") + tr("colon")) : ""}</div></article>`;
   }).join("");
   $("toc").innerHTML = ep.news.map((n, j) =>
     `<button data-seg="${newsSeg(j)}" aria-label="${String(j + 1).padStart(2, "0")} ${esc(n.label)}">${String(j + 1).padStart(2, "0")}<span>${esc(n.label)}</span></button>`).join("");
-  document.querySelectorAll("#eps a").forEach(a => a.classList.toggle("cur", a.dataset.date === date));
+  document.querySelectorAll("#eps a").forEach(a => a.classList.toggle("cur", a.dataset.date === key));
   $("loading").textContent = "";
   // switching the language keeps the place in the show: the same part, from its start
   if (at > 0 && ep.segments[at]) { const go = () => { audio.currentTime = ep.segments[at].start; };
@@ -1058,8 +1066,8 @@ async function load(date, lang = LANG, at = 0) {
     }
   }
   if (at > 0) $("resume").hidden = true;
-  if ("mediaSession" in navigator) navigator.mediaSession.metadata = new MediaMetadata({ title: ep.title, artist: st("name"), album: dateFmt(ep.date) });
-  history.replaceState(null, "", L ? `#${date}/${L}` : `#${date}`);
+  if ("mediaSession" in navigator) navigator.mediaSession.metadata = new MediaMetadata({ title: ep.title, artist: st("name"), album: dateFmt(ep.date) + (slotText(ep) ? " " + slotText(ep) : "") });
+  history.replaceState(null, "", L ? `#${key}/${L}` : `#${key}`);
   // the share button shows when this episode has a share page
   SHARE = new URL(`share/${name}.html`, location.href).href;
   $("share").hidden = true;
@@ -1101,7 +1109,7 @@ function talkShow() {
   const g = STATION.comments?.giscus, box = $("talkBox");
   box.hidden = !g || !ep;
   if (box.hidden || !box.open) return;
-  const term = `${STATION.name} ${ep.date}`, key = `${term}|${LANG}`;
+  const term = `${STATION.name} ${curKey || ep.date}`, key = `${term}|${LANG}`;
   if (key === talkKey) return;
   talkKey = key;
   const s = document.createElement("script");
@@ -1143,20 +1151,20 @@ function setLang(l) {
 // the episode lists (the picker in the header, the list at the bottom), in the current language
 function listEpisodes() {
   const heard = store("heard"), pos = store("pos");
-  const seen = e => heard[e.date] ? [tr("heard"), "done"] : (() => { const t = pos[`${e.date}-${LANG}`] ?? Object.entries(pos).find(([k]) => k.startsWith(e.date))?.[1];
+  const seen = e => heard[epKey(e)] ? [tr("heard"), "done"] : (() => { const k = epKey(e), t = pos[`${k}-${LANG}`] ?? pos[k] ?? Object.entries(pos).find(([n]) => langsOf(e).some(l => n === `${k}-${l}`))?.[1];
     return t ? [tr("partway")(mmss(t)), "part"] : null; })();
   $("eps").innerHTML = EPS.map(e => { const s = seen(e);
-    return `<a href="#${e.date}" data-date="${e.date}"><span class="d">${esc(dateFmt(e.date))}</span><span>${esc(info(e).title)}</span>${s ? `<span class="seen ${s[1]}">${s[0]}</span>` : ""}<span class="len">${mmss(info(e).seconds)}</span></a>`; }).join("");
+    return `<a href="#${esc(epKey(e))}" data-date="${esc(epKey(e))}"><span class="d">${esc(dateFmt(e.date) + (slotText(e) ? " " + slotText(e) : ""))}</span><span>${esc(info(e).title)}</span>${s ? `<span class="seen ${s[1]}">${s[0]}</span>` : ""}<span class="len">${mmss(info(e).seconds)}</span></a>`; }).join("");
   $("eps").querySelectorAll("a").forEach(a => a.onclick = ev => { ev.preventDefault(); audio.pause(); load(a.dataset.date); scrollTo({ top: 0, behavior: "smooth" }); });
   $("eplist").innerHTML = `<div class="hd">${tr("episodes")}</div>` + EPS.map(e => { const d = new Date(e.date + "T00:00:00");
-    return `<button role="option" data-date="${e.date}" aria-selected="${e.date === ep?.date}"><span class="dt">${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}<small>${tr("days")[d.getDay()]}</small></span><span class="tt">${esc(info(e).title)}</span><span class="ln">${mmss(info(e).seconds)}${(s => s ? `<small class="${s[1]}">${s[0]}</small>` : "")(seen(e))}</span></button>`; }).join("");
-  document.querySelectorAll("#eps a").forEach(a => a.classList.toggle("cur", a.dataset.date === ep?.date));
+    return `<button role="option" data-date="${esc(epKey(e))}" aria-selected="${epKey(e) === curKey}"><span class="dt">${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}<small>${e.time ? esc(e.time) : tr("days")[d.getDay()]}</small></span><span class="tt">${esc(info(e).title)}</span><span class="ln">${mmss(info(e).seconds)}${(s => s ? `<small class="${s[1]}">${s[0]}</small>` : "")(seen(e))}</span></button>`; }).join("");
+  document.querySelectorAll("#eps a").forEach(a => a.classList.toggle("cur", a.dataset.date === curKey));
 }
 $("langsw").onclick = e => {
   const b = e.target.closest("[data-lang]"); if (!b || b.dataset.lang === LANG || !ep) return;
   const t = audio.currentTime, at = t > 0 ? Math.max(0, ep.segments.findIndex(x => t >= x.start && t < x.end)) : 0;
   const playing = !audio.paused;
-  audio.pause(); load(ep.date, b.dataset.lang, at).then(() => { if (playing) audio.play().catch(() => {}); });
+  audio.pause(); load(curKey, b.dataset.lang, at).then(() => { if (playing) audio.play().catch(() => {}); });
 };
 // ---------- today's weather (station.json "weather": true) ----------
 // where: a city guessed from the browser's time zone, until the viewer picks a city or their own area from the list
@@ -1301,11 +1309,11 @@ async function init() {
   // A saved language only applies when the selected episode actually offers it.
   const [want, wantLang] = location.hash.slice(1).split("/");
   let saved = null; try { saved = localStorage.getItem(storageKey("lang")); } catch {}
-  const selected = eps.find(e => e.date === want) || eps[0];
+  const selected = eps.find(e => epKey(e) === want) || eps.find(e => e.date === want) || eps[0];
   const available = langsOf(selected).length ? langsOf(selected) : STATION.languages || [STATION.language || "zh"];
   const browserLang = (navigator.language || "").toLowerCase().split("-")[0];
   const pref = [wantLang, saved, STATION.language, browserLang].find(l => available.includes(l)) || available[0];
-  load(selected.date, pref);
+  load(epKey(selected), pref);
 }
 init();
 </script>

@@ -32,7 +32,8 @@ def arg(name, default=None):
 
 
 def font(path, size, weight):
-    f = ImageFont.truetype(path, size)
+    # Noto Sans CJK 的 .ttc 依次是 JP、KR、SC、TC、HK：中文台用简体字形（第 3 个）
+    f = ImageFont.truetype(path, size, index=2 if os.path.basename(path).startswith("NotoSansCJK") else 0)
     try: f.set_variation_by_axes([weight])
     except Exception: pass   # not a variable font
     return f
@@ -89,7 +90,9 @@ def font_path(root):
     explicit = arg("--font", os.environ.get("SHARE_FONT"))
     if explicit: return explicit
     candidates = [os.path.join(root, "fonts", "NotoSansJP.ttf"),
-                  "C:/Windows/Fonts/msyh.ttc", "C:/Windows/Fonts/simhei.ttf"]
+                  "C:/Windows/Fonts/msyh.ttc", "C:/Windows/Fonts/simhei.ttf",
+                  "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+                  "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc"]
     return next((path for path in candidates if os.path.isfile(path)), candidates[0])
 
 
@@ -109,7 +112,7 @@ def card(station, st, ep, lang, char, logo, fpath):
     d.rectangle([x0, 102, x0 + 110, 106], fill=YELLOW)
     y = 124
     if st("tagline"): d.text((x0, y), st("tagline"), font=font(fpath, 24, 700), fill=TEAL); y += 36
-    d.text((x0, y), date_text(ep["date"], lang), font=font(fpath, 24, 600), fill=MUTED); y += 54
+    d.text((x0, y), date_text(ep["date"], lang) + (f"  {ep['time']} · {ep.get('column_name') or ep.get('column', '')}" if ep.get("time") else ""), font=font(fpath, 24, 600), fill=MUTED); y += 54
 
     # the episode title, then its topics
     ft = font(fpath, 48, 800)
@@ -214,7 +217,7 @@ def main():
     os.makedirs(os.path.join(root, "share"), exist_ok=True)
     made, newest = 0, None
     for entry in json.load(open(os.path.join(root, station.get("episodes", "episodes.json")), encoding="utf-8")):   # newest first
-        date = entry["date"]
+        date = entry.get("id") or entry["date"]   # 节目编号（旧节目即日期）
         langs = [k for k in entry if k != "date" and isinstance(entry[k], dict)] or [None]
         for lang in langs:
             stem = f"{date}-{lang}" if lang else date

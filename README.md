@@ -8,7 +8,9 @@
 
 在线版由 GitHub Pages 托管，访问者不需要安装本机工具。本机预览方法见下文。
 
-当前包含中文界面、一集约 66 秒的中文开台试播、晓晓普通话配音、同步字幕、角色口型和章节跳转。首集介绍电台玩法，未接入实时新闻或自动更新。
+每天两次（台北时间 08:00、16:00）各播一份 **AI 日报** 和一份 **二次元／游戏** 日报，每份约 90 秒，附原文链接。配音为开源的 Kokoro-82M-v1.1-zh（Apache-2.0）。日更流程见 [docs/daily.md](docs/daily.md)。
+
+同一天的多份节目用独立编号区分：`YYYY-MM-DD-HHmm-ai`、`YYYY-MM-DD-HHmm-acg`。早期的开台试播（`2026-11-06-zh`）及其链接继续可用。
 
 ## 先听听看
 
@@ -55,19 +57,13 @@ python -m pip install -r tools/requirements-tts.txt
 python tools/make_episode.py episodes/2026-11-06-zh.json
 ```
 
-工具会联网将 `say` 文本发送给 Microsoft Edge 语音服务，生成 `audio/2026-11-06-zh.mp3`，同时更新字幕、章节时间和节目目录。生成完成后刷新浏览器。只修改画面要点和补充说明时，不需要重新配音；修改台词时需要重新生成。
+工具在本机用 Kokoro-82M-v1.1-zh（音色 `zf_001`）离线合成，生成 `audio/<编号>-zh.mp3`，同时更新字幕、章节时间和节目目录。只修改画面要点和补充说明时，不需要重新配音；修改台词时需要重新生成。`python tools/make_episode.py --pending` 会处理所有缺音频或台词改过的节目。
 
-默认声音是晓晓。也可以改用云希：
-
-```text
-python tools/make_episode.py episodes/2026-11-06-zh.json --voice zh-CN-YunxiNeural
-```
-
-换声音后，同时更新 `station.json` 中的 `caster` 和 `credits`。自选语音和素材按相应提供方的条件使用。
+旧版 Microsoft Edge TTS（晓晓）只保留为 `--engine edge` 可选项：其公开传播授权未确认，默认不再使用。换声音后，同时更新 `station.json` 中的 `caster` 和 `credits`。
 
 ### 添加新一期
 
-复制本期 JSON 为 `episodes/日期-zh.json`，修改内部 `date`、`title` 和台词，再把新文件路径传给配音工具。日期采用 `YYYY-MM-DD`。工具按日期更新目录，新一期排在最上面。
+运行 `python tools/new_episode.py --slot 0800 --column ai`（或 `1600`、`acg`）生成 `episodes/<编号>-zh.json` 骨架，填写后用 `python tools/check_episode.py` 检查，再交给配音工具或直接推送到 main 由 GitHub Actions 配音发布。目录按编号更新，新一期排在最上面。
 
 完整台本和角色格式见 [docs/formats.md](docs/formats.md)；该文档沿用原项目的日文说明。
 
@@ -93,7 +89,9 @@ python tools/share.py --url http://127.0.0.1:8765/ --all
 3. 可用 `python tools/build_site.py --output 一个新的空文件夹路径` 在 Windows 上生成静态发布目录，包含网页、角色和最近 30 天音频。该命令只准备文件，不会联网发布。
 4. 将发布目录更新到自己的 `gh-pages` 分支并推送，GitHub Pages 会更新网站。也可以在 Git Bash 中使用原项目的 `tools/publish.sh`；它从已提交的 HEAD 打包，发布前要先提交源码修改。
 
-原 Bash 脚本会重建并覆盖自己仓库的 `gh-pages` 分支，默认只携带最近 30 天音频。发布工具不负责抓取新闻、编写台本或定时合成声音。想每天自动播报时，需要另外设计内容来源与更新流程。
+原 Bash 脚本会重建并覆盖自己仓库的 `gh-pages` 分支，默认只携带最近 30 天音频。
+
+现在的日更发布用 `tools/daily_publish.sh`：提交台本、取回 gh-pages 上已有的音频、为新台本配音、写回字幕时间、校验、发布并打开线上网站核对；失败时不改动线上网站。`tools/ci/publish.yml` 是可选的 GitHub Actions 版本。详见 [docs/daily.md](docs/daily.md)。
 
 本机工作文件夹保留了原项目的 Git 历史；交付压缩包不包含 `.git`。如果从压缩包解压后再发布，需要先初始化自己的 Git 仓库。
 
@@ -102,6 +100,7 @@ python tools/share.py --url http://127.0.0.1:8765/ --all
 - 播放器和原工具：[monoradio102/myradio](https://github.com/monoradio102/myradio)，MIT，保留 [LICENSE](LICENSE)。
 - 角色：沿用原项目允许复用的 AI 生成素材，具体说明见原项目 README。
 - 台名及日出标志：本中文试播版的新设计，可继续替换。
-- 本期声音：Microsoft Edge TTS，`zh-CN-XiaoxiaoNeural`；未使用原项目的日语或英语录音。
+- 配音：[Kokoro-82M-v1.1-zh](https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh)（hexgrad，Apache-2.0），音色 `zf_001`；中文语音数据由 LongMaoData（龙猫数据）授权提供。推理库 kokoro、misaki 为 Apache-2.0。开台试播已改用同一声音重新配音；未使用原项目的日语或英语录音。
+- 节目内容：每条资讯附原文链接，事实以来源为准。
 
 本版保留可编辑源文件，音频已经放在本地 `audio/`。Git 忽略音频只影响版本记录，不影响你在本机播放或备份文件夹。

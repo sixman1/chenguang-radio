@@ -1,1 +1,9 @@
-edge-tts>=7.2,<8
+# 默认配音：Kokoro-82M-v1.1-zh（Apache-2.0）。CPU 版 torch 可用：
+#   python -m pip install --extra-index-url https://download.pytorch.org/whl/cpu -r tools/requirements-tts.txt
+kokoro>=0.9.4,<0.10
+misaki[zh]>=0.9.4,<0.10
+soundfile>=0.12
+numpy
+torch
+Pillow>=10
+resvg-py>=0.1

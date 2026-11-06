@@ -1,0 +1,111 @@
+# 可选：GitHub Actions 版本的「配音并发布」。启用方法：把本文件复制到 .github/workflows/publish.yml 并推送
+# （推送工作流文件需要带 workflow 权限的 GitHub 凭据）。启用前，日更由 tools/daily_publish.sh 在 Grok Bot 云端机器上执行。
+# 晨光电台：main 上的台本有变化时，配音 → 对齐字幕和章节 → 校验 → 发布到 gh-pages。
+# 合成用 Kokoro-82M-v1.1-zh（Apache-2.0），在 GitHub 的云端机器上离线运行，不需要任何密钥。
+# 任一步失败都不会改动 gh-pages，线上保留上一版可用的网站。
+name: 配音并发布
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "episodes/**"
+      - "episodes.json"
+      - "index.html"
+      - "station.json"
+      - "logo.svg"
+      - "character/**"
+      - "tools/**"
+      - ".github/workflows/publish.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Taipei
+  PIP_EXTRA_INDEX_URL: https://download.pytorch.org/whl/cpu
+  HF_HUB_DISABLE_TELEMETRY: "1"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/requirements-tts.txt
+
+      - name: 系统依赖（ffmpeg、中文字体）
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk >/dev/null
+
+      - name: 缓存 Kokoro 模型
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: kokoro-82m-v1.1-zh-v1
+
+      - name: 安装配音依赖
+        run: python -m pip install -q -r tools/requirements-tts.txt
+
+      - name: 取回已发布的音频（保留期内的旧节目不能遗漏）
+        run: |
+          mkdir -p audio
+          if git fetch -q origin gh-pages; then
+            git archive origin/gh-pages audio | tar -x || echo "gh-pages 上还没有音频"
+          fi
+          ls -la audio
+
+      - name: 检查台本
+        run: python tools/check_episode.py --all
+
+      - name: 配音（缺音频、台词改过或声音不同的节目）
+        run: python tools/make_episode.py --pending
+
+      - name: 检查字幕、章节与音频
+        run: python tools/check_episode.py --all --audio
+
+      - name: 把字幕时间写回 main
+        run: |
+          git config user.name "chenguang-radio bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add episodes episodes.json
+          if ! git diff --cached --quiet; then
+            git commit -q -m "配音：更新字幕与章节时间 [skip ci]"
+            for i in 1 2 3; do
+              git pull -q --rebase origin main && git push -q origin HEAD:main && break
+              sleep 5
+            done
+          fi
+
+      - name: 打包站点与分享卡片
+        env:
+          SHARE_FONT: /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+        run: |
+          python tools/build_site.py --output "$RUNNER_TEMP/site"
+          python tools/share.py "$RUNNER_TEMP/site" --all --front
+          python tools/check_episode.py --site "$RUNNER_TEMP/site"
+
+      - name: 发布到 gh-pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd "$RUNNER_TEMP/site"
+          git init -q -b gh-pages
+          git add -A -f
+          git -c user.name="chenguang-radio bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "publish $(date '+%F %H:%M %Z') from ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+          echo "已发布：$(git ls-files | wc -l) 个文件，$(git ls-files audio | wc -l) 个音频"

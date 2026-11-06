@@ -7,7 +7,8 @@ python tools/build_site.py --output ../../work/chenguang-site
 from __future__ import annotations
 
 import argparse
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 import json
 import os
 from pathlib import Path
@@ -68,7 +69,8 @@ def collect(today: date) -> tuple[set[Path], int, date]:
         episode_date = date.fromisoformat(entry["date"])
         languages = [lang for lang, value in entry.items()
                      if lang != "date" and isinstance(value, dict) and value.get("title")]
-        names = [f"{entry['date']}-{language}" for language in languages] or [entry["date"]]
+        key = entry.get("id") or entry["date"]   # 同一天多期节目：id = YYYY-MM-DD-HHmm-栏目
+        names = [f"{key}-{language}" for language in languages] or [key]
         for name in names:
             episode_path = source_path(f"episodes/{name}.json")
             paths.add(episode_path)
@@ -98,7 +100,7 @@ def collect(today: date) -> tuple[set[Path], int, date]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--output", required=True, help="新的空输出目录")
-    parser.add_argument("--today", type=date.fromisoformat, default=date.today(), help="音频保留期基准，YYYY-MM-DD")
+    parser.add_argument("--today", type=date.fromisoformat, default=None, help="音频保留期基准，YYYY-MM-DD；默认按 station.json schedule.timezone 的今天")
     args = parser.parse_args()
     output = Path(os.path.normpath(str(Path.cwd() / args.output))).resolve()
     try:
@@ -106,6 +108,9 @@ def main() -> None:
             raise ValueError("输出目录必须放在源码目录以外，避免混入源文件。")
         if output.exists() and (not output.is_dir() or any(output.iterdir())):
             raise ValueError("输出目录必须不存在或为空；本工具不会清空已有文件。")
+        if args.today is None:
+            zone = read_json(ROOT / "station.json").get("schedule", {}).get("timezone") or "Asia/Taipei"
+            args.today = datetime.now(ZoneInfo(zone)).date()
         paths, audio_count, cutoff = collect(args.today)
         output.mkdir(parents=True, exist_ok=True)
         for source in sorted(paths):

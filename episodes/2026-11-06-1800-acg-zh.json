@@ -1,0 +1,153 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-06-1800-acg",
+  "date": "2026-11-06",
+  "time": "18:00",
+  "timezone": "Asia/Taipei",
+  "column": "acg",
+  "column_name": "二次元／游戏",
+  "lang": "zh",
+  "trial": "接管试播",
+  "title": "接管试播｜二次元／游戏：时之笛重生、剑星登陆 Switch 2、拉面赤猫第二季",
+  "opening": [
+    {
+      "say": "你好，这里是晨光电台二次元和游戏日报。现在是台北时间十一月六日傍晚，这是接管后的第一期试播。",
+      "show": "你好，这里是晨光电台二次元／游戏日报。台北时间 11 月 6 日傍晚，接管后第一期试播。"
+    },
+    {
+      "say": "今天有两款游戏发售，和一部动画的新消息。",
+      "show": "今天有两款游戏发售，和一部动画的新消息。"
+    }
+  ],
+  "news": [
+    {
+      "label": "《塞尔达传说 时之笛》Switch 2 重制版发售",
+      "points": [
+        "Nintendo Switch 2 独占",
+        "重做画面，加入过场语音与交响乐",
+        "塞尔达系列 40 周年"
+      ],
+      "details": [
+        "任天堂美国官网 11 月 5 日发文宣布已推出；美国定价 59.99 美元。",
+        "官方列出：全面重制的画面、过场语音、扩充对话、交响乐配乐，以及重新设计的视角和操作。",
+        "可用 Switch 2 的麦克风哼唱或吹奏游戏里的陶笛曲。"
+      ],
+      "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+      "link": {
+        "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+        "title": "It's time. Experience The Legend of Zelda: Ocarina of Time, reborn exclusively for Nintendo Switch 2!",
+        "site": "Nintendo",
+        "description": "任天堂美国官网新闻"
+      },
+      "meta": {
+        "date": "2026-11-05（美国）",
+        "region": "美国官网公告；其他地区以当地公告为准",
+        "platform": "Nintendo Switch 2"
+      },
+      "verified_at": "2026-11-06T18:20+08:00",
+      "lines": [
+        {
+          "say": "第一条。任天堂美国官网十一月五日宣布，《塞尔达传说 时之笛》重制版已经推出，由 Nintendo Switch 2 独占。",
+          "show": "第一条：任天堂美国官网 11 月 5 日宣布，《塞尔达传说 时之笛》重制版已推出，Switch 2 独占。"
+        },
+        {
+          "say": "这一版全新制作了画面，加入过场语音和交响乐配乐，也改进了视角和操作。",
+          "show": "全新制作画面，加入过场语音和交响乐，并改进视角与操作。"
+        },
+        {
+          "say": "今年正好是塞尔达系列四十周年。",
+          "show": "今年正值塞尔达系列 40 周年。"
+        }
+      ]
+    },
+    {
+      "label": "《剑星》完整版登陆 Switch 2",
+      "points": [
+        "日韩时间 11 月 6 日 0 点全球上市",
+        "收录《尼尔：机械纪元》与《胜利女神：妮姬》联动",
+        "《猎天使魔女》联动服装同步免费更新"
+      ],
+      "details": [
+        "开发商 SHIFT UP 的新闻稿：通过 Nintendo eShop 全球发售，也有实体版。",
+        "完整版收录此前推出的两项联动 DLC。",
+        "四套联动服装同时作为 PS5 和 PC 版的免费更新推出。"
+      ],
+      "url": "https://www.gamespress.com/STELLAR-BLADE-COMPLETE-EDITION-NOW-AVAILABLE-GLOBALLY-ON-NINTENDO-SWIT",
+      "link": {
+        "url": "https://www.gamespress.com/STELLAR-BLADE-COMPLETE-EDITION-NOW-AVAILABLE-GLOBALLY-ON-NINTENDO-SWIT",
+        "title": "STELLAR BLADE COMPLETE EDITION NOW AVAILABLE GLOBALLY ON NINTENDO SWITCH 2",
+        "site": "Games Press · SHIFT UP 新闻稿",
+        "description": "开发商 SHIFT UP 发布的新闻稿"
+      },
+      "meta": {
+        "date": "2026-11-06 00:00（日韩时间）",
+        "region": "全球",
+        "platform": "Nintendo Switch 2（联动更新：PS5 · PC）"
+      },
+      "verified_at": "2026-11-06T18:20+08:00",
+      "lines": [
+        {
+          "say": "第二条。韩国开发商 Shift Up 宣布，《剑星》完整版已经在 Nintendo Switch 2 全球上市，日韩时间是十一月六日零点。",
+          "show": "第二条：韩国开发商 SHIFT UP 宣布，《剑星》完整版已在 Switch 2 全球上市（日韩时间 11 月 6 日 0 点）。"
+        },
+        {
+          "say": "完整版收录了《尼尔 机械纪元》和《胜利女神 妮姬》的联动内容。",
+          "show": "完整版收录《尼尔：机械纪元》和《胜利女神：妮姬》联动内容。"
+        },
+        {
+          "say": "和《猎天使魔女》联动的四套服装，也作为免费更新，同时登陆 PS5 和 PC。",
+          "show": "《猎天使魔女》联动的四套服装，同时作为免费更新登陆 PS5 和 PC。"
+        }
+      ]
+    },
+    {
+      "label": "动画《拉面赤猫》第二季公开主视觉",
+      "points": [
+        "官网 11 月 4 日公开新主视觉",
+        "2027 年 1 月在日本开播",
+        "新猫角色由畠中祐配音"
+      ],
+      "details": [
+        "主视觉由角色设计、总作画监督千叶道德绘制。",
+        "官方新闻稿（电击 Online 全文转载）写明：2027 年 1 月起在东京电视台系列播出。",
+        "第一季主要声优继续出演；动画制作为 E&H production。"
+      ],
+      "url": "https://ramenakaneko.com/season/2/news/644/",
+      "link": {
+        "url": "https://ramenakaneko.com/season/2/news/644/",
+        "title": "Main Visual Released｜TVアニメ『ラーメン赤猫』公式サイト",
+        "site": "《拉面赤猫》动画官网",
+        "description": "TVアニメ第2期 2027年1月放送開始",
+        "image": "https://ramenakaneko.com/images/ogp.png"
+      },
+      "source_note": "https://dengekionline.com/article/202611/93017",
+      "meta": {
+        "date": "2026-11-04（日本时间）",
+        "region": "日本",
+        "platform": "东京电视台系列（电视动画）"
+      },
+      "verified_at": "2026-11-06T18:20+08:00",
+      "lines": [
+        {
+          "say": "第三条。动画《拉面赤猫》第二季，十一月四日在官网公开了新的主视觉。",
+          "show": "第三条：动画《拉面赤猫》第二季，11 月 4 日在官网公开新主视觉。"
+        },
+        {
+          "say": "第二季将在二零二七年一月，于日本东京电视台系列开播。",
+          "show": "第二季将于 2027 年 1 月在日本东京电视台系列开播。"
+        },
+        {
+          "say": "第二季还加入了一只新的猫咪角色，由声优畠中祐配音。",
+          "show": "第二季新加入一只猫咪角色，由畠中祐配音。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天的二次元和游戏日报。发售和播出时间，请以各地官方公告为准。原文链接都在节目下方，我们下期见。",
+      "show": "以上就是今天的二次元／游戏日报。时间以各地官方公告为准，原文链接在节目下方，下期见。"
+    }
+  ],
+  "highlight": 0
+}
