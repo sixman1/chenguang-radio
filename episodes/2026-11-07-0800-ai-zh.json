@@ -148,5 +148,122 @@
       "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，16:00 见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 114.415,
+  "audio": "audio/2026-11-07-0800-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.275,
+      "show": "早上好，这里是晨光电台 AI 日报。11 月 7 日，星期六。",
+      "part": 0
+    },
+    {
+      "start": 6.495,
+      "end": 17.77,
+      "show": "本期根据今天同一时段的 AI 早报，选取三条已打开原文核实的官方研究与产品消息，不重复昨日已播内容。",
+      "part": 0
+    },
+    {
+      "start": 18.47,
+      "end": 27.47,
+      "show": "第一条：Google DeepMind 公布新研究，称在人工指导下 AI Agent 加速了加密系统压力测试。",
+      "part": 1
+    },
+    {
+      "start": 27.69,
+      "end": 40.365,
+      "show": "模型发现遗留 1024 位 RSA 两处弱点；官方强调现行 2048 位及以上 RSA 不受这些具体利用影响。",
+      "part": 1
+    },
+    {
+      "start": 40.585,
+      "end": 51.435,
+      "show": "相关工作论文已公开；论文写明两个协作智能体在人工指导下用不到四天完成实验设计、运行与调试。",
+      "part": 1
+    },
+    {
+      "start": 52.135,
+      "end": 59.535,
+      "show": "第二条：OpenAI 发布湿实验日常分析基准 BioBasicsBench，与酶设计公司 Ligo 合作。",
+      "part": 2
+    },
+    {
+      "start": 59.755,
+      "end": 69.755,
+      "show": "100 项真实实验任务，测 Agent 解读凝胶／显微／仪器原始数据、找错、判断证据是否充分。",
+      "part": 2
+    },
+    {
+      "start": 69.975,
+      "end": 79.7,
+      "show": "xhigh 推理下 GPT‑6 Astra 均分 66.7%，GPT‑5.6 Sol 为 43.8%。",
+      "part": 2
+    },
+    {
+      "start": 80.4,
+      "end": 87.5,
+      "show": "第三条：Anthropic 发文拆解 Agent 记忆：Claude 如何在会话间保留经验。",
+      "part": 3
+    },
+    {
+      "start": 87.72,
+      "end": 95.745,
+      "show": "空闲时回看 transcript、纠正错误笔记并整理成 wiki 式表征的过程称为 dreaming。",
+      "part": 3
+    },
+    {
+      "start": 95.965,
+      "end": 106.49,
+      "show": "Stainless 语料 25 题评测：dreaming 从 2 轮到 128 轮，得分由 13% 升至 48%。",
+      "part": 3
+    },
+    {
+      "start": 107.19,
+      "end": 113.715,
+      "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，16:00 见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 18.47
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 18.47,
+      "end": 52.135
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 52.135,
+      "end": 80.4
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 80.4,
+      "end": 107.19
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 107.19,
+      "end": 114.415
+    }
+  ],
+  "made_at": "2026-11-06T23:23:41+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "6b9eb5755fe49f2f"
 }
