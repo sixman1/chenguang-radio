@@ -144,5 +144,128 @@
       "show": "下午四点，我们接着看新的消息。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 102.86,
+  "audio": "audio/2026-11-06-0800-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 5.775,
+      "show": "早上好，这里是晨光电台 AI 日报，11月6日早间版。",
+      "part": 0
+    },
+    {
+      "start": 5.995,
+      "end": 10.395,
+      "show": "今天三条，都和中国厂商的新模型有关。",
+      "part": 0
+    },
+    {
+      "start": 11.095,
+      "end": 16.145,
+      "show": "第一条，百度开放了 ERNIE-5.5-Flash-Base 基座模型。",
+      "part": 1
+    },
+    {
+      "start": 16.365,
+      "end": 24.465,
+      "show": "总参数 2800 亿、每个 token 激活 140 亿，在 33.5 万亿 token 上从零预训练。",
+      "part": 1
+    },
+    {
+      "start": 24.685,
+      "end": 33.46,
+      "show": "这是没有经过后训练的基座权重，方便开发者自己做适配；官方说后训练版本随后推出。",
+      "part": 1
+    },
+    {
+      "start": 34.16,
+      "end": 38.46,
+      "show": "第二条，腾讯发布新一代大模型混元 Hy4。",
+      "part": 2
+    },
+    {
+      "start": 38.68,
+      "end": 49.13,
+      "show": "首次加入视觉理解，可操作命令行与图形界面，并针对 Blender、CAD 等专业软件训练。",
+      "part": 2
+    },
+    {
+      "start": 49.35,
+      "end": 61.225,
+      "show": "已上线腾讯云、OpenRouter 和元宝等产品，价格与预览版相同；官方称权重与系统卡将在近日开放。",
+      "part": 2
+    },
+    {
+      "start": 61.925,
+      "end": 68.7,
+      "show": "第三条，月之暗面在 Hugging Face 开放旗舰模型 Kimi K3.1 Pro 的权重。",
+      "part": 3
+    },
+    {
+      "start": 68.92,
+      "end": 80.57,
+      "show": "混合专家架构，总参数 2.8 万亿、激活 1040 亿，支持文本与图像，上下文约 100 万 token。",
+      "part": 3
+    },
+    {
+      "start": 80.79,
+      "end": 92.49,
+      "show": "官方称重点强化编程、3D 创作、金融研究与长时间智能体任务；采用 Kimi K3.1 Pro 许可。",
+      "part": 3
+    },
+    {
+      "start": 93.19,
+      "end": 98.415,
+      "show": "以上就是早间 AI 日报，原文链接都在节目页面里。",
+      "part": 4
+    },
+    {
+      "start": 98.635,
+      "end": 102.16,
+      "show": "下午四点，我们接着看新的消息。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 11.095
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 11.095,
+      "end": 34.16
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 34.16,
+      "end": 61.925
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 61.925,
+      "end": 93.19
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 93.19,
+      "end": 102.86
+    }
+  ],
+  "made_at": "2026-11-06T10:15:48+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "6e040b80c38061c7"
 }

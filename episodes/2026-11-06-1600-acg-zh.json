@@ -144,5 +144,128 @@
       "show": "明早八点见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 83.06,
+  "audio": "audio/2026-11-06-1600-acg-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.25,
+      "show": "下午好，这里是晨光电台二次元与游戏频道，11月6日午后版。",
+      "part": 0
+    },
+    {
+      "start": 6.47,
+      "end": 10.545,
+      "show": "一条动画、一条新作、一条行业数据。",
+      "part": 0
+    },
+    {
+      "start": 11.245,
+      "end": 18.245,
+      "show": "第一条，TV 动画《我心里危险的东西》（僕ヤバ）第三季确定 2027 年 4 月开播。",
+      "part": 1
+    },
+    {
+      "start": 18.465,
+      "end": 25.265,
+      "show": "日本时间 11 月 6 日 0 点，官方公开第三季先导视觉图与先导 PV。",
+      "part": 1
+    },
+    {
+      "start": 25.485,
+      "end": 31.285,
+      "show": "主演堀江瞬、羊宫妃那续演，制作仍为 シンエイ動画。",
+      "part": 1
+    },
+    {
+      "start": 31.985,
+      "end": 38.96,
+      "show": "第二条，Rockstar 官网公开《GTA6》发售前图集，放出数十张新截图。",
+      "part": 2
+    },
+    {
+      "start": 39.18,
+      "end": 44.955,
+      "show": "画面聚焦两位主角 Jason 和 Lucia，也展示了罪恶都市等地点。",
+      "part": 2
+    },
+    {
+      "start": 45.175,
+      "end": 52.525,
+      "show": "游戏 11 月 19 日登陆 PS5 与 Xbox Series X|S，预载 11 月 10 日开始。",
+      "part": 2
+    },
+    {
+      "start": 53.225,
+      "end": 57.3,
+      "show": "第三条，任天堂 11 月 5 日公布财报。",
+      "part": 3
+    },
+    {
+      "start": 57.52,
+      "end": 66.195,
+      "show": "截至 9 月 30 日，Switch 2 全球累计 2635 万台，初代 Switch 1.572 亿台。",
+      "part": 3
+    },
+    {
+      "start": 66.415,
+      "end": 73.365,
+      "show": "Switch 2 第一方最畅销：《马力欧赛车 世界》1648 万份。",
+      "part": 3
+    },
+    {
+      "start": 74.065,
+      "end": 80.09,
+      "show": "以上就是今天的二次元与游戏消息，原文链接都在节目页面里。",
+      "part": 4
+    },
+    {
+      "start": 80.31,
+      "end": 82.36,
+      "show": "明早八点见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 11.245
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 11.245,
+      "end": 31.985
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 31.985,
+      "end": 53.225
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 53.225,
+      "end": 74.065
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 74.065,
+      "end": 83.06
+    }
+  ],
+  "made_at": "2026-11-06T10:15:57+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "2f2c4a0ce821605b"
 }

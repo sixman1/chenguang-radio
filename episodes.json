@@ -24,6 +24,54 @@
     }
   },
   {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1600-ai",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜Gemini Omni 1.2 Flash、Ripple-65B 开放权重与 Perplexity Teammates",
+      "seconds": 92.11
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1600-acg",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜《我心里危险的东西》第三季、GTA6 新截图与任天堂财报",
+      "seconds": 83.06
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-0800-ai",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜文心 5.5 Flash 基座、腾讯混元 Hy4 与 Kimi K3.1 Pro 开放权重",
+      "seconds": 102.86
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-0800-acg",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜《Fool Night》新 PV、PS5 累计 9790 万台与《摇曳露营△》第四季",
+      "seconds": 83.01
+    }
+  },
+  {
     "zh": {
       "title": "开台试播｜你好，这里是晨光电台",
       "seconds": 62.355

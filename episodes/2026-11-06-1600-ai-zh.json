@@ -142,5 +142,128 @@
       "show": "明早八点见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 92.11,
+  "audio": "audio/2026-11-06-1600-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 5.625,
+      "show": "下午好，这里是晨光电台 AI 日报，11月6日午后版。",
+      "part": 0
+    },
+    {
+      "start": 5.845,
+      "end": 9.97,
+      "show": "和上午不重复，再看三条新消息。",
+      "part": 0
+    },
+    {
+      "start": 10.67,
+      "end": 19.97,
+      "show": "第一条，Google 发布视频生成与编辑模型 Gemini Omni 1.2 Flash，在 Gemini API 和 Google Cloud 正式商用。",
+      "part": 1
+    },
+    {
+      "start": 20.19,
+      "end": 26.465,
+      "show": "单段视频最长从 10 秒提高到 15 秒，并支持多轮对话式修改。",
+      "part": 1
+    },
+    {
+      "start": 26.685,
+      "end": 34.36,
+      "show": "720p 降价 30%，每秒 0.07 美元；输出带 SynthID 隐形水印。",
+      "part": 1
+    },
+    {
+      "start": 35.06,
+      "end": 41.36,
+      "show": "第二条，芯片设计 AI 公司 Ricursive 开放 Ripple-65B Preview。",
+      "part": 2
+    },
+    {
+      "start": 41.58,
+      "end": 54.905,
+      "show": "650 亿参数稠密模型，在 12 万亿 token 上从零训练；官方自报 TerminalBench 2.1 得分 80.52。",
+      "part": 2
+    },
+    {
+      "start": 55.125,
+      "end": 63.375,
+      "show": "权重以 Apache 2.0 许可上架 Hugging Face；官方称研发总成本约 3200 万美元。",
+      "part": 2
+    },
+    {
+      "start": 64.075,
+      "end": 69.075,
+      "show": "第三条，Perplexity 推出常驻工作智能体 Teammates。",
+      "part": 3
+    },
+    {
+      "start": 69.295,
+      "end": 77.52,
+      "show": "它可以同时承担多项任务、持续跟进，并沿用用户在 Perplexity 里已有的项目、技能和记忆。",
+      "part": 3
+    },
+    {
+      "start": 77.74,
+      "end": 83.115,
+      "show": "据 The Verge 报道，目前需要每月 200 美元的 Max 订阅。",
+      "part": 3
+    },
+    {
+      "start": 83.815,
+      "end": 89.14,
+      "show": "以上就是今天的 AI 日报，原文链接都在节目页面里。",
+      "part": 4
+    },
+    {
+      "start": 89.36,
+      "end": 91.41,
+      "show": "明早八点见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 10.67
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 10.67,
+      "end": 35.06
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 35.06,
+      "end": 64.075
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 64.075,
+      "end": 83.815
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 83.815,
+      "end": 92.11
+    }
+  ],
+  "made_at": "2026-11-06T10:16:07+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "fa5acab15059f3c6"
 }
