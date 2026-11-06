@@ -1,8 +1,32 @@
 [
   {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1800-ai",
+    "time": "18:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
     "zh": {
-      "seconds": 66.028,
-      "title": "开台试播｜你好，这里是晨光电台"
+      "title": "接管试播｜AI 日报：安全专用模型、开放权重与世界模拟",
+      "seconds": 96.165
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1800-acg",
+    "time": "18:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "接管试播｜二次元／游戏：时之笛重生、剑星登陆 Switch 2、拉面赤猫第二季",
+      "seconds": 93.94
+    }
+  },
+  {
+    "zh": {
+      "title": "开台试播｜你好，这里是晨光电台",
+      "seconds": 62.355
     },
     "date": "2026-11-06"
   }

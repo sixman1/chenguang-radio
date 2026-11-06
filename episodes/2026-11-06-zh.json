@@ -112,59 +112,59 @@
     }
   ],
   "highlight": 0,
-  "seconds": 66.028,
+  "seconds": 62.355,
   "lines_timed": [
     {
       "start": 0.4,
-      "end": 6.4,
+      "end": 5.825,
       "show": "你好，这里是晨光电台。欢迎收听第一期中文试播。",
       "part": 0
     },
     {
-      "start": 6.62,
-      "end": 12.404,
+      "start": 6.045,
+      "end": 11.87,
       "show": "今天先不追热点，一起看看这间小电台可以怎么玩。",
       "part": 0
     },
     {
-      "start": 13.104,
-      "end": 20.976,
+      "start": 12.57,
+      "end": 19.67,
       "show": "第一个话题：把电台变成自己的样子。台名、角色和声音都可以调整。",
       "part": 1
     },
     {
-      "start": 21.196,
-      "end": 25.66,
+      "start": 19.89,
+      "end": 24.69,
       "show": "节目由网页呈现，不用先制作整段视频。",
       "part": 1
     },
     {
-      "start": 26.36,
-      "end": 34.04,
+      "start": 25.39,
+      "end": 32.265,
       "show": "第二个话题：边听边看。字幕跟随声音，角色也会随着声音动嘴。",
       "part": 2
     },
     {
-      "start": 34.26,
-      "end": 40.86,
+      "start": 32.485,
+      "end": 38.435,
       "show": "点击话题可切换章节，点击画面上的要点可展开说明。",
       "part": 2
     },
     {
-      "start": 41.56,
-      "end": 49.096,
+      "start": 39.135,
+      "end": 46.585,
       "show": "第三个话题：从想分享的内容开始，比如学习心得或有趣的项目。",
       "part": 3
     },
     {
-      "start": 49.316,
-      "end": 55.964,
+      "start": 46.805,
+      "end": 52.78,
       "show": "写好台本，再生成中文声音；引用外部资料时，记得附上来源。",
       "part": 3
     },
     {
-      "start": 56.664,
-      "end": 65.328,
+      "start": 53.48,
+      "end": 61.655,
       "show": "把想分享的事情，变成自己的声音。这里是晨光电台，下次见。",
       "part": 4
     }
@@ -174,38 +174,41 @@
       "kind": "opening",
       "index": null,
       "start": 0.0,
-      "end": 13.104
+      "end": 12.57
     },
     {
       "kind": "news",
       "index": 0,
-      "start": 13.104,
-      "end": 26.36
+      "start": 12.57,
+      "end": 25.39
     },
     {
       "kind": "news",
       "index": 1,
-      "start": 26.36,
-      "end": 41.56
+      "start": 25.39,
+      "end": 39.135
     },
     {
       "kind": "news",
       "index": 2,
-      "start": 41.56,
-      "end": 56.664
+      "start": 39.135,
+      "end": 53.48
     },
     {
       "kind": "closing",
       "index": null,
-      "start": 56.664,
-      "end": 66.028
+      "start": 53.48,
+      "end": 62.355
     }
   ],
   "audio": "audio/2026-11-06-zh.mp3",
-  "made_at": "2026-11-06T06:20:39+00:00",
+  "made_at": "2026-11-06T10:09:06+00:00",
   "voice": {
-    "provider": "edge-tts",
-    "name": "zh-CN-XiaoxiaoNeural",
-    "rate": "+0%"
-  }
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "4a29658c8f41e866"
 }
