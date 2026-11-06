@@ -1,0 +1,148 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-06-0800-ai",
+  "date": "2026-11-06",
+  "time": "08:00",
+  "timezone": "Asia/Taipei",
+  "column": "ai",
+  "column_name": "AI 日报",
+  "lang": "zh",
+  "title": "AI 日报｜文心 5.5 Flash 基座、腾讯混元 Hy4 与 Kimi K3.1 Pro 开放权重",
+  "opening": [
+    {
+      "say": "早上好，这里是晨光电台 AI 日报，11月6日早间版。",
+      "show": "早上好，这里是晨光电台 AI 日报，11月6日早间版。"
+    },
+    {
+      "say": "今天三条，都和中国厂商的新模型有关。",
+      "show": "今天三条，都和中国厂商的新模型有关。"
+    }
+  ],
+  "news": [
+    {
+      "label": "百度开放 ERNIE-5.5-Flash-Base",
+      "points": [
+        "总参数 2800 亿，激活 140 亿",
+        "预训练结束时的基座权重",
+        "FP8、BF16 已上架 Hugging Face"
+      ],
+      "details": [
+        "稀疏混合专家模型，在 33.5 万亿 token 上从零预训练。",
+        "未经中期训练或后训练，适合领域适配和强化学习研究。",
+        "官方称后训练版 ERNIE 5.5 Flash 随后推出。"
+      ],
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+      "meta": {
+        "date": "2026-11-05",
+        "region": "全球",
+        "platform": "Hugging Face、ModelScope 等"
+      },
+      "verified_at": "2026-11-06T18:05:00+08:00",
+      "lines": [
+        {
+          "say": "第一条，百度开放了 ERNIE-5.5-Flash-Base 基座模型。",
+          "show": "第一条，百度开放了 ERNIE-5.5-Flash-Base 基座模型。"
+        },
+        {
+          "say": "总参数2800亿，每个词元激活140亿，在33.5万亿词元上从零预训练。",
+          "show": "总参数 2800 亿、每个 token 激活 140 亿，在 33.5 万亿 token 上从零预训练。"
+        },
+        {
+          "say": "这是没有经过后训练的基座权重，方便开发者自己做适配；官方说后训练版本随后推出。",
+          "show": "这是没有经过后训练的基座权重，方便开发者自己做适配；官方说后训练版本随后推出。"
+        }
+      ]
+    },
+    {
+      "label": "腾讯发布混元 Hy4",
+      "points": [
+        "首次加入视觉理解与电脑操作",
+        "面向编程、金融分析与办公",
+        "权重与系统卡将在近日开放"
+      ],
+      "details": [
+        "可处理精细图片、复杂图表；能操作命令行与图形界面，并针对 Blender、CAD 等专业软件做了训练。",
+        "腾讯称在 WorkBuddy 办公场景与金融专家盲测中表现领先开源模型（自评）。",
+        "目前可在腾讯云、OpenRouter 及元宝、WorkBuddy、CodeBuddy 等产品使用，API 价格与预览版相同。"
+      ],
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+      "meta": {
+        "date": "2026-11-04（官方公告）",
+        "region": "全球（API）／中国大陆产品",
+        "platform": "腾讯云 TokenHub、OpenRouter、元宝、WorkBuddy、CodeBuddy"
+      },
+      "verified_at": "2026-11-06T18:40:00+08:00",
+      "lines": [
+        {
+          "say": "第二条，腾讯发布新一代大模型混元 Hy4。",
+          "show": "第二条，腾讯发布新一代大模型混元 Hy4。"
+        },
+        {
+          "say": "它首次加入视觉理解，还能直接操作命令行和图形界面，并专门针对 Blender、CAD 这类专业软件做了训练。",
+          "show": "首次加入视觉理解，可操作命令行与图形界面，并针对 Blender、CAD 等专业软件训练。"
+        },
+        {
+          "say": "目前可以在腾讯云、OpenRouter 和元宝等产品里使用，价格与预览版相同；官方表示，模型权重和系统卡会在近日开放。",
+          "show": "已上线腾讯云、OpenRouter 和元宝等产品，价格与预览版相同；官方称权重与系统卡将在近日开放。"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://hy.tencent.ai/research/hy4",
+          "title": "Tencent Hy 官方介绍"
+        }
+      ]
+    },
+    {
+      "label": "月之暗面开放 Kimi K3.1 Pro 权重",
+      "points": [
+        "MoE：总参数 2.8 万亿，激活 1040 亿",
+        "支持文本与图像，上下文约 100 万 token",
+        "权重已上架 Hugging Face"
+      ],
+      "details": [
+        "共 896 个专家，每个 token 选 16 个；采用量化感知训练的 MXFP4 权重。",
+        "基于 Kimi K3 后训练，强化编程、3D 创作、金融研究与长时间智能体任务。",
+        "采用 Kimi K3.1 Pro 自有许可；推荐用 vLLM、SGLang、TokenSpeed 部署，API 仍在 Kimi 开放平台提供。"
+      ],
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "meta": {
+        "date": "2026-11-05（据 TechNode 报道）",
+        "region": "全球",
+        "platform": "Hugging Face、Kimi 开放平台"
+      },
+      "verified_at": "2026-11-06T18:40:00+08:00",
+      "lines": [
+        {
+          "say": "第三条，月之暗面在 Hugging Face 上开放了旗舰模型 Kimi K3.1 Pro 的权重。",
+          "show": "第三条，月之暗面在 Hugging Face 开放旗舰模型 Kimi K3.1 Pro 的权重。"
+        },
+        {
+          "say": "它是混合专家架构，总参数二点八万亿，每次激活一千零四十亿，支持文本和图像输入，上下文大约一百万个词元。",
+          "show": "混合专家架构，总参数 2.8 万亿、激活 1040 亿，支持文本与图像，上下文约 100 万 token。"
+        },
+        {
+          "say": "官方说，它重点强化了编程、三维创作、金融研究和长时间运行的智能体任务；许可是 Kimi 自己的 K3.1 Pro 许可。",
+          "show": "官方称重点强化编程、3D 创作、金融研究与长时间智能体任务；采用 Kimi K3.1 Pro 许可。"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://technode.com/2026/11/05/moonshot-ai-releases-kimi-k3-1-pro-model-weights/",
+          "title": "TechNode 报道"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是早间 AI 日报，原文链接都在节目页面里。",
+      "show": "以上就是早间 AI 日报，原文链接都在节目页面里。"
+    },
+    {
+      "say": "下午四点，我们接着看新的消息。",
+      "show": "下午四点，我们接着看新的消息。"
+    }
+  ],
+  "highlight": 0
+}

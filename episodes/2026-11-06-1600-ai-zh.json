@@ -1,0 +1,146 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-06-1600-ai",
+  "date": "2026-11-06",
+  "time": "16:00",
+  "timezone": "Asia/Taipei",
+  "column": "ai",
+  "column_name": "AI 日报",
+  "lang": "zh",
+  "title": "AI 日报｜Gemini Omni 1.2 Flash、Ripple-65B 开放权重与 Perplexity Teammates",
+  "opening": [
+    {
+      "say": "下午好，这里是晨光电台 AI 日报，11月6日午后版。",
+      "show": "下午好，这里是晨光电台 AI 日报，11月6日午后版。"
+    },
+    {
+      "say": "和上午不重复，再看三条新消息。",
+      "show": "和上午不重复，再看三条新消息。"
+    }
+  ],
+  "news": [
+    {
+      "label": "Google 发布 Gemini Omni 1.2 Flash",
+      "points": [
+        "视频最长 15 秒",
+        "多轮对话式修改",
+        "720p 降价 30%，每秒 0.07 美元"
+      ],
+      "details": [
+        "此前 Omni 1.1 为 10 秒，可按 1 秒步长指定 3 到 15 秒。",
+        "可在同一段视频上逐轮替换背景、灯光等。",
+        "在 Gemini API 和 Google Cloud 正式商用，输出带 SynthID 隐形水印。"
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "meta": {
+        "date": "2026-11-05（美国时间）",
+        "region": "全球",
+        "platform": "Gemini API、Google Cloud、Flow、Google Vids 等"
+      },
+      "verified_at": "2026-11-06T18:05:00+08:00",
+      "lines": [
+        {
+          "say": "第一条，Google 发布视频生成与编辑模型 Gemini Omni 1.2 Flash，在 Gemini API 和 Google Cloud 正式商用。",
+          "show": "第一条，Google 发布视频生成与编辑模型 Gemini Omni 1.2 Flash，在 Gemini API 和 Google Cloud 正式商用。"
+        },
+        {
+          "say": "单段视频最长从10秒提高到15秒，还支持多轮对话式修改。",
+          "show": "单段视频最长从 10 秒提高到 15 秒，并支持多轮对话式修改。"
+        },
+        {
+          "say": "720p 价格降低三成，每秒0.07美元，生成内容带有 SynthID 隐形水印。",
+          "show": "720p 降价 30%，每秒 0.07 美元；输出带 SynthID 隐形水印。"
+        }
+      ]
+    },
+    {
+      "label": "Ricursive 开放 Ripple-65B Preview",
+      "points": [
+        "650 亿参数稠密模型，从零训练",
+        "TerminalBench 2.1 自报 80.52 分",
+        "Apache 2.0 许可开放权重"
+      ],
+      "details": [
+        "在 12 万亿 token 上预训练，最长支持约 100 万 token 上下文。",
+        "官方称是美国开放权重模型中的智能体编程最高分；不同评测框架下分数可能变化。",
+        "含 BF16、NVFP4 指令版与 BF16 基座版；官方称全部研发成本约 3200 万美元。"
+      ],
+      "url": "https://www.ricursive.com/ripple",
+      "meta": {
+        "date": "2026-11-06（据 Dataconomy 报道，美国时间）",
+        "region": "全球",
+        "platform": "Hugging Face、Together AI、GMI Cloud、OpenRouter"
+      },
+      "verified_at": "2026-11-06T18:40:00+08:00",
+      "lines": [
+        {
+          "say": "第二条，芯片设计 AI 公司 Ricursive 开放了 Ripple-65B Preview 模型。",
+          "show": "第二条，芯片设计 AI 公司 Ricursive 开放 Ripple-65B Preview。"
+        },
+        {
+          "say": "这是一个六百五十亿参数的稠密模型，在十二万亿词元上从零训练，官方自报在 TerminalBench 2.1 智能体编程测试中拿到八十点五二分。",
+          "show": "650 亿参数稠密模型，在 12 万亿 token 上从零训练；官方自报 TerminalBench 2.1 得分 80.52。"
+        },
+        {
+          "say": "权重采用 Apache 2.0 许可，已上架 Hugging Face；官方称，整个研发成本约三千二百万美元。",
+          "show": "权重以 Apache 2.0 许可上架 Hugging Face；官方称研发总成本约 3200 万美元。"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+          "title": "Hugging Face 模型页"
+        },
+        {
+          "url": "https://dataconomy.com/2026/11/06/ricursive-launches-ripple-65b-preview-claiming-us-open/",
+          "title": "Dataconomy 报道"
+        }
+      ]
+    },
+    {
+      "label": "Perplexity 推出常驻工作智能体 Teammates",
+      "points": [
+        "可同时承担多项任务",
+        "沿用已有项目、技能与记忆",
+        "需每月 200 美元的 Max 订阅"
+      ],
+      "details": [
+        "基于 Perplexity Computer，可持续跟进长期工作。",
+        "每个 Teammate 有独立对话线程，也可在 Slack 中交流。",
+        "据 The Verge 报道。"
+      ],
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+      "meta": {
+        "date": "2026-11-05 22:26 UTC（台北时间 11 月 6 日 06:26）",
+        "region": "全球（Max 订阅用户）",
+        "platform": "Perplexity"
+      },
+      "verified_at": "2026-11-06T18:05:00+08:00",
+      "lines": [
+        {
+          "say": "第三条，Perplexity 推出常驻工作智能体 Teammates。",
+          "show": "第三条，Perplexity 推出常驻工作智能体 Teammates。"
+        },
+        {
+          "say": "它可以同时承担多项任务、持续跟进，并沿用用户在 Perplexity 里已有的项目、技能和记忆。",
+          "show": "它可以同时承担多项任务、持续跟进，并沿用用户在 Perplexity 里已有的项目、技能和记忆。"
+        },
+        {
+          "say": "据 The Verge 报道，目前需要每月200美元的 Max 订阅才能使用。",
+          "show": "据 The Verge 报道，目前需要每月 200 美元的 Max 订阅。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天的 AI 日报，原文链接都在节目页面里。",
+      "show": "以上就是今天的 AI 日报，原文链接都在节目页面里。"
+    },
+    {
+      "say": "明早八点见。",
+      "show": "明早八点见。"
+    }
+  ],
+  "highlight": 0
+}
