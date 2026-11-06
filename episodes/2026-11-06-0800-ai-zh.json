@@ -149,5 +149,122 @@
       "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，16:00 见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 83.94,
+  "audio": "audio/2026-11-06-0800-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.175,
+      "show": "早上好，这里是晨光电台 AI 日报。11 月 6 日，星期五。",
+      "part": 0
+    },
+    {
+      "start": 6.395,
+      "end": 11.945,
+      "show": "本期根据今天的 AI 早报更新，三条均来自官方发布。",
+      "part": 0
+    },
+    {
+      "start": 12.645,
+      "end": 20.145,
+      "show": "第一条：OpenAI 发布网络安全专用模型 GPT‑6 Cyber，用于经过授权的漏洞研究。",
+      "part": 1
+    },
+    {
+      "start": 20.365,
+      "end": 27.94,
+      "show": "官方称它在 ExploitGym 得分 48.5%，上一代为 32.1%。",
+      "part": 1
+    },
+    {
+      "start": 28.16,
+      "end": 35.26,
+      "show": "OpenAI 将其网络安全风险评为最高级 Critical（上一代为 High）；目前仅向获批客户开放。",
+      "part": 1
+    },
+    {
+      "start": 35.96,
+      "end": 40.835,
+      "show": "第二条：Thinking Machines Lab 发布第二代模型 Inkling 2 Small。",
+      "part": 2
+    },
+    {
+      "start": 41.055,
+      "end": 49.105,
+      "show": "混合专家模型，总参数 5940 亿、激活 170 亿，支持图像输入。",
+      "part": 2
+    },
+    {
+      "start": 49.325,
+      "end": 56.2,
+      "show": "目前仅在 Tinker 提供；官方计划安全测试后于下周以 Apache 2.0 开放权重（仍是计划）。",
+      "part": 2
+    },
+    {
+      "start": 56.9,
+      "end": 62.4,
+      "show": "第三条：百度开放文心 ERNIE‑5.5‑Flash‑Base 基座模型权重。",
+      "part": 3
+    },
+    {
+      "start": 62.62,
+      "end": 70.595,
+      "show": "混合专家模型，总参数 2800 亿、激活 140 亿，可在 Hugging Face 下载。",
+      "part": 3
+    },
+    {
+      "start": 70.815,
+      "end": 76.015,
+      "show": "这是预训练结束时的版本，便于继续训练；后训练版官方称将随后推出。",
+      "part": 3
+    },
+    {
+      "start": 76.715,
+      "end": 83.24,
+      "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，16:00 见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 12.645
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 12.645,
+      "end": 35.96
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 35.96,
+      "end": 56.9
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 56.9,
+      "end": 76.715
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 76.715,
+      "end": 83.94
+    }
+  ],
+  "made_at": "2026-11-06T10:43:52+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "0d29ad3d0c3d3939"
 }

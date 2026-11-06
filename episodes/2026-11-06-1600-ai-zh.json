@@ -147,5 +147,122 @@
       "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 08:00 见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 88.09,
+  "audio": "audio/2026-11-06-1600-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.15,
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 6 日，星期五。",
+      "part": 0
+    },
+    {
+      "start": 6.37,
+      "end": 15.47,
+      "show": "本期根据今天的 AI 午报更新：上午没有新的前沿模型发布，来看国内产品进展。",
+      "part": 0
+    },
+    {
+      "start": 16.17,
+      "end": 21.045,
+      "show": "第一条：DeepSeek 公布智能体工具 Harness 的使用数据。",
+      "part": 1
+    },
+    {
+      "start": 21.265,
+      "end": 31.19,
+      "show": "截至 11 月 4 日（仅统计官方 API 用户），日活 154 万，日耗约 92 万亿 Token。",
+      "part": 1
+    },
+    {
+      "start": 31.41,
+      "end": 37.76,
+      "show": "第三方插件约 3.5 万个，团队计划建设官方插件市场。",
+      "part": 1
+    },
+    {
+      "start": 38.46,
+      "end": 44.385,
+      "show": "第二条：字节旗下豆包工作，首次原生接入第三方大模型。",
+      "part": 2
+    },
+    {
+      "start": 44.605,
+      "end": 52.13,
+      "show": "首批：Kimi 3.1 Pro、智谱 GLM‑5.3、DeepSeek V4.1 Flash。",
+      "part": 2
+    },
+    {
+      "start": 52.35,
+      "end": 57.85,
+      "show": "目前仅对团队版和企业版开放，统一使用 AI 点数计费。",
+      "part": 2
+    },
+    {
+      "start": 58.55,
+      "end": 63.375,
+      "show": "第三条：腾讯混元 Hy4 上线首日调用量激增。",
+      "part": 3
+    },
+    {
+      "start": 63.595,
+      "end": 74.72,
+      "show": "腾讯称 Hy4 推理集群紧急扩容十倍并提高免费额度；WorkBuddy 上 Hy3 限免延长至 11 月 15 日。",
+      "part": 3
+    },
+    {
+      "start": 74.94,
+      "end": 79.365,
+      "show": "Hy4 的模型权重目前仍未公开。",
+      "part": 3
+    },
+    {
+      "start": 80.065,
+      "end": 87.39,
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 08:00 见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 16.17
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 16.17,
+      "end": 38.46
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 38.46,
+      "end": 58.55
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 58.55,
+      "end": 80.065
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 80.065,
+      "end": 88.09
+    }
+  ],
+  "made_at": "2026-11-06T10:43:43+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "b3aded2800f802d4"
 }
