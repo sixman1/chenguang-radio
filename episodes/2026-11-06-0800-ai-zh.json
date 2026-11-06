@@ -7,265 +7,147 @@
   "column": "ai",
   "column_name": "AI 日报",
   "lang": "zh",
-  "title": "AI 日报｜文心 5.5 Flash 基座、腾讯混元 Hy4 与 Kimi K3.1 Pro 开放权重",
+  "title": "AI 日报｜GPT‑6 Cyber、Inkling 2 Small 与文心 5.5 Flash 基座开放权重",
   "opening": [
     {
-      "say": "早上好，这里是晨光电台 AI 日报，11月6日早间版。",
-      "show": "早上好，这里是晨光电台 AI 日报，11月6日早间版。"
+      "say": "早上好，这里是晨光电台 AI 日报。今天是十一月六日，星期五。",
+      "show": "早上好，这里是晨光电台 AI 日报。11 月 6 日，星期五。"
     },
     {
-      "say": "今天三条，都和中国厂商的新模型有关。",
-      "show": "今天三条，都和中国厂商的新模型有关。"
+      "say": "这一期根据今天的 AI 早报更新，三条都来自官方发布。",
+      "show": "本期根据今天的 AI 早报更新，三条均来自官方发布。"
     }
   ],
   "news": [
     {
-      "label": "百度开放 ERNIE-5.5-Flash-Base",
+      "label": "OpenAI 发布网络安全模型 GPT‑6 Cyber",
       "points": [
-        "总参数 2800 亿，激活 140 亿",
-        "预训练结束时的基座权重",
-        "FP8、BF16 已上架 Hugging Face"
+        "面向授权安全研究的专用模型",
+        "ExploitGym 得分 48.5%，上一代 32.1%",
+        "网络安全风险评级为最高的 Critical"
       ],
       "details": [
-        "稀疏混合专家模型，在 33.5 万亿 token 上从零预训练。",
-        "未经中期训练或后训练，适合领域适配和强化学习研究。",
-        "官方称后训练版 ERNIE 5.5 Flash 随后推出。"
+        "官方称它协助发现了 81 个被 Mozilla 定为高危的 Firefox 新漏洞（官方自述数据）。",
+        "GPT‑5.6 Cyber 为 32.1%；数据来自 OpenAI 自测。",
+        "按 OpenAI 准备度框架，网络安全能力评为 Critical（上一代为 High）。目前仅向获批的 Daybreak Red 客户通过 API 和 Codex 开放。"
       ],
-      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "link": {
+        "url": "https://openai.com/index/introducing-gpt-6-cyber",
+        "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+        "site": "OpenAI",
+        "description": "OpenAI 官方发布文章",
+        "image": "https://images.ctfassets.net/kftzwdyauwt9/73cvZmLsj7WIXQAgMDX8kz/4996c7a084b81e21a8f1357fe395c30b/gpt-6-cyber-social.png?w=1600&h=900&fit=fill"
+      },
+      "meta": {
+        "date": "2026-11-05（美国时间）",
+        "region": "全球 · 限获批客户",
+        "platform": "OpenAI API · Codex"
+      },
+      "verified_at": "2026-11-06T18:55+08:00",
+      "lines": [
+        {
+          "say": "第一条。OpenAI 发布网络安全专用模型 GPT 6 Cyber，用于经过授权的漏洞研究。",
+          "show": "第一条：OpenAI 发布网络安全专用模型 GPT‑6 Cyber，用于经过授权的漏洞研究。"
+        },
+        {
+          "say": "官方称，它在 ExploitGym 测试中得分百分之四十八点五，上一代是百分之三十二点一。",
+          "show": "官方称它在 ExploitGym 得分 48.5%，上一代为 32.1%。"
+        },
+        {
+          "say": "OpenAI 把它的网络安全风险评为最高一档，目前只向获批的安全客户开放。",
+          "show": "OpenAI 将其网络安全风险评为最高级 Critical（上一代为 High）；目前仅向获批客户开放。"
+        }
+      ]
+    },
+    {
+      "label": "Thinking Machines 发布 Inkling 2 Small",
+      "points": [
+        "混合专家模型：总参数 5940 亿，激活 170 亿",
+        "支持图像输入",
+        "先在 Tinker 提供，权重计划下周开放"
+      ],
+      "details": [
+        "Thinking Machines Lab 的第二代模型。",
+        "官方称在视觉、金融等测试中领先同规模开放模型（厂商自测）。",
+        "官方表示计划在外部安全测试完成后，以 Apache 2.0 许可开放完整权重；目前仍是计划。"
+      ],
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+      "link": {
+        "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+        "title": "Introducing Inkling 2 Small",
+        "site": "Thinking Machines Lab",
+        "description": "官方发布文章",
+        "image": "https://thinkingmachines.ai/news/inkling-2-small/images/cover-social.png"
+      },
       "meta": {
         "date": "2026-11-05",
         "region": "全球",
-        "platform": "Hugging Face、ModelScope 等"
+        "platform": "Tinker"
       },
-      "verified_at": "2026-11-06T18:05:00+08:00",
+      "verified_at": "2026-11-06T18:55+08:00",
       "lines": [
         {
-          "say": "第一条，百度开放了 ERNIE-5.5-Flash-Base 基座模型。",
-          "show": "第一条，百度开放了 ERNIE-5.5-Flash-Base 基座模型。"
+          "say": "第二条。Thinking Machines Lab 发布第二代模型 Inkling 2 Small。",
+          "show": "第二条：Thinking Machines Lab 发布第二代模型 Inkling 2 Small。"
         },
         {
-          "say": "总参数2800亿，每个词元激活140亿，在33.5万亿词元上从零预训练。",
-          "show": "总参数 2800 亿、每个 token 激活 140 亿，在 33.5 万亿 token 上从零预训练。"
+          "say": "它是混合专家模型，总参数五千九百四十亿，每次激活一百七十亿，支持图像输入。",
+          "show": "混合专家模型，总参数 5940 亿、激活 170 亿，支持图像输入。"
         },
         {
-          "say": "这是没有经过后训练的基座权重，方便开发者自己做适配；官方说后训练版本随后推出。",
-          "show": "这是没有经过后训练的基座权重，方便开发者自己做适配；官方说后训练版本随后推出。"
+          "say": "目前只在 Tinker 平台提供，官方计划下周以 Apache 2.0 许可开放权重。",
+          "show": "目前仅在 Tinker 提供；官方计划安全测试后于下周以 Apache 2.0 开放权重（仍是计划）。"
         }
       ]
     },
     {
-      "label": "腾讯发布混元 Hy4",
+      "label": "百度开放文心 ERNIE 5.5 Flash 基座模型权重",
       "points": [
-        "首次加入视觉理解与电脑操作",
-        "面向编程、金融分析与办公",
-        "权重与系统卡将在近日开放"
+        "总参数 2800 亿，每个词元激活 140 亿",
+        "预训练结束时的基座检查点",
+        "Hugging Face 可下载，采用百度自有许可"
       ],
       "details": [
-        "可处理精细图片、复杂图表；能操作命令行与图形界面，并针对 Blender、CAD 等专业软件做了训练。",
-        "腾讯称在 WorkBuddy 办公场景与金融专家盲测中表现领先开源模型（自评）。",
-        "目前可在腾讯云、OpenRouter 及元宝、WorkBuddy、CodeBuddy 等产品使用，API 价格与预览版相同。"
+        "稀疏混合专家架构，预训练 33.5 万亿词元，微调和推理支持 100 万词元上下文。",
+        "未经任何中期或后期训练，适合作领域适配和强化学习研究的起点；后训练版 ERNIE 5.5 Flash 将随后推出。",
+        "许可为 ERNIE 5.5 Flash Base Model License Agreement v1.0，不是通用开源许可，使用前请阅读条款。"
       ],
-      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-      "meta": {
-        "date": "2026-11-04（官方公告）",
-        "region": "全球（API）／中国大陆产品",
-        "platform": "腾讯云 TokenHub、OpenRouter、元宝、WorkBuddy、CodeBuddy"
+      "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+      "link": {
+        "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
+        "title": "ERNIE 5.5 Flash Base",
+        "site": "ERNIE · 百度",
+        "description": "百度官方发布页",
+        "image": "https://ernie.baidu.com/release/ernie-5-5-flash-base/banner-center.png"
       },
-      "verified_at": "2026-11-06T18:40:00+08:00",
-      "lines": [
-        {
-          "say": "第二条，腾讯发布新一代大模型混元 Hy4。",
-          "show": "第二条，腾讯发布新一代大模型混元 Hy4。"
-        },
-        {
-          "say": "它首次加入视觉理解，还能直接操作命令行和图形界面，并专门针对 Blender、CAD 这类专业软件做了训练。",
-          "show": "首次加入视觉理解，可操作命令行与图形界面，并针对 Blender、CAD 等专业软件训练。"
-        },
-        {
-          "say": "目前可以在腾讯云、OpenRouter 和元宝等产品里使用，价格与预览版相同；官方表示，模型权重和系统卡会在近日开放。",
-          "show": "已上线腾讯云、OpenRouter 和元宝等产品，价格与预览版相同；官方称权重与系统卡将在近日开放。"
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://hy.tencent.ai/research/hy4",
-          "title": "Tencent Hy 官方介绍"
-        }
-      ]
-    },
-    {
-      "label": "月之暗面开放 Kimi K3.1 Pro 权重",
-      "points": [
-        "MoE：总参数 2.8 万亿，激活 1040 亿",
-        "支持文本与图像，上下文约 100 万 token",
-        "权重已上架 Hugging Face"
-      ],
-      "details": [
-        "共 896 个专家，每个 token 选 16 个；采用量化感知训练的 MXFP4 权重。",
-        "基于 Kimi K3 后训练，强化编程、3D 创作、金融研究与长时间智能体任务。",
-        "采用 Kimi K3.1 Pro 自有许可；推荐用 vLLM、SGLang、TokenSpeed 部署，API 仍在 Kimi 开放平台提供。"
-      ],
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "meta": {
-        "date": "2026-11-05（据 TechNode 报道）",
+        "date": "2026-11-05",
         "region": "全球",
-        "platform": "Hugging Face、Kimi 开放平台"
+        "platform": "Hugging Face（开放权重）"
       },
-      "verified_at": "2026-11-06T18:40:00+08:00",
+      "verified_at": "2026-11-06T18:55+08:00",
       "lines": [
         {
-          "say": "第三条，月之暗面在 Hugging Face 上开放了旗舰模型 Kimi K3.1 Pro 的权重。",
-          "show": "第三条，月之暗面在 Hugging Face 开放旗舰模型 Kimi K3.1 Pro 的权重。"
+          "say": "第三条。百度开放了文心 ERNIE 5.5 Flash 的基座模型权重。",
+          "show": "第三条：百度开放文心 ERNIE‑5.5‑Flash‑Base 基座模型权重。"
         },
         {
-          "say": "它是混合专家架构，总参数二点八万亿，每次激活一千零四十亿，支持文本和图像输入，上下文大约一百万个词元。",
-          "show": "混合专家架构，总参数 2.8 万亿、激活 1040 亿，支持文本与图像，上下文约 100 万 token。"
+          "say": "它是混合专家模型，总参数两千八百亿，每次激活一百四十亿，可以在 Hugging Face 下载。",
+          "show": "混合专家模型，总参数 2800 亿、激活 140 亿，可在 Hugging Face 下载。"
         },
         {
-          "say": "官方说，它重点强化了编程、三维创作、金融研究和长时间运行的智能体任务；许可是 Kimi 自己的 K3.1 Pro 许可。",
-          "show": "官方称重点强化编程、3D 创作、金融研究与长时间智能体任务；采用 Kimi K3.1 Pro 许可。"
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://technode.com/2026/11/05/moonshot-ai-releases-kimi-k3-1-pro-model-weights/",
-          "title": "TechNode 报道"
+          "say": "这是预训练刚结束的版本，方便开发者继续训练。",
+          "show": "这是预训练结束时的版本，便于继续训练；后训练版官方称将随后推出。"
         }
       ]
     }
   ],
   "closing": [
     {
-      "say": "以上就是早间 AI 日报，原文链接都在节目页面里。",
-      "show": "以上就是早间 AI 日报，原文链接都在节目页面里。"
-    },
-    {
-      "say": "下午四点，我们接着看新的消息。",
-      "show": "下午四点，我们接着看新的消息。"
+      "say": "以上就是今天早上的 AI 日报。原文链接都在节目下方，下午四点见。",
+      "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，16:00 见。"
     }
   ],
-  "highlight": 0,
-  "seconds": 102.86,
-  "audio": "audio/2026-11-06-0800-ai-zh.mp3",
-  "lines_timed": [
-    {
-      "start": 0.4,
-      "end": 5.775,
-      "show": "早上好，这里是晨光电台 AI 日报，11月6日早间版。",
-      "part": 0
-    },
-    {
-      "start": 5.995,
-      "end": 10.395,
-      "show": "今天三条，都和中国厂商的新模型有关。",
-      "part": 0
-    },
-    {
-      "start": 11.095,
-      "end": 16.145,
-      "show": "第一条，百度开放了 ERNIE-5.5-Flash-Base 基座模型。",
-      "part": 1
-    },
-    {
-      "start": 16.365,
-      "end": 24.465,
-      "show": "总参数 2800 亿、每个 token 激活 140 亿，在 33.5 万亿 token 上从零预训练。",
-      "part": 1
-    },
-    {
-      "start": 24.685,
-      "end": 33.46,
-      "show": "这是没有经过后训练的基座权重，方便开发者自己做适配；官方说后训练版本随后推出。",
-      "part": 1
-    },
-    {
-      "start": 34.16,
-      "end": 38.46,
-      "show": "第二条，腾讯发布新一代大模型混元 Hy4。",
-      "part": 2
-    },
-    {
-      "start": 38.68,
-      "end": 49.13,
-      "show": "首次加入视觉理解，可操作命令行与图形界面，并针对 Blender、CAD 等专业软件训练。",
-      "part": 2
-    },
-    {
-      "start": 49.35,
-      "end": 61.225,
-      "show": "已上线腾讯云、OpenRouter 和元宝等产品，价格与预览版相同；官方称权重与系统卡将在近日开放。",
-      "part": 2
-    },
-    {
-      "start": 61.925,
-      "end": 68.7,
-      "show": "第三条，月之暗面在 Hugging Face 开放旗舰模型 Kimi K3.1 Pro 的权重。",
-      "part": 3
-    },
-    {
-      "start": 68.92,
-      "end": 80.57,
-      "show": "混合专家架构，总参数 2.8 万亿、激活 1040 亿，支持文本与图像，上下文约 100 万 token。",
-      "part": 3
-    },
-    {
-      "start": 80.79,
-      "end": 92.49,
-      "show": "官方称重点强化编程、3D 创作、金融研究与长时间智能体任务；采用 Kimi K3.1 Pro 许可。",
-      "part": 3
-    },
-    {
-      "start": 93.19,
-      "end": 98.415,
-      "show": "以上就是早间 AI 日报，原文链接都在节目页面里。",
-      "part": 4
-    },
-    {
-      "start": 98.635,
-      "end": 102.16,
-      "show": "下午四点，我们接着看新的消息。",
-      "part": 4
-    }
-  ],
-  "segments": [
-    {
-      "kind": "opening",
-      "index": null,
-      "start": 0.0,
-      "end": 11.095
-    },
-    {
-      "kind": "news",
-      "index": 0,
-      "start": 11.095,
-      "end": 34.16
-    },
-    {
-      "kind": "news",
-      "index": 1,
-      "start": 34.16,
-      "end": 61.925
-    },
-    {
-      "kind": "news",
-      "index": 2,
-      "start": 61.925,
-      "end": 93.19
-    },
-    {
-      "kind": "closing",
-      "index": null,
-      "start": 93.19,
-      "end": 102.86
-    }
-  ],
-  "made_at": "2026-11-06T10:15:48+00:00",
-  "voice": {
-    "provider": "kokoro",
-    "model": "hexgrad/Kokoro-82M-v1.1-zh",
-    "name": "zf_001",
-    "speed": 1.0,
-    "license": "Apache-2.0"
-  },
-  "speech_hash": "6e040b80c38061c7"
+  "highlight": 0
 }

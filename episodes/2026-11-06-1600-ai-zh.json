@@ -7,263 +7,145 @@
   "column": "ai",
   "column_name": "AI 日报",
   "lang": "zh",
-  "title": "AI 日报｜Gemini Omni 1.2 Flash、Ripple-65B 开放权重与 Perplexity Teammates",
+  "title": "AI 日报｜DeepSeek Harness 日活 154 万、豆包工作接入三家模型、混元 Hy4 扩容十倍",
   "opening": [
     {
-      "say": "下午好，这里是晨光电台 AI 日报，11月6日午后版。",
-      "show": "下午好，这里是晨光电台 AI 日报，11月6日午后版。"
+      "say": "下午好，这里是晨光电台 AI 日报。今天是十一月六日，星期五。",
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 6 日，星期五。"
     },
     {
-      "say": "和上午不重复，再看三条新消息。",
-      "show": "和上午不重复，再看三条新消息。"
+      "say": "这一期根据今天的 AI 午报更新，今天上午没有新的前沿模型发布，我们看看国内产品的进展。",
+      "show": "本期根据今天的 AI 午报更新：上午没有新的前沿模型发布，来看国内产品进展。"
     }
   ],
   "news": [
     {
-      "label": "Google 发布 Gemini Omni 1.2 Flash",
+      "label": "DeepSeek Harness 日活跃用户 154 万",
       "points": [
-        "视频最长 15 秒",
-        "多轮对话式修改",
-        "720p 降价 30%，每秒 0.07 美元"
+        "截至 11 月 4 日，日活 154 万",
+        "每天约消耗 92 万亿 Token",
+        "第三方插件约 3.5 万个，将建官方插件市场"
       ],
       "details": [
-        "此前 Omni 1.1 为 10 秒，可按 1 秒步长指定 3 到 15 秒。",
-        "可在同一段视频上逐轮替换背景、灯光等。",
-        "在 Gemini API 和 Google Cloud 正式商用，输出带 SynthID 隐形水印。"
+        "统计范围为使用官方 API 的用户。Harness v0.1 于 8 月 13 日上线，桌面端 9 月 29 日发布。",
+        "数据由 DeepSeek Harness 官方在 11 月 5 日晚公布，IT之家报道。",
+        "约六成活跃用户制作或安装过至少一款插件；面向插件作者的支持计划（Token 激励等）规则尚未公布。"
       ],
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-      "meta": {
-        "date": "2026-11-05（美国时间）",
-        "region": "全球",
-        "platform": "Gemini API、Google Cloud、Flow、Google Vids 等"
+      "url": "https://www.ithome.com/1/023/011.htm",
+      "link": {
+        "url": "https://www.ithome.com/1/023/011.htm",
+        "title": "DeepSeek Harness：日活跃用户达 154 万、日消耗 Token 约 92 万亿，将建设官方插件市场",
+        "site": "IT之家",
+        "description": "转述 DeepSeek Harness 官方公布的数据"
       },
-      "verified_at": "2026-11-06T18:05:00+08:00",
+      "meta": {
+        "date": "2026-11-05（北京时间晚间）",
+        "region": "中国 · 全球用户",
+        "platform": "DeepSeek Harness（官方 API）"
+      },
+      "verified_at": "2026-11-06T18:55+08:00",
       "lines": [
         {
-          "say": "第一条，Google 发布视频生成与编辑模型 Gemini Omni 1.2 Flash，在 Gemini API 和 Google Cloud 正式商用。",
-          "show": "第一条，Google 发布视频生成与编辑模型 Gemini Omni 1.2 Flash，在 Gemini API 和 Google Cloud 正式商用。"
+          "say": "第一条。DeepSeek 公布了智能体工具 Harness 的使用数据。",
+          "show": "第一条：DeepSeek 公布智能体工具 Harness 的使用数据。"
         },
         {
-          "say": "单段视频最长从10秒提高到15秒，还支持多轮对话式修改。",
-          "show": "单段视频最长从 10 秒提高到 15 秒，并支持多轮对话式修改。"
+          "say": "截至十一月四日，只算使用官方接口的用户，日活跃用户一百五十四万，每天大约消耗九十二万亿 Token。",
+          "show": "截至 11 月 4 日（仅统计官方 API 用户），日活 154 万，日耗约 92 万亿 Token。"
         },
         {
-          "say": "720p 价格降低三成，每秒0.07美元，生成内容带有 SynthID 隐形水印。",
-          "show": "720p 降价 30%，每秒 0.07 美元；输出带 SynthID 隐形水印。"
+          "say": "第三方插件已经有大约三万五千个，团队计划建设官方插件市场。",
+          "show": "第三方插件约 3.5 万个，团队计划建设官方插件市场。"
         }
       ]
     },
     {
-      "label": "Ricursive 开放 Ripple-65B Preview",
+      "label": "豆包工作首次接入第三方模型",
       "points": [
-        "650 亿参数稠密模型，从零训练",
-        "TerminalBench 2.1 自报 80.52 分",
-        "Apache 2.0 许可开放权重"
+        "首批：Kimi 3.1 Pro、GLM‑5.3、DeepSeek V4.1 Flash",
+        "仅限团队版和企业版",
+        "统一用豆包工作的 AI 点数计费"
       ],
       "details": [
-        "在 12 万亿 token 上预训练，最长支持约 100 万 token 上下文。",
-        "官方称是美国开放权重模型中的智能体编程最高分；不同评测框架下分数可能变化。",
-        "含 BF16、NVFP4 指令版与 BF16 基座版；官方称全部研发成本约 3200 万美元。"
+        "此前豆包工作只支持字节自研的豆包模型。",
+        "功能默认开启，企业无需另签各家模型的 API 合同。",
+        "管理员可按成员、部门和使用渠道开关各个模型。腾讯 WorkBuddy 此前已提供多模型选择。"
       ],
-      "url": "https://www.ricursive.com/ripple",
-      "meta": {
-        "date": "2026-11-06（据 Dataconomy 报道，美国时间）",
-        "region": "全球",
-        "platform": "Hugging Face、Together AI、GMI Cloud、OpenRouter"
+      "url": "https://www.51dns.com/info/detail/14582.html",
+      "link": {
+        "url": "https://www.51dns.com/info/detail/14582.html",
+        "title": "豆包工作首次接入第三方模型，首批上线Kimi、智谱与DeepSeek",
+        "site": "站长之家转载",
+        "description": "原载站长之家 chinaz.com"
       },
-      "verified_at": "2026-11-06T18:40:00+08:00",
+      "source_note": "https://www.chinaz.com/ainews/32104.shtml",
+      "meta": {
+        "date": "2026-11-06（报道时间）",
+        "region": "中国",
+        "platform": "豆包工作（团队版／企业版）"
+      },
+      "verified_at": "2026-11-06T18:55+08:00",
       "lines": [
         {
-          "say": "第二条，芯片设计 AI 公司 Ricursive 开放了 Ripple-65B Preview 模型。",
-          "show": "第二条，芯片设计 AI 公司 Ricursive 开放 Ripple-65B Preview。"
+          "say": "第二条。字节的豆包工作，第一次直接接入了其他公司的大模型。",
+          "show": "第二条：字节旗下豆包工作，首次原生接入第三方大模型。"
         },
         {
-          "say": "这是一个六百五十亿参数的稠密模型，在十二万亿词元上从零训练，官方自报在 TerminalBench 2.1 智能体编程测试中拿到八十点五二分。",
-          "show": "650 亿参数稠密模型，在 12 万亿 token 上从零训练；官方自报 TerminalBench 2.1 得分 80.52。"
+          "say": "首批是月之暗面的 Kimi 3.1 Pro、智谱的 GLM 5.3，以及 DeepSeek V4.1 Flash。",
+          "show": "首批：Kimi 3.1 Pro、智谱 GLM‑5.3、DeepSeek V4.1 Flash。"
         },
         {
-          "say": "权重采用 Apache 2.0 许可，已上架 Hugging Face；官方称，整个研发成本约三千二百万美元。",
-          "show": "权重以 Apache 2.0 许可上架 Hugging Face；官方称研发总成本约 3200 万美元。"
-        }
-      ],
-      "sources": [
-        {
-          "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-          "title": "Hugging Face 模型页"
-        },
-        {
-          "url": "https://dataconomy.com/2026/11/06/ricursive-launches-ripple-65b-preview-claiming-us-open/",
-          "title": "Dataconomy 报道"
+          "say": "目前只对团队版和企业版开放，统一用 AI 点数计费。",
+          "show": "目前仅对团队版和企业版开放，统一使用 AI 点数计费。"
         }
       ]
     },
     {
-      "label": "Perplexity 推出常驻工作智能体 Teammates",
+      "label": "混元 Hy4 上线首日调用激增，推理集群扩容十倍",
       "points": [
-        "可同时承担多项任务",
-        "沿用已有项目、技能与记忆",
-        "需每月 200 美元的 Max 订阅"
+        "11 月 4 日在 WorkBuddy 首发接入",
+        "推理集群紧急扩容十倍，提高免费额度",
+        "Hy4 权重仍未公开"
       ],
       "details": [
-        "基于 Perplexity Computer，可持续跟进长期工作。",
-        "每个 Teammate 有独立对话线程，也可在 Slack 中交流。",
-        "据 The Verge 报道。"
+        "上线首日大量用户触及使用额度；腾讯称高峰时段仍可能限额，建议改用 Hy3 等模型。",
+        "WorkBuddy 上 Hy3 的限时免费延长到 11 月 15 日 23:59。",
+        "截至报道时，Hy4 的权重还没有放出。"
       ],
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
-      "meta": {
-        "date": "2026-11-05 22:26 UTC（台北时间 11 月 6 日 06:26）",
-        "region": "全球（Max 订阅用户）",
-        "platform": "Perplexity"
+      "url": "https://www.eet-china.com/mp/a537325.html",
+      "link": {
+        "url": "https://www.eet-china.com/mp/a537325.html",
+        "title": "【每日瞰AI】OpenAI 发布 GPT-6 Cyber……混元 Hy4 上线首日调用激增，腾讯称扩容十倍",
+        "site": "电子工程专辑",
+        "description": "11 月 6 日每日瞰AI 第 4 条"
       },
-      "verified_at": "2026-11-06T18:05:00+08:00",
+      "meta": {
+        "date": "2026-11-06（报道时间）",
+        "region": "中国",
+        "platform": "腾讯 WorkBuddy"
+      },
+      "verified_at": "2026-11-06T18:55+08:00",
       "lines": [
         {
-          "say": "第三条，Perplexity 推出常驻工作智能体 Teammates。",
-          "show": "第三条，Perplexity 推出常驻工作智能体 Teammates。"
+          "say": "第三条。腾讯混元 Hy4 上线首日调用量激增。",
+          "show": "第三条：腾讯混元 Hy4 上线首日调用量激增。"
         },
         {
-          "say": "它可以同时承担多项任务、持续跟进，并沿用用户在 Perplexity 里已有的项目、技能和记忆。",
-          "show": "它可以同时承担多项任务、持续跟进，并沿用用户在 Perplexity 里已有的项目、技能和记忆。"
+          "say": "腾讯称已经把 Hy4 的推理集群紧急扩容十倍，并提高了免费额度；WorkBuddy 上 Hy3 的限时免费延长到十一月十五日。",
+          "show": "腾讯称 Hy4 推理集群紧急扩容十倍并提高免费额度；WorkBuddy 上 Hy3 限免延长至 11 月 15 日。"
         },
         {
-          "say": "据 The Verge 报道，目前需要每月200美元的 Max 订阅才能使用。",
-          "show": "据 The Verge 报道，目前需要每月 200 美元的 Max 订阅。"
+          "say": "不过，Hy4 的模型权重目前还没有公开。",
+          "show": "Hy4 的模型权重目前仍未公开。"
         }
       ]
     }
   ],
   "closing": [
     {
-      "say": "以上就是今天的 AI 日报，原文链接都在节目页面里。",
-      "show": "以上就是今天的 AI 日报，原文链接都在节目页面里。"
-    },
-    {
-      "say": "明早八点见。",
-      "show": "明早八点见。"
+      "say": "以上就是今天下午的 AI 日报。原文链接都在节目下方，我们明天早上八点见。",
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 08:00 见。"
     }
   ],
-  "highlight": 0,
-  "seconds": 92.11,
-  "audio": "audio/2026-11-06-1600-ai-zh.mp3",
-  "lines_timed": [
-    {
-      "start": 0.4,
-      "end": 5.625,
-      "show": "下午好，这里是晨光电台 AI 日报，11月6日午后版。",
-      "part": 0
-    },
-    {
-      "start": 5.845,
-      "end": 9.97,
-      "show": "和上午不重复，再看三条新消息。",
-      "part": 0
-    },
-    {
-      "start": 10.67,
-      "end": 19.97,
-      "show": "第一条，Google 发布视频生成与编辑模型 Gemini Omni 1.2 Flash，在 Gemini API 和 Google Cloud 正式商用。",
-      "part": 1
-    },
-    {
-      "start": 20.19,
-      "end": 26.465,
-      "show": "单段视频最长从 10 秒提高到 15 秒，并支持多轮对话式修改。",
-      "part": 1
-    },
-    {
-      "start": 26.685,
-      "end": 34.36,
-      "show": "720p 降价 30%，每秒 0.07 美元；输出带 SynthID 隐形水印。",
-      "part": 1
-    },
-    {
-      "start": 35.06,
-      "end": 41.36,
-      "show": "第二条，芯片设计 AI 公司 Ricursive 开放 Ripple-65B Preview。",
-      "part": 2
-    },
-    {
-      "start": 41.58,
-      "end": 54.905,
-      "show": "650 亿参数稠密模型，在 12 万亿 token 上从零训练；官方自报 TerminalBench 2.1 得分 80.52。",
-      "part": 2
-    },
-    {
-      "start": 55.125,
-      "end": 63.375,
-      "show": "权重以 Apache 2.0 许可上架 Hugging Face；官方称研发总成本约 3200 万美元。",
-      "part": 2
-    },
-    {
-      "start": 64.075,
-      "end": 69.075,
-      "show": "第三条，Perplexity 推出常驻工作智能体 Teammates。",
-      "part": 3
-    },
-    {
-      "start": 69.295,
-      "end": 77.52,
-      "show": "它可以同时承担多项任务、持续跟进，并沿用用户在 Perplexity 里已有的项目、技能和记忆。",
-      "part": 3
-    },
-    {
-      "start": 77.74,
-      "end": 83.115,
-      "show": "据 The Verge 报道，目前需要每月 200 美元的 Max 订阅。",
-      "part": 3
-    },
-    {
-      "start": 83.815,
-      "end": 89.14,
-      "show": "以上就是今天的 AI 日报，原文链接都在节目页面里。",
-      "part": 4
-    },
-    {
-      "start": 89.36,
-      "end": 91.41,
-      "show": "明早八点见。",
-      "part": 4
-    }
-  ],
-  "segments": [
-    {
-      "kind": "opening",
-      "index": null,
-      "start": 0.0,
-      "end": 10.67
-    },
-    {
-      "kind": "news",
-      "index": 0,
-      "start": 10.67,
-      "end": 35.06
-    },
-    {
-      "kind": "news",
-      "index": 1,
-      "start": 35.06,
-      "end": 64.075
-    },
-    {
-      "kind": "news",
-      "index": 2,
-      "start": 64.075,
-      "end": 83.815
-    },
-    {
-      "kind": "closing",
-      "index": null,
-      "start": 83.815,
-      "end": 92.11
-    }
-  ],
-  "made_at": "2026-11-06T10:16:07+00:00",
-  "voice": {
-    "provider": "kokoro",
-    "model": "hexgrad/Kokoro-82M-v1.1-zh",
-    "name": "zf_001",
-    "speed": 1.0,
-    "license": "Apache-2.0"
-  },
-  "speech_hash": "fa5acab15059f3c6"
+  "highlight": 0
 }
