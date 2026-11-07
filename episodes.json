@@ -1,0 +1,129 @@
+[
+  {
+    "date": "2026-11-07",
+    "id": "2026-11-07-1600-ai",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜Aaronson–Ambainis 获证、智能体终端入网与 OpenAI Showcase",
+      "seconds": 153.345
+    }
+  },
+  {
+    "date": "2026-11-07",
+    "id": "2026-11-07-1600-acg",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜绝区零星铁战斗 PV、弹丸论破 AR 与魔界战记七周年",
+      "seconds": 96.44
+    }
+  },
+  {
+    "date": "2026-11-07",
+    "id": "2026-11-07-0800-ai",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜DeepMind 攻坚遗留 RSA、BioBasicsBench 与 Claude 记忆做梦",
+      "seconds": 114.415
+    }
+  },
+  {
+    "date": "2026-11-07",
+    "id": "2026-11-07-0800-acg",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜《伤口与绷带》本 PV、咒术手游上线与 Temppal 开服日",
+      "seconds": 84.915
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1800-ai",
+    "time": "18:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "接管试播｜AI 日报：安全专用模型、开放权重与世界模拟",
+      "seconds": 96.165
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1800-acg",
+    "time": "18:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "接管试播｜二次元／游戏：时之笛重生、剑星登陆 Switch 2、拉面赤猫第二季",
+      "seconds": 93.94
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1600-ai",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜DeepSeek Harness 日活 154 万、豆包工作接入三家模型、混元 Hy4 扩容十倍",
+      "seconds": 88.09
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-1600-acg",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜《我心里危险的东西》第三季、GTA6 新截图与任天堂财报",
+      "seconds": 83.06
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-0800-ai",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜GPT‑6 Cyber、Inkling 2 Small 与文心 5.5 Flash 基座开放权重",
+      "seconds": 83.94
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "id": "2026-11-06-0800-acg",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜《Fool Night》新 PV、PS5 累计 9790 万台与《摇曳露营△》第四季",
+      "seconds": 83.01
+    }
+  },
+  {
+    "zh": {
+      "title": "开台试播｜你好，这里是晨光电台",
+      "seconds": 62.355
+    },
+    "date": "2026-11-06"
+  }
+]

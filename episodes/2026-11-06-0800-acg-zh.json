@@ -1,0 +1,259 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-06-0800-acg",
+  "date": "2026-11-06",
+  "time": "08:00",
+  "timezone": "Asia/Taipei",
+  "column": "acg",
+  "column_name": "二次元／游戏",
+  "lang": "zh",
+  "title": "二次元／游戏｜《Fool Night》新 PV、PS5 累计 9790 万台与《摇曳露营△》第四季",
+  "opening": [
+    {
+      "say": "早上好，这里是晨光电台二次元与游戏频道，11月6日早间版。",
+      "show": "早上好，这里是晨光电台二次元与游戏频道，11月6日早间版。"
+    },
+    {
+      "say": "今天两条动画消息，中间插一条主机数据。",
+      "show": "今天两条动画消息，中间插一条主机数据。"
+    }
+  ],
+  "news": [
+    {
+      "label": "Netflix 动画《フールナイト》公开正式 PV",
+      "points": [
+        "Sunrise 与 Shaft 首次合作",
+        "OP：Tempalay；ED：Nowlu",
+        "11 月 26 日 Netflix 全球独家"
+      ],
+      "details": [
+        "日本时间 11 月 5 日 20 点公开主视觉、正式 PV 与追加声优。",
+        "片头曲《Shake! spit out》，片尾曲《息》。",
+        "原作为安田佳澄的漫画（小学馆）。"
+      ],
+      "url": "https://www.animatetimes.com/news/details.php?id=1793844656",
+      "meta": {
+        "date": "2026-11-05 20:00（日本时间）",
+        "region": "日本发布，全球配信",
+        "platform": "Netflix"
+      },
+      "verified_at": "2026-11-06T18:05:00+08:00",
+      "lines": [
+        {
+          "say": "第一条，由 Sunrise 和 Shaft 首次合作制作的 Netflix 动画《Fool Night》，公开了主视觉和正式PV。",
+          "show": "第一条，Sunrise × Shaft 首次合作的 Netflix 动画《フールナイト》公开主视觉与正式 PV。"
+        },
+        {
+          "say": "片头曲是 Tempalay 的《Shake! spit out》，片尾曲是 Nowlu 的《息》。",
+          "show": "片头曲是 Tempalay 的《Shake! spit out》，片尾曲是 Nowlu 的《息》。"
+        },
+        {
+          "say": "作品将于11月26日在 Netflix 全球独家播出。",
+          "show": "作品将于 11 月 26 日在 Netflix 全球独家播出。"
+        }
+      ]
+    },
+    {
+      "label": "索尼财报：PS5 累计出货 9790 万台",
+      "points": [
+        "7 到 9 月出货 260 万台",
+        "《漫威金刚狼》销量 240 万份",
+        "PSN 月活 1.27 亿"
+      ],
+      "details": [
+        "截至 2026 年 9 月 30 日的季度，比去年同期少 90 万台。",
+        "截至 11 月 4 日的数据。",
+        "比去年同期增加 800 万；当季 PS5、PS4 软件合计售出 8820 万份。"
+      ],
+      "url": "https://www.gematsu.com/2026/11/ps5-shipments-top-97-9-million-marvels-wolverine-tops-2-4-million",
+      "meta": {
+        "date": "2026-11-05（索尼财报）",
+        "region": "全球累计",
+        "platform": "PlayStation 5"
+      },
+      "verified_at": "2026-11-06T18:40:00+08:00",
+      "lines": [
+        {
+          "say": "第二条，索尼公布最新财报，PS5 全球累计出货达到九千七百九十万台。",
+          "show": "第二条，索尼财报：PS5 全球累计出货 9790 万台。"
+        },
+        {
+          "say": "七到九月这一季出货二百六十万台，比去年同期少九十万台。",
+          "show": "7 到 9 月出货 260 万台，比去年同期少 90 万台。"
+        },
+        {
+          "say": "另外，《漫威金刚狼》销量已经达到二百四十万份，PlayStation Network 月活跃用户为一亿两千七百万。",
+          "show": "《漫威金刚狼》销量达 240 万份；PSN 月活用户 1.27 亿。"
+        }
+      ]
+    },
+    {
+      "label": "《摇曳露营△》第四季 2027 年 4 月开播",
+      "points": [
+        "公开主视觉与正式 PV",
+        "新生绘真、メイ加入",
+        "OP：亚咲花《ぶらんにゅ。》"
+      ],
+      "details": [
+        "主视觉中，抚子、凛等 8 人齐聚露营地。",
+        "PV 描写升上新年级的野外活动社为招新生想办法。",
+        "ED 为佐佐木惠梨《葉っぱの手紙》，系列主题曲为 キミのね《となりにいれば》。"
+      ],
+      "url": "https://yurucamp.jp/news/information/9896",
+      "meta": {
+        "date": "2026-11-06（日本）",
+        "region": "日本",
+        "platform": "日本电视播出"
+      },
+      "verified_at": "2026-11-06T18:40:00+08:00",
+      "lines": [
+        {
+          "say": "第三条，电视动画《摇曳露营》第四季确定在二零二七年四月开播，官方公开了主视觉和正式PV。",
+          "show": "第三条，TV 动画《摇曳露营△》第四季确定 2027 年 4 月开播，公开主视觉与正式 PV。"
+        },
+        {
+          "say": "这一季有两位新生加入，主视觉里八个人一起聚在露营地。",
+          "show": "新生绘真、メイ加入，主视觉中 8 人齐聚露营地。"
+        },
+        {
+          "say": "片头曲是亚咲花的《ぶらんにゅ。》，片尾曲是佐佐木惠梨的《葉っぱの手紙》。",
+          "show": "OP：亚咲花《ぶらんにゅ。》；ED：佐佐木惠梨《葉っぱの手紙》。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是早间的二次元与游戏消息。",
+      "show": "以上就是早间的二次元与游戏消息。"
+    },
+    {
+      "say": "下午四点见。",
+      "show": "下午四点见。"
+    }
+  ],
+  "highlight": 0,
+  "seconds": 83.01,
+  "audio": "audio/2026-11-06-0800-acg-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.425,
+      "show": "早上好，这里是晨光电台二次元与游戏频道，11月6日早间版。",
+      "part": 0
+    },
+    {
+      "start": 6.645,
+      "end": 11.395,
+      "show": "今天两条动画消息，中间插一条主机数据。",
+      "part": 0
+    },
+    {
+      "start": 12.095,
+      "end": 20.47,
+      "show": "第一条，Sunrise × Shaft 首次合作的 Netflix 动画《フールナイト》公开主视觉与正式 PV。",
+      "part": 1
+    },
+    {
+      "start": 20.69,
+      "end": 25.69,
+      "show": "片头曲是 Tempalay 的《Shake! spit out》，片尾曲是 Nowlu 的《息》。",
+      "part": 1
+    },
+    {
+      "start": 25.91,
+      "end": 30.86,
+      "show": "作品将于 11 月 26 日在 Netflix 全球独家播出。",
+      "part": 1
+    },
+    {
+      "start": 31.56,
+      "end": 38.485,
+      "show": "第二条，索尼财报：PS5 全球累计出货 9790 万台。",
+      "part": 2
+    },
+    {
+      "start": 38.705,
+      "end": 44.78,
+      "show": "7 到 9 月出货 260 万台，比去年同期少 90 万台。",
+      "part": 2
+    },
+    {
+      "start": 45.0,
+      "end": 53.75,
+      "show": "《漫威金刚狼》销量达 240 万份；PSN 月活用户 1.27 亿。",
+      "part": 2
+    },
+    {
+      "start": 54.45,
+      "end": 63.85,
+      "show": "第三条，TV 动画《摇曳露营△》第四季确定 2027 年 4 月开播，公开主视觉与正式 PV。",
+      "part": 3
+    },
+    {
+      "start": 64.07,
+      "end": 69.52,
+      "show": "新生绘真、メイ加入，主视觉中 8 人齐聚露营地。",
+      "part": 3
+    },
+    {
+      "start": 69.74,
+      "end": 75.315,
+      "show": "OP：亚咲花《ぶらんにゅ。》；ED：佐佐木惠梨《葉っぱの手紙》。",
+      "part": 3
+    },
+    {
+      "start": 76.015,
+      "end": 80.09,
+      "show": "以上就是早间的二次元与游戏消息。",
+      "part": 4
+    },
+    {
+      "start": 80.31,
+      "end": 82.31,
+      "show": "下午四点见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 12.095
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 12.095,
+      "end": 31.56
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 31.56,
+      "end": 54.45
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 54.45,
+      "end": 76.015
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 76.015,
+      "end": 83.01
+    }
+  ],
+  "made_at": "2026-11-06T10:15:36+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "80b8e442d591ae6f"
+}

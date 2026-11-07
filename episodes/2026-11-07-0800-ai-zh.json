@@ -1,0 +1,269 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-07-0800-ai",
+  "date": "2026-11-07",
+  "time": "08:00",
+  "timezone": "Asia/Taipei",
+  "column": "ai",
+  "column_name": "AI 日报",
+  "lang": "zh",
+  "title": "AI 日报｜DeepMind 攻坚遗留 RSA、BioBasicsBench 与 Claude 记忆做梦",
+  "opening": [
+    {
+      "say": "早上好，这里是晨光电台 AI 日报。今天是十一月七日，星期六。",
+      "show": "早上好，这里是晨光电台 AI 日报。11 月 7 日，星期六。"
+    },
+    {
+      "say": "这一期根据今天同一时段的 AI 早报，挑三条已打开原文核实的官方研究与产品消息，不重复昨天已经播过的内容。",
+      "show": "本期根据今天同一时段的 AI 早报，选取三条已打开原文核实的官方研究与产品消息，不重复昨日已播内容。"
+    }
+  ],
+  "news": [
+    {
+      "label": "DeepMind：AI Agent 加速密码分析，发现遗留 1024 位 RSA 弱点",
+      "points": [
+        "人工指导下模型找出遗留 1024 位 RSA 两处弱点",
+        "官方强调现行 2048 位及以上 RSA 不受这些具体利用影响",
+        "两篇工作论文与实验复现已公开"
+      ],
+      "details": [
+        "其一改进仿射模根与签名接口场景；其二改进批量分解与分解工厂。",
+        "论文写明：两个协作 AI 智能体在人工指导下约四天内设计、运行并调试了计算。",
+        "意义在于看清旧签名标准的边界，以及 AI 辅助研究推进该领域的速度。"
+      ],
+      "url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
+      "link": {
+        "url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
+        "title": "AI agents accelerating cryptanalysis of legacy 1024-bit RSA",
+        "site": "Google DeepMind",
+        "description": "官方 X：人工指导下发现遗留 1024-bit RSA 两处弱点；强调现代 2048-bit+ 不受影响"
+      },
+      "meta": {
+        "date": "2026-11-07 01:20（台北，对应官方 X）",
+        "region": "全球 · 密码学研究",
+        "platform": "Google DeepMind 官方 X · 工作论文 PDF"
+      },
+      "verified_at": "2026-11-07T07:25+08:00",
+      "lines": [
+        {
+          "say": "第一条。谷歌 DeepMind 公布新研究，称在人工指导下，人工智能智能体加速了加密系统压力测试。",
+          "show": "第一条：Google DeepMind 公布新研究，称在人工指导下 AI Agent 加速了加密系统压力测试。"
+        },
+        {
+          "say": "模型发现了遗留一千零二十四位 RSA 的两处弱点；官方强调，现在常用的二千零四十八位及以上 RSA 不受这些具体利用影响。",
+          "show": "模型发现遗留 1024 位 RSA 两处弱点；官方强调现行 2048 位及以上 RSA 不受这些具体利用影响。"
+        },
+        {
+          "say": "相关工作论文已经公开；论文写明，两个协作智能体在人工指导下，用不到四天完成了实验的设计、运行和调试。",
+          "show": "相关工作论文已公开；论文写明两个协作智能体在人工指导下用不到四天完成实验设计、运行与调试。"
+        }
+      ]
+    },
+    {
+      "label": "OpenAI 发布 BioBasicsBench 湿实验日常分析基准",
+      "points": [
+        "与酶设计公司 Ligo 合作，共一百项真实实验任务",
+        "测 Agent 解读凝胶、显微与仪器原始数据并找错",
+        "高推理设置下 GPT 六 Astra 均分百分之六十六点七"
+      ],
+      "details": [
+        "任务覆盖蛋白方法、成像、定量、核酸与分子克隆等日常湿实验。",
+        "对比中 GPT 五点六 Sol 为百分之四十三点八。",
+        "官方页面发布日期为 2026-11-06。"
+      ],
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "link": {
+        "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+        "title": "Measuring how AI agents handle everyday wet-lab science",
+        "site": "OpenAI",
+        "description": "OpenAI 官方：BioBasicsBench，100 项湿实验日常分析任务",
+        "image": "https://images.ctfassets.net/kftzwdyauwt9/3lNbSQIg31Dg9aBrUjuQMI/131fea8d534499ca30f7a9f880269d74/biobasicsbench-social.png?w=1600&h=900&fit=fill"
+      },
+      "meta": {
+        "date": "2026-11-06（美国）",
+        "region": "全球 · 生物实验基准",
+        "platform": "OpenAI 官方站点"
+      },
+      "verified_at": "2026-11-07T07:25+08:00",
+      "lines": [
+        {
+          "say": "第二条。OpenAI 发布湿实验日常分析基准 BioBasicsBench，与酶设计公司 Ligo 合作。",
+          "show": "第二条：OpenAI 发布湿实验日常分析基准 BioBasicsBench，与酶设计公司 Ligo 合作。"
+        },
+        {
+          "say": "一百项真实实验任务，测智能体能不能读懂凝胶、显微和仪器原始数据，找出错误，并判断证据够不够。",
+          "show": "100 项真实实验任务，测 Agent 解读凝胶／显微／仪器原始数据、找错、判断证据是否充分。"
+        },
+        {
+          "say": "在最高推理设置下，GPT 六 Astra 均分百分之六十六点七，GPT 五点六 Sol 是百分之四十三点八。",
+          "show": "xhigh 推理下 GPT‑6 Astra 均分 66.7%，GPT‑5.6 Sol 为 43.8%。"
+        }
+      ]
+    },
+    {
+      "label": "Anthropic：Agent 记忆组件与「做梦」整理",
+      "points": [
+        "解释 Claude 如何在会话间保留经验记忆",
+        "空闲时回看 transcript，纠错并建 wiki 式表征",
+        "Stainless 语料评测：做梦从两轮到一百二十八轮，二十五题得分百分之十三升至百分之四十八"
+      ],
+      "details": [
+        "工程博文发布于 2026-11-06；配套有 Managed Agents／Dreams 文档。",
+        "dreaming 还可把笔记提升到每会话预加载层，并按目标聚焦记忆。",
+        "作者强调记忆系统仍在演进，需平衡即时记录与后台整理。"
+      ],
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "link": {
+        "url": "https://www.anthropic.com/research/components-of-agent-memory",
+        "title": "The components of agent memory",
+        "site": "Anthropic",
+        "description": "Anthropic 工程：Agent 记忆笔记与 dreaming 整理、纠错与表征",
+        "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6ab2663a2c0bd6a41409d90136a59a5d72995ea5-1200x630.jpg"
+      },
+      "meta": {
+        "date": "2026-11-06（美国）",
+        "region": "全球 · Agent 工程",
+        "platform": "Anthropic 官方研究博客"
+      },
+      "verified_at": "2026-11-07T07:25+08:00",
+      "lines": [
+        {
+          "say": "第三条。Anthropic 发文拆解智能体记忆：Claude 怎样在不同会话之间留下经验。",
+          "show": "第三条：Anthropic 发文拆解 Agent 记忆：Claude 如何在会话间保留经验。"
+        },
+        {
+          "say": "他们把空闲时回看对话记录、纠正错误笔记，并整理成维基式表征的过程叫做做梦。",
+          "show": "空闲时回看 transcript、纠正错误笔记并整理成 wiki 式表征的过程称为 dreaming。"
+        },
+        {
+          "say": "在 Stainless 内部语料的二十五题评测里，做梦从两轮做到一百二十八轮，得分从百分之十三升到百分之四十八。",
+          "show": "Stainless 语料 25 题评测：dreaming 从 2 轮到 128 轮，得分由 13% 升至 48%。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天早上的 AI 日报。原文链接都在节目下方，下午四点见。",
+      "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，16:00 见。"
+    }
+  ],
+  "highlight": 0,
+  "seconds": 114.415,
+  "audio": "audio/2026-11-07-0800-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.275,
+      "show": "早上好，这里是晨光电台 AI 日报。11 月 7 日，星期六。",
+      "part": 0
+    },
+    {
+      "start": 6.495,
+      "end": 17.77,
+      "show": "本期根据今天同一时段的 AI 早报，选取三条已打开原文核实的官方研究与产品消息，不重复昨日已播内容。",
+      "part": 0
+    },
+    {
+      "start": 18.47,
+      "end": 27.47,
+      "show": "第一条：Google DeepMind 公布新研究，称在人工指导下 AI Agent 加速了加密系统压力测试。",
+      "part": 1
+    },
+    {
+      "start": 27.69,
+      "end": 40.365,
+      "show": "模型发现遗留 1024 位 RSA 两处弱点；官方强调现行 2048 位及以上 RSA 不受这些具体利用影响。",
+      "part": 1
+    },
+    {
+      "start": 40.585,
+      "end": 51.435,
+      "show": "相关工作论文已公开；论文写明两个协作智能体在人工指导下用不到四天完成实验设计、运行与调试。",
+      "part": 1
+    },
+    {
+      "start": 52.135,
+      "end": 59.535,
+      "show": "第二条：OpenAI 发布湿实验日常分析基准 BioBasicsBench，与酶设计公司 Ligo 合作。",
+      "part": 2
+    },
+    {
+      "start": 59.755,
+      "end": 69.755,
+      "show": "100 项真实实验任务，测 Agent 解读凝胶／显微／仪器原始数据、找错、判断证据是否充分。",
+      "part": 2
+    },
+    {
+      "start": 69.975,
+      "end": 79.7,
+      "show": "xhigh 推理下 GPT‑6 Astra 均分 66.7%，GPT‑5.6 Sol 为 43.8%。",
+      "part": 2
+    },
+    {
+      "start": 80.4,
+      "end": 87.5,
+      "show": "第三条：Anthropic 发文拆解 Agent 记忆：Claude 如何在会话间保留经验。",
+      "part": 3
+    },
+    {
+      "start": 87.72,
+      "end": 95.745,
+      "show": "空闲时回看 transcript、纠正错误笔记并整理成 wiki 式表征的过程称为 dreaming。",
+      "part": 3
+    },
+    {
+      "start": 95.965,
+      "end": 106.49,
+      "show": "Stainless 语料 25 题评测：dreaming 从 2 轮到 128 轮，得分由 13% 升至 48%。",
+      "part": 3
+    },
+    {
+      "start": 107.19,
+      "end": 113.715,
+      "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，16:00 见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 18.47
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 18.47,
+      "end": 52.135
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 52.135,
+      "end": 80.4
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 80.4,
+      "end": 107.19
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 107.19,
+      "end": 114.415
+    }
+  ],
+  "made_at": "2026-11-06T23:23:41+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "6b9eb5755fe49f2f"
+}

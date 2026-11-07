@@ -1,0 +1,44 @@
+{
+  "format": "myradio/station-1",
+  "name": "晨光电台",
+  "description": "一位虚拟主播，每天两次为你播报 AI 与二次元／游戏资讯。每份约 90 秒，来源均附原文链接。",
+  "tagline": "用声音，开启新的一天",
+  "logo": "logo.svg",
+  "url": "https://sixman1.github.io/chenguang-radio/",
+  "repo": "https://github.com/sixman1/chenguang-radio",
+  "language": "zh",
+  "languages": [
+    "zh"
+  ],
+  "episodes": "episodes.json",
+  "character": {
+    "pack": "character/character.json",
+    "thumbnail": "character/base.png",
+    "note": "沿用 myradio 原项目的 AI 生成角色"
+  },
+  "credits": [
+    "播放器：myradio · MIT License",
+    "角色：myradio 原项目素材（AI 生成）",
+    "配音：Kokoro-82M-v1.1-zh · 音色 zf_001 · Apache-2.0（hexgrad；中文语音数据由龙猫数据 LongMaoData 授权提供）"
+  ],
+  "caster": "中文主播 · Kokoro zf_001",
+  "audio": {
+    "dir": "audio",
+    "keep_days": 30
+  },
+  "weather": false,
+  "i18n": {},
+  "schedule": {
+    "every": "day",
+    "times": [
+      "08:00",
+      "16:00"
+    ],
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "columns": {
+      "ai": "AI 日报",
+      "acg": "二次元／游戏"
+    }
+  }
+}
