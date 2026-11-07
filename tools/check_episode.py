@@ -59,8 +59,9 @@ def check_script(path: Path, audio: bool, errors: list[str], warnings: list[str]
         if path.stem != f"{ep.get('id')}-{lang}":
             err(f"文件名应为 {ep.get('id')}-{lang}.json")
         news = ep["news"]
-        if len(news) > 3:
-            err("每期最多 3 条资讯")
+        # 条数按内容：默认约 5，特别值得报可再多；硬上限避免失控
+        if len(news) > 8:
+            err("每期资讯过多（建议约 5 条，最多 8 条）")
         for j, n in enumerate(news):
             tag = f"news[{j}]"
             for field in ("label", "points", "lines", "url", "meta"):
@@ -78,8 +79,9 @@ def check_script(path: Path, audio: bool, errors: list[str], warnings: list[str]
                 err(f"{tag} 缺少 verified_at（打开来源核实的时间）")
         chars = sum(len(l.get("say", "")) for l in lines_of(ep))
         estimate = chars / CHARS_PER_SECOND
-        if news and not 60 <= estimate <= 125:
-            warn(f"按字数估算约 {estimate:.0f} 秒（目标约 90 秒）")
+        # 时长按内容，不再卡约 90 秒；过短或明显过长仅提醒
+        if news and not 50 <= estimate <= 280:
+            warn(f"按字数估算约 {estimate:.0f} 秒（按内容弹性，通常约 1–4 分钟）")
     for l in lines_of(ep):
         if not str(l.get("say", "")).strip():
             err("有空的 say")
