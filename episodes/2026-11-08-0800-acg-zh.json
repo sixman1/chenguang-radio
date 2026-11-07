@@ -149,5 +149,122 @@
       "show": "以上就是今天早上的二次元与游戏更新。原文链接在节目下方，下午见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 101.065,
+  "audio": "audio/2026-11-08-0800-acg-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.325,
+      "show": "早上好，这里是晨光电台二次元与游戏频道，11 月 8 日上午版。",
+      "part": 0
+    },
+    {
+      "start": 6.545,
+      "end": 21.17,
+      "show": "今天三条，均为昨天下午档之后核实的官方公布；不重复《伤口与绷带》、咒术手游、TEMPPAL、绝区零联动、弹丸论破 AR 与魔界战记七周年。",
+      "part": 0
+    },
+    {
+      "start": 21.87,
+      "end": 28.52,
+      "show": "第一条：Aniplex 与 CYBIRD 首次合作的新作 ADV《LunaReverse》正式始動。",
+      "part": 1
+    },
+    {
+      "start": 28.74,
+      "end": 35.765,
+      "show": "复仇题材；对应 Switch／Lite 与 Steam，支持日／英／简繁中文。",
+      "part": 1
+    },
+    {
+      "start": 35.985,
+      "end": 42.235,
+      "show": "已公开预告视觉、PV 与主创；发售日、售价与 CERO 均未定。",
+      "part": 1
+    },
+    {
+      "start": 42.935,
+      "end": 52.76,
+      "show": "第二条：《ガールズバンドクライ First Riff》公开游戏内容，并解禁トゲナシトゲアリ游戏 KV。",
+      "part": 2
+    },
+    {
+      "start": 52.98,
+      "end": 62.13,
+      "show": "介绍故事、3D 现场演出与全国巡演等；定位为「路上到アリーナ」的女孩摇滚 RPG。",
+      "part": 2
+    },
+    {
+      "start": 62.35,
+      "end": 71.65,
+      "show": "「ガルリフマガジン」创刊；11 月 21 日办动画一举配信＆观看派对；发售日未定。",
+      "part": 2
+    },
+    {
+      "start": 72.35,
+      "end": 81.1,
+      "show": "第三条：《葬送的芙莉莲》宣布与《モンスター烈伝 オレカバトル2》联动第二弹确定举办。",
+      "part": 3
+    },
+    {
+      "start": 81.32,
+      "end": 87.47,
+      "show": "第一弹芙莉莲将复刻；第二弹追加フェルン与シュタルク。",
+      "part": 3
+    },
+    {
+      "start": 87.69,
+      "end": 92.89,
+      "show": "详细日程与规则稍后见オレカバトル2 官网／官方 X。",
+      "part": 3
+    },
+    {
+      "start": 93.59,
+      "end": 100.365,
+      "show": "以上就是今天早上的二次元与游戏更新。原文链接在节目下方，下午见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 21.87
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 21.87,
+      "end": 42.935
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 42.935,
+      "end": 72.35
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 72.35,
+      "end": 93.59
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 93.59,
+      "end": 101.065
+    }
+  ],
+  "made_at": "2026-11-07T23:07:20+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "61aec64e1a3fcddb"
 }

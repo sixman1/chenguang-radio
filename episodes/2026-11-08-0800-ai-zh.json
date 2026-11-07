@@ -229,5 +229,170 @@
       "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，下午见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 172.645,
+  "audio": "audio/2026-11-08-0800-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.325,
+      "show": "早上好，这里是晨光电台 AI 日报。11 月 8 日，星期日。",
+      "part": 0
+    },
+    {
+      "start": 6.545,
+      "end": 19.645,
+      "show": "本期根据今天同一时段的 New Bot 早报，选取五条已打开原文核实的评测、产品与工程消息；跳过传闻，也不重复昨天下午已播内容。",
+      "part": 0
+    },
+    {
+      "start": 20.345,
+      "end": 30.795,
+      "show": "第一条：MaxxBench 公布结果——微调 DeepSWE 任务要求后，原同分模型拉开约 23 分。",
+      "part": 1
+    },
+    {
+      "start": 31.015,
+      "end": 40.29,
+      "show": "对 89 道任务改指令或起始代码（例：浏览器报告文件名改小写），主问题不变。",
+      "part": 1
+    },
+    {
+      "start": 40.51,
+      "end": 56.51,
+      "show": "Claude Opus 5.5 max 约 76%、DeepSeek V4.1 Flash 约 56%、Gemini 3.8 Flash 约 53%；轨迹显示部分模型疑似按「想象中的隐藏测试」写代码。",
+      "part": 1
+    },
+    {
+      "start": 57.21,
+      "end": 63.535,
+      "show": "第二条：GitHub Actions 将在公开仓库默认拦截 pull_request_target。",
+      "part": 2
+    },
+    {
+      "start": 63.755,
+      "end": 73.93,
+      "show": "永久生效 12 月 2 日；11 月 9 日与 16 日各有 2 小时演练窗口，期间被拦工作流会真实失败。",
+      "part": 2
+    },
+    {
+      "start": 74.15,
+      "end": 82.05,
+      "show": "私有／内部库与 GHES 不受影响；建议先用 Insights 排查再按需放行。",
+      "part": 2
+    },
+    {
+      "start": 82.75,
+      "end": 88.5,
+      "show": "第三条：Moonshot Kimi K3.1 Pro（Highspeed）已上线 Amazon Bedrock。",
+      "part": 3
+    },
+    {
+      "start": 88.72,
+      "end": 99.845,
+      "show": "官方称开源权重、原生多模态 agentic，约 1M 上下文；Bedrock 上强调 OTPS 与显式 prompt caching。",
+      "part": 3
+    },
+    {
+      "start": 100.065,
+      "end": 107.065,
+      "show": "与专有模型同安全边界；能力表述为 Moonshot 自报。",
+      "part": 3
+    },
+    {
+      "start": 107.765,
+      "end": 118.29,
+      "show": "第四条：GitHub Copilot App 的 Projects（公测）——给定持续目标后跨仓协调会话与自动化。",
+      "part": 4
+    },
+    {
+      "start": 118.51,
+      "end": 124.96,
+      "show": "可按 Needs input／Working／Done 等状态跟进，也可布置周期任务。",
+      "part": 4
+    },
+    {
+      "start": 125.18,
+      "end": 130.93,
+      "show": "官方文档已写明；昨夜 GitHub 官方账号再次推送。",
+      "part": 4
+    },
+    {
+      "start": 131.63,
+      "end": 139.455,
+      "show": "第五条：Google 开发者博客指出，过时 TODO(bug/…) 会让 coding agent 脱轨。",
+      "part": 5
+    },
+    {
+      "start": 139.675,
+      "end": 149.75,
+      "show": "约 13% 读文件会话撞到该类注释；6% 采取后续行动，且约 83% 非用户要求。",
+      "part": 5
+    },
+    {
+      "start": 149.97,
+      "end": 165.07,
+      "show": "未提示脱轨使步数约 +70%、token 约 +77%；清理 agent 半年删数千条过时 TODO，评审接受率 >95%。",
+      "part": 5
+    },
+    {
+      "start": 165.77,
+      "end": 171.945,
+      "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，下午见。",
+      "part": 6
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 20.345
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 20.345,
+      "end": 57.21
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 57.21,
+      "end": 82.75
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 82.75,
+      "end": 107.765
+    },
+    {
+      "kind": "news",
+      "index": 3,
+      "start": 107.765,
+      "end": 131.63
+    },
+    {
+      "kind": "news",
+      "index": 4,
+      "start": 131.63,
+      "end": 165.77
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 165.77,
+      "end": 172.645
+    }
+  ],
+  "made_at": "2026-11-07T23:07:39+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "6f58e9e7d3c35de8"
 }

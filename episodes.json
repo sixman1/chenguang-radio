@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-11-08",
+    "id": "2026-11-08-0800-ai",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜MaxxBench、Actions 默认拦截与 Bedrock 上的 Kimi",
+      "seconds": 172.645
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "id": "2026-11-08-0800-acg",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜LunaReverse、ガルリフ内容公开与芙莉莲联动第二弹",
+      "seconds": 101.065
+    }
+  },
+  {
     "date": "2026-11-07",
     "id": "2026-11-07-1600-ai",
     "time": "16:00",
