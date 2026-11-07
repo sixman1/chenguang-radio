@@ -1,0 +1,153 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-08-0800-acg",
+  "date": "2026-11-08",
+  "time": "08:00",
+  "timezone": "Asia/Taipei",
+  "column": "acg",
+  "column_name": "二次元／游戏",
+  "lang": "zh",
+  "title": "二次元／游戏｜LunaReverse、ガルリフ内容公开与芙莉莲联动第二弹",
+  "opening": [
+    {
+      "say": "早上好，这里是晨光电台二次元与游戏频道，十一月八日上午版。",
+      "show": "早上好，这里是晨光电台二次元与游戏频道，11 月 8 日上午版。"
+    },
+    {
+      "say": "今天三条，都是昨天下午档之后核实到的官方公布，不重复伤口与绷带、咒术手游、Temppal、绝区零联动、弹丸论破增强现实和魔界战记七周年。",
+      "show": "今天三条，均为昨天下午档之后核实的官方公布；不重复《伤口与绷带》、咒术手游、TEMPPAL、绝区零联动、弹丸论破 AR 与魔界战记七周年。"
+    }
+  ],
+  "news": [
+    {
+      "label": "Aniplex×CYBIRD 新作 ADV《LunaReverse》正式始動",
+      "points": [
+        "首次合作的复仇题材冒险游戏，面向全球同步展开",
+        "对应 Switch、Switch Lite 与 Steam，多语言含中日英",
+        "公开预告视觉、预告片与主创名单，发售日未定"
+      ],
+      "details": [
+        "CYBIRD 十一月七日十八时三十分发稿；企划制作 CYBIRD，发售 Aniplex。",
+        "剧本中山智美、イチハ；人设うごんば；制作人仓增ひろと。",
+        "官方站点与多平台社媒同步开设。"
+      ],
+      "url": "https://prtimes.jp/main/html/rd/p/000002727.000001661.html",
+      "link": {
+        "url": "https://prtimes.jp/main/html/rd/p/000002727.000001661.html",
+        "title": "復讐の果てに待つ運命のADV『LunaReverse』始動",
+        "site": "PR TIMES（CYBIRD）",
+        "description": "Aniplex×CYBIRD 新作 ADV：预告视觉／PV／主创公开，Switch／Steam，发售未定",
+        "image": "https://prcdn.freetls.fastly.net/release_image/1661/2727/1661-2727-d209591b9cf87261cf2a0e6f5e095cea-1200x630.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+      },
+      "meta": {
+        "date": "2026-11-07 18:30（日本）",
+        "region": "全球同步 · 日本企划",
+        "platform": "Nintendo Switch／Lite · Steam"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第一条。Aniplex 与赛博德首次合作的新作冒险游戏《Luna Reverse》正式始動。",
+          "show": "第一条：Aniplex 与 CYBIRD 首次合作的新作 ADV《LunaReverse》正式始動。"
+        },
+        {
+          "say": "题材是复仇剧，对应任天堂 Switch、Switch Lite 和 Steam，支持日语、英语和简繁中文。",
+          "show": "复仇题材；对应 Switch／Lite 与 Steam，支持日／英／简繁中文。"
+        },
+        {
+          "say": "已公开预告视觉、预告片和主创名单；发售日、售价与分级均未定。",
+          "show": "已公开预告视觉、PV 与主创；发售日、售价与 CERO 均未定。"
+        }
+      ]
+    },
+    {
+      "label": "《ガールズバンドクライ First Riff》公开游戏内容与刺刺针 KV",
+      "points": [
+        "官方生放送第四回公开故事、现场演出与全国巡演等要素",
+        "同步解禁刺刺针乐队游戏主视觉，并创刊在线杂志",
+        "十一月二十一日将办动画一举配信与观看派对"
+      ],
+      "details": [
+        "DONUTS 与东映动画十一月七日二十一时发稿；类型定位为女孩摇滚角色扮演。",
+        "除刺刺针五人外，还有大量游戏原创乐队与角色；发售日未定。",
+        "预定平台为手机 iOS 与 Android；事前登录已于十一月三日启动。"
+      ],
+      "url": "https://prtimes.jp/main/html/rd/p/000002052.000004237.html",
+      "link": {
+        "url": "https://prtimes.jp/main/html/rd/p/000002052.000004237.html",
+        "title": "ゲーム『ガールズバンドクライ First Riff』、トゲナシトゲアリのKVを解禁",
+        "site": "PR TIMES（DONUTS）",
+        "description": "ガルリフ：游戏内容公开、刺刺针 KV、杂志创刊与 11/21 一举配信",
+        "image": "https://prcdn.freetls.fastly.net/release_image/4237/2052/4237-2052-1c2c3539b6b52595ad6c5f14051f081e-1600x1200.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+      },
+      "meta": {
+        "date": "2026-11-07 21:00（日本）",
+        "region": "日本 · 智能手机游戏",
+        "platform": "iOS／Android（预定）· 发售未定"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第二条。《女孩乐队呐喊 First Riff》在官方生放送里公开了游戏内容，并解禁刺刺针乐队的游戏主视觉。",
+          "show": "第二条：《ガールズバンドクライ First Riff》公开游戏内容，并解禁トゲナシトゲアリ游戏 KV。"
+        },
+        {
+          "say": "介绍了故事、三维现场演出和全国巡演等模块，定位是从街头冲向场馆的女孩摇滚角色扮演。",
+          "show": "介绍故事、3D 现场演出与全国巡演等；定位为「路上到アリーナ」的女孩摇滚 RPG。"
+        },
+        {
+          "say": "在线杂志创刊号同步上线；十一月二十一日还将办动画一举配信与观看派对，发售日仍未定。",
+          "show": "「ガルリフマガジン」创刊；11 月 21 日办动画一举配信＆观看派对；发售日未定。"
+        }
+      ]
+    },
+    {
+      "label": "《葬送的芙莉莲》×オレカバトル2 联动第二弹决定",
+      "points": [
+        "动画官方十一月七日宣布与视频卡牌游戏第二弹联动",
+        "第一弹芙莉莲将复刻，第二弹追加菲伦与修塔尔克",
+        "详细日程与规则稍后于オレカバトル2 官方公布"
+      ],
+      "details": [
+        "来源为葬送的芙莉莲动画官网新闻页。",
+        "合作方为科乐美旗下街机／视频卡牌《怪物烈传 オレカバトル2》。",
+        "续报见オレカバトル2 官网与官方账号。"
+      ],
+      "url": "https://frieren-anime.jp/news/6344/",
+      "link": {
+        "url": "https://frieren-anime.jp/news/6344/",
+        "title": "ビデオカードゲーム『モンスター烈伝 オレカバトル2』のコラボ第2弾 開催決定！",
+        "site": "葬送のフリーレン 公式",
+        "description": "芙莉莲×オレカバトル2 第二弹：复刻芙莉莲，追加菲伦与修塔尔克",
+        "image": "https://frieren-anime.jp/wp-content/themes/frieren_2023/assets/og/ogp9.jpg"
+      },
+      "meta": {
+        "date": "2026-11-07（日本）",
+        "region": "日本",
+        "platform": "オレカバトル2 · 视频卡牌／街机"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第三条。《葬送的芙莉莲》官方宣布，与视频卡牌游戏《怪物烈传 オレカバトル二》的联动第二弹确定举办。",
+          "show": "第三条：《葬送的芙莉莲》宣布与《モンスター烈伝 オレカバトル2》联动第二弹确定举办。"
+        },
+        {
+          "say": "第一弹登场的芙莉莲会复刻；第二弹还将加入菲伦和修塔尔克。",
+          "show": "第一弹芙莉莲将复刻；第二弹追加フェルン与シュタルク。"
+        },
+        {
+          "say": "具体日程与玩法细节，稍后看オレカバトル二官网和官方账号。",
+          "show": "详细日程与规则稍后见オレカバトル2 官网／官方 X。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天早上的二次元与游戏更新。原文链接在节目下方，下午见。",
+      "show": "以上就是今天早上的二次元与游戏更新。原文链接在节目下方，下午见。"
+    }
+  ],
+  "highlight": 0
+}

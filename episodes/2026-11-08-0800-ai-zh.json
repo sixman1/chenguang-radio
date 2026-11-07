@@ -1,0 +1,233 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-08-0800-ai",
+  "date": "2026-11-08",
+  "time": "08:00",
+  "timezone": "Asia/Taipei",
+  "column": "ai",
+  "column_name": "AI 日报",
+  "lang": "zh",
+  "title": "AI 日报｜MaxxBench、Actions 默认拦截与 Bedrock 上的 Kimi",
+  "opening": [
+    {
+      "say": "早上好，这里是晨光电台 AI 日报。今天是十一月八日，星期日。",
+      "show": "早上好，这里是晨光电台 AI 日报。11 月 8 日，星期日。"
+    },
+    {
+      "say": "这一期根据今天同一时段的 New Bot 早报，挑五条已打开原文核实的评测、产品与工程消息；跳过传闻，也不重复昨天下午已播内容。",
+      "show": "本期根据今天同一时段的 New Bot 早报，选取五条已打开原文核实的评测、产品与工程消息；跳过传闻，也不重复昨天下午已播内容。"
+    }
+  ],
+  "news": [
+    {
+      "label": "MaxxBench：微调 DeepSWE 任务后同分模型拉开约 23 分",
+      "points": [
+        "对八十九道 DeepSWE 任务改指令或起始代码，主问题不变",
+        "原 DeepSWE 扎堆约百分之七十四的模型，在 MaxxBench 上差距拉开",
+        "轨迹显示部分模型疑似按想象中的隐藏测试写代码"
+      ],
+      "details": [
+        "评测方 unLAP：例浏览器报告文件名改为小写等突变。",
+        "Claude Opus 5.5 max 百分之七十六点四（相对 DeepSWE 负二点二个百分点）；DeepSeek V4.1 Flash max 百分之五十五点六（负十八点六）；Gemini 3.8 Flash high 百分之五十三点四（负二十点五）。",
+        "解读为评测方主张；HN 讨论发酵中。"
+      ],
+      "url": "https://maxxbench.unlap.ai/",
+      "link": {
+        "url": "https://maxxbench.unlap.ai/",
+        "title": "MaxxBench",
+        "site": "unLAP / MaxxBench",
+        "description": "微调 DeepSWE 任务要求后，同分模型拉开约 23 分的榜单与方法说明",
+        "image": "https://maxxbench.unlap.ai/social-card.png"
+      },
+      "meta": {
+        "date": "2026-11-07 晚起发酵（台北约 11/8 凌晨）",
+        "region": "全球 · 编码智能体评测",
+        "platform": "MaxxBench 官方榜单"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第一条。评测方 MaxxBench 公布结果：微调 DeepSWE 任务要求后，原本分数接近的模型被拉开大约二十三分。",
+          "show": "第一条：MaxxBench 公布结果——微调 DeepSWE 任务要求后，原同分模型拉开约 23 分。"
+        },
+        {
+          "say": "他们对八十九道任务改了指令或起始代码，例如浏览器报告文件名改成小写，主工程问题不变。",
+          "show": "对 89 道任务改指令或起始代码（例：浏览器报告文件名改小写），主问题不变。"
+        },
+        {
+          "say": "官网上 Claude Opus 五点五 max 约百分之七十六，DeepSeek 四点一 Flash 约百分之五十六，Gemini 三点八 Flash 约百分之五十三；轨迹显示有的模型疑似按想象中的隐藏测试写代码。",
+          "show": "Claude Opus 5.5 max 约 76%、DeepSeek V4.1 Flash 约 56%、Gemini 3.8 Flash 约 53%；轨迹显示部分模型疑似按「想象中的隐藏测试」写代码。"
+        }
+      ]
+    },
+    {
+      "label": "GitHub Actions：公开库默认拦截 pull_request_target，11/9 首次演练",
+      "points": [
+        "十二月二日起公开仓库默认拦截该触发器",
+        "十一月九日、十六日各有两小时真实失败演练窗口",
+        "私有与内部库、以及企业服务器不受影响"
+      ],
+      "details": [
+        "该触发器可访问 base 仓库密钥，fork 拉取请求风险高。",
+        "演练窗口为世界协调时十六点到十八点；结束后恢复评估模式。",
+        "建议先用 Insights 排查，再按需在 Actions 事件策略中放行。"
+      ],
+      "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2/",
+      "link": {
+        "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2/",
+        "title": "pull_request_target blocked by default December 2",
+        "site": "GitHub Changelog",
+        "description": "公开库默认拦截 pull_request_target；11/9、11/16 演练窗口",
+        "image": "https://github.blog/wp-content/uploads/2026/11/682988073-439dd4ff-beed-4b9b-b767-acf8c41542d9.jpg"
+      },
+      "meta": {
+        "date": "changelog 2026-11-02；首次演练 2026-11-09",
+        "region": "全球 · 公开仓库",
+        "platform": "GitHub Actions / Changelog"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第二条。GitHub Actions 将在公开仓库默认拦截 pull request target 触发器。",
+          "show": "第二条：GitHub Actions 将在公开仓库默认拦截 pull_request_target。"
+        },
+        {
+          "say": "永久生效定在十二月二日；十一月九日和十六日各有两小时演练窗口，期间被拦的工作流会真实失败。",
+          "show": "永久生效 12 月 2 日；11 月 9 日与 16 日各有 2 小时演练窗口，期间被拦工作流会真实失败。"
+        },
+        {
+          "say": "私有库、内部库和 GitHub Enterprise Server 不受影响；官方建议先用 Insights 排查再按需放行。",
+          "show": "私有／内部库与 GHES 不受影响；建议先用 Insights 排查再按需放行。"
+        }
+      ]
+    },
+    {
+      "label": "Moonshot Kimi K3.1 Pro（Highspeed）上线 Amazon Bedrock",
+      "points": [
+        "开源权重、原生多模态 agentic，约一百万上下文",
+        "Bedrock 上强调高输出吞吐、跨区推理与显式提示缓存",
+        "与专有模型同安全边界；能力表述为 Moonshot 自报"
+      ],
+      "details": [
+        "AWS What’s New 十一月六日公告；昨天下午午报未收。",
+        "面向编码与文档处理等 agentic 场景。",
+        "可通过跨区推理在 Bedrock 可用区域使用。"
+      ],
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/",
+      "link": {
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/",
+        "title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
+        "site": "AWS What’s New",
+        "description": "Moonshot Kimi K3.1 Pro 上线 Amazon Bedrock：高 OTPS、跨区推理、显式 prompt caching"
+      },
+      "meta": {
+        "date": "2026-11-06（AWS 公告）",
+        "region": "全球 · 云端推理",
+        "platform": "Amazon Bedrock"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第三条。月之暗面的 Kimi 三点一 Pro 高速版，已上线亚马逊 Bedrock。",
+          "show": "第三条：Moonshot Kimi K3.1 Pro（Highspeed）已上线 Amazon Bedrock。"
+        },
+        {
+          "say": "官方称其为开源权重、原生多模态智能体模型，上下文约一百万；在 Bedrock 上强调输出吞吐和显式提示缓存。",
+          "show": "官方称开源权重、原生多模态 agentic，约 1M 上下文；Bedrock 上强调 OTPS 与显式 prompt caching。"
+        },
+        {
+          "say": "与专有模型共用同一安全边界；编码、三维创建等能力表述为 Moonshot 自报。",
+          "show": "与专有模型同安全边界；能力表述为 Moonshot 自报。"
+        }
+      ]
+    },
+    {
+      "label": "GitHub Copilot App「Projects」：跨仓协调目标与周期任务",
+      "points": [
+        "公测功能：给定持续目标后协调会话、自动化与产物",
+        "可按 Needs input、Open、Working、Done 跟进",
+        "官方文档已有；昨夜官方账号再推"
+      ],
+      "details": [
+        "可跨多个仓库，也可不绑定仓库起步。",
+        "支持把材料放进 Library，并设置周期性自动化。",
+        "功能标注为 public preview，可能变更。"
+      ],
+      "url": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-projects",
+      "link": {
+        "url": "https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-projects",
+        "title": "Working with projects in the GitHub Copilot app",
+        "site": "GitHub Docs",
+        "description": "Copilot App Projects：跨仓协调目标、会话与周期任务（public preview）"
+      },
+      "meta": {
+        "date": "文档已有；官方 X 推送约 2026-11-08 02:22 台北",
+        "region": "全球 · 开发者",
+        "platform": "GitHub Copilot App"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第四条。GitHub Copilot 应用里的 Projects 功能进入公测说明：给它一个持续目标，它会跨仓库协调会话和自动化。",
+          "show": "第四条：GitHub Copilot App 的 Projects（公测）——给定持续目标后跨仓协调会话与自动化。"
+        },
+        {
+          "say": "进度可按需要输入、进行中、已完成等状态查看，也可布置周期任务。",
+          "show": "可按 Needs input／Working／Done 等状态跟进，也可布置周期任务。"
+        },
+        {
+          "say": "官方文档已写明细节；昨夜 GitHub 官方账号再次推送该功能。",
+          "show": "官方文档已写明；昨夜 GitHub 官方账号再次推送。"
+        }
+      ]
+    },
+    {
+      "label": "Google：过时 TODO(bug/…) 会让 coding agent 脱轨",
+      "points": [
+        "约百分之十三读文件会话撞到 TODO 或 FIXME 带 bug 引用",
+        "百分之六采取后续行动，其中约百分之八十三并非用户要求",
+        "未提示脱轨使步数约加百分之七十、令牌约加百分之七十七"
+      ],
+      "details": [
+        "基于百万级步数轨迹与固定效应回归；午报未收。",
+        "清理智能体半年删数千条过时 TODO，评审接受率超过百分之九十五。",
+        "作者呼吁把 agent 友好代码库的清理债务重新排期。"
+      ],
+      "url": "https://developers.googleblog.com/agent-distraction/",
+      "link": {
+        "url": "https://developers.googleblog.com/agent-distraction/",
+        "title": "Agent Distraction",
+        "site": "Google Developers Blog",
+        "description": "过时 TODO(bug/…) 导致 coding agent 脱轨的量化分析与清理实践",
+        "image": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Agent_Distraction_Cover_1600x900_.2e16d0ba.fill-1200x600.png"
+      },
+      "meta": {
+        "date": "2026-11-06",
+        "region": "全球 · 工程实践",
+        "platform": "Google Developers Blog"
+      },
+      "verified_at": "2026-11-08T07:15+08:00",
+      "lines": [
+        {
+          "say": "第五条。谷歌工程师在开发者博客写：过时的待办注释，会让写代码的智能体脱轨。",
+          "show": "第五条：Google 开发者博客指出，过时 TODO(bug/…) 会让 coding agent 脱轨。"
+        },
+        {
+          "say": "约百分之十三的读文件会话撞到这类注释；其中百分之六会采取后续行动，八成以上并非用户要求。",
+          "show": "约 13% 读文件会话撞到该类注释；6% 采取后续行动，且约 83% 非用户要求。"
+        },
+        {
+          "say": "未提示的脱轨使步数大约增加百分之七十、令牌大约增加百分之七十七；他们的清理智能体半年删了数千条过时待办，评审接受率超过百分之九十五。",
+          "show": "未提示脱轨使步数约 +70%、token 约 +77%；清理 agent 半年删数千条过时 TODO，评审接受率 >95%。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天早上的 AI 日报。原文链接都在节目下方，下午见。",
+      "show": "以上就是今天早上的 AI 日报。原文链接在节目下方，下午见。"
+    }
+  ],
+  "highlight": 0
+}
