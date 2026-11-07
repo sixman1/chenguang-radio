@@ -1,6 +1,30 @@
 [
   {
     "date": "2026-11-07",
+    "id": "2026-11-07-1600-ai",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜Aaronson–Ambainis 获证、智能体终端入网与 OpenAI Showcase",
+      "seconds": 153.345
+    }
+  },
+  {
+    "date": "2026-11-07",
+    "id": "2026-11-07-1600-acg",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜绝区零星铁战斗 PV、弹丸论破 AR 与魔界战记七周年",
+      "seconds": 96.44
+    }
+  },
+  {
+    "date": "2026-11-07",
     "id": "2026-11-07-0800-ai",
     "time": "08:00",
     "timezone": "Asia/Taipei",
