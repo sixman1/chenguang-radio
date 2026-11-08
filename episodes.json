@@ -1,6 +1,30 @@
 [
   {
     "date": "2026-11-08",
+    "id": "2026-11-08-1600-ai",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜Claude Code 密钥外泄、开放模型攻防评测与 Arete-27B",
+      "seconds": 211.945
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "id": "2026-11-08-1600-acg",
+    "time": "16:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜《みなみけ》新作、FGO 一亿下载与《ブレス》开播日",
+      "seconds": 152.68
+    }
+  },
+  {
+    "date": "2026-11-08",
     "id": "2026-11-08-0800-ai",
     "time": "08:00",
     "timezone": "Asia/Taipei",

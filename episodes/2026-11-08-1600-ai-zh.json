@@ -231,5 +231,170 @@
       "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明天早上见。"
     }
   ],
-  "highlight": 0
+  "highlight": 0,
+  "seconds": 211.945,
+  "audio": "audio/2026-11-08-1600-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.25,
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 8 日，星期日。",
+      "part": 0
+    },
+    {
+      "start": 6.47,
+      "end": 21.97,
+      "show": "本期根据今天同一时段的 New Bot 午报，选取五条已打开原文核实的安全、评测、模型、工具与行业消息；周日官方新发布不多，不重复今天早上已播内容。",
+      "part": 0
+    },
+    {
+      "start": 22.67,
+      "end": 36.52,
+      "show": "第一条：Apiiro 发现，Claude Code 选「Yes, and don't ask again」时，整条命令可能连同密码原样存进 .claude/settings.local.json。",
+      "part": 1
+    },
+    {
+      "start": 36.74,
+      "end": 53.69,
+      "show": "公开 GitHub 上 104,185 份该文件中 1,122 份含密钥（共 1,379 个）；Claude Code 只加到本机全局 git excludes，不写进项目 .gitignore。",
+      "part": 1
+    },
+    {
+      "start": 53.91,
+      "end": 65.735,
+      "show": "建议：先轮换密钥，再 git rm --cached 并加入 .gitignore；命令里用变量，批准模式而非单条命令。",
+      "part": 1
+    },
+    {
+      "start": 66.435,
+      "end": 76.085,
+      "show": "第二条：Vals CyberOffense 让 AI 智能体在两个隔离的模拟企业网络中自主入侵。",
+      "part": 2
+    },
+    {
+      "start": 76.305,
+      "end": 90.13,
+      "show": "据 WIRED：受限提供的 GPT-6 Sol Daybreak 平均完成约 81% 目标，开放权重 DeepSeek V4.1 Flash 1017 约 73%。",
+      "part": 2
+    },
+    {
+      "start": 90.35,
+      "end": 102.95,
+      "show": "Vals：第一个靶场两者持平，DeepSeek 单次 < $3、Daybreak 约 $22；称这是防守方自查的窗口期。",
+      "part": 2
+    },
+    {
+      "start": 103.65,
+      "end": 116.325,
+      "show": "第三条：Nous Research 发布 Arete-27B，基于阿里 Qwen3.8-27B，仅 SFT，教师模型 Inkling。",
+      "part": 3
+    },
+    {
+      "start": 116.545,
+      "end": 129.27,
+      "show": "Nous 自评（803 题）：含宣传回答 22% → 0.9%，事实分 2.32 → 2.98。",
+      "part": 3
+    },
+    {
+      "start": 129.49,
+      "end": 141.39,
+      "show": "Hermes Bench 基本持平；分数为 Nous 用 LLM 评审自测，相关争论仍在继续。",
+      "part": 3
+    },
+    {
+      "start": 142.09,
+      "end": 154.515,
+      "show": "第四条：GitHub PR 新 Overview 页公测——合并状态与下一步操作置顶，合并框不到原来一半大。",
+      "part": 4
+    },
+    {
+      "start": 154.735,
+      "end": 162.585,
+      "show": "评论可筛「未解决／我写的」并按新到旧排序；右上角有动态摘要。",
+      "part": 4
+    },
+    {
+      "start": 162.805,
+      "end": 172.655,
+      "show": "PR 头部「✨ Try the Overview page」开启，可随时切回经典版；推送持续到本周末。",
+      "part": 4
+    },
+    {
+      "start": 173.355,
+      "end": 182.93,
+      "show": "第五条：John Langford 在博客宣布，微软研究院约 50 人的 AI Frontiers（AIF）小组结束。",
+      "part": 5
+    },
+    {
+      "start": 183.15,
+      "end": 195.175,
+      "show": "做过 Autogen、Fara 的 AIF 九月初并入 Microsoft AI；他称 MAI 路线「只做扩展、不做研究」，理念不合。",
+      "part": 5
+    },
+    {
+      "start": 195.395,
+      "end": 203.845,
+      "show": "Langford 已离开，明年不再有该组实习；对 MAI 的评价为作者观点。",
+      "part": 5
+    },
+    {
+      "start": 204.545,
+      "end": 211.245,
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明天早上见。",
+      "part": 6
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 22.67
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 22.67,
+      "end": 66.435
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 66.435,
+      "end": 103.65
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 103.65,
+      "end": 142.09
+    },
+    {
+      "kind": "news",
+      "index": 3,
+      "start": 142.09,
+      "end": 173.355
+    },
+    {
+      "kind": "news",
+      "index": 4,
+      "start": 173.355,
+      "end": 204.545
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 204.545,
+      "end": 211.945
+    }
+  ],
+  "made_at": "2026-11-08T07:14:40+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "67406a2b663ffcd5"
 }
