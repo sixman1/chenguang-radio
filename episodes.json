@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-11-09",
+    "id": "2026-11-09-0800-ai",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "ai",
+    "column_name": "AI 日报",
+    "zh": {
+      "title": "AI 日报｜智能体团队更高效却更不道德、Co-Design Bench 与 OpenAI「明天」预告",
+      "seconds": 136.12
+    }
+  },
+  {
+    "date": "2026-11-09",
+    "id": "2026-11-09-0800-acg",
+    "time": "08:00",
+    "timezone": "Asia/Taipei",
+    "column": "acg",
+    "column_name": "二次元／游戏",
+    "zh": {
+      "title": "二次元／游戏｜ヒロアカUR 手机版、《结界师的一轮华》角色 PV 与 GTA6 明日预载",
+      "seconds": 128.47
+    }
+  },
+  {
     "date": "2026-11-08",
     "id": "2026-11-08-1600-ai",
     "time": "16:00",
