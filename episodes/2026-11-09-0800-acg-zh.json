@@ -1,0 +1,182 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-09-0800-acg",
+  "date": "2026-11-09",
+  "time": "08:00",
+  "timezone": "Asia/Taipei",
+  "column": "acg",
+  "column_name": "二次元／游戏",
+  "lang": "zh",
+  "title": "二次元／游戏｜ヒロアカUR 手机版、《结界师的一轮华》角色 PV 与 GTA6 明日预载",
+  "opening": [
+    {
+      "say": "早上好，这里是晨光电台二次元与游戏频道，十一月九日早间版。",
+      "show": "早上好，这里是晨光电台二次元与游戏频道，11 月 9 日早间版。"
+    },
+    {
+      "say": "今天四条，都是昨天下午档之后公开、或这几天就要发生的已核实消息。",
+      "show": "今天四条，均为昨天下午档之后公开、或近日就要发生的已核实消息。"
+    }
+  ],
+  "news": [
+    {
+      "label": "《我的英雄学院 ULTRA RUMBLE》手机版公布，事前登录开始",
+      "points": [
+        "万代南梦宫 11 月 9 日公布 iOS／Android 版并开放事前登录",
+        "沿用 8 队×3 人的大逃杀玩法，可用「个性」技能卡强化",
+        "事前登录满 30 万：绿谷、爆豪、轰、欧尔麦特「1 亿部纪念服装」，扭蛋券最多 200 张"
+      ],
+      "details": [
+        "原作是 PC／PS4／Xbox One／Switch 上的免费对战游戏；手机版独立运营。",
+        "据 Gematsu，手机版不与主机／PC 版跨平台，iOS 与 Android 之间可以互通。",
+        "发售日尚未公布；奖励仅面向手机版玩家。"
+      ],
+      "url": "https://www.4gamer.net/games/055/G105589/20261105059/",
+      "link": {
+        "url": "https://www.4gamer.net/games/055/G105589/20261105059/",
+        "title": "「ヒロアカUR」のスマホ版「僕のヒーローアカデミア ULTRA RUMBLE モバイル」が発表",
+        "site": "4Gamer.net",
+        "description": "ヒロアカUR 手机版公布，事前登录奖励随人数增加",
+        "image": "https://www.4gamer.net/games/055/G105589/20261105059/SS/001.jpg"
+      },
+      "meta": {
+        "date": "2026-11-09 00:00（日本）发表",
+        "region": "日本（事前登录面向 App Store／Google Play）",
+        "platform": "iOS／Android"
+      },
+      "verified_at": "2026-11-09T07:25+08:00",
+      "lines": [
+        {
+          "say": "第一条。万代南梦宫今天零点公布了《我的英雄学院 ULTRA RUMBLE》的手机版，iOS 和安卓同步开放事前登录。",
+          "show": "第一条：万代南梦宫 11/9 公布《僕のヒーローアカデミア ULTRA RUMBLE モバイル》，iOS／Android 同步开放事前登录。"
+        },
+        {
+          "say": "玩法和主机版一样，八支三人小队在大地图上大逃杀，用角色的个性和技能卡对战；手机版独立运营，不和主机、电脑版互通。",
+          "show": "8 队×3 人大逃杀，用「个性」和技能卡对战；手机版独立运营，不与主机／PC 版跨平台。"
+        },
+        {
+          "say": "事前登录满三十万，开服送绿谷、爆豪、轰和欧尔麦特的纪念服装，扭蛋券最多两百张。发售日还没公布。",
+          "show": "事前登录满 30 万送绿谷、爆豪、轰、欧尔麦特「1 亿部纪念服装」，扭蛋券最多 200 张；发售日未公布。"
+        }
+      ]
+    },
+    {
+      "label": "TV 动画《结界师的一轮华》公开华与朔的角色 PV",
+      "points": [
+        "11/8「Animate Girls Festival 2026」舞台公开一濑华、一之宫朔角色 PV",
+        "同时公开一之宫望、葵、雅的新角色视觉图与 Q 版插画",
+        "2027 年 1 月开播，Netflix 等平台同步配信，TROYCA 制作"
+      ],
+      "details": [
+        "一濑华由鬼头明里配音，一之宫朔由户谷菊之介配音。",
+        "原作是クレハ的小说（角川文库），系列累计发行 250 万部。",
+        "监督喜多幡彻，系列构成柿原优子，角色设计村山未菜美。"
+      ],
+      "url": "https://dengekionline.com/article/202611/93423",
+      "link": {
+        "url": "https://dengekionline.com/article/202611/93423",
+        "title": "アニメ『結界師の一輪華』華と朔のキャラPV公開！ 鬼頭明里らボイス入り映像＆新規ビジュアル到着",
+        "site": "電撃オンライン",
+        "description": "《结界师的一轮华》华与朔角色 PV、新角色视觉图",
+        "image": "https://cimg.kgl-systems.io/camion/files/93423/ogp_XHgw.jpg?x=1280"
+      },
+      "meta": {
+        "date": "2026-11-08 18:30（日本）发稿",
+        "region": "日本",
+        "platform": "TV 动画／Netflix 等配信"
+      },
+      "verified_at": "2026-11-09T07:25+08:00",
+      "lines": [
+        {
+          "say": "第二条。和风恋爱奇幻动画《结界师的一轮华》，昨天在日本的活动舞台上公开了主角一濑华和一之宫朔的角色 PV，配音分别是鬼头明里和户谷菊之介。",
+          "show": "第二条：TV 动画《結界師の一輪華》11/8 在活动舞台公开一濑华（鬼头明里）与一之宫朔（户谷菊之介）的角色 PV。"
+        },
+        {
+          "say": "同时公开了三位配角的新视觉图和 Q 版插画。动画由 TROYCA 制作，二零二七年一月开播，Netflix 等平台也会配信。",
+          "show": "同时公开望、葵、雅的新视觉图与 Q 版插画；TROYCA 制作，2027 年 1 月开播，Netflix 等平台配信。"
+        }
+      ]
+    },
+    {
+      "label": "《GTA6》PS5 版 11 月 10 日起预载，需 212GB 空间",
+      "points": [
+        "已预购玩家 11/10 当地时间零点起可预先下载",
+        "PS5 需至少腾出 212GB 存储空间",
+        "游戏 11 月 19 日发售"
+      ],
+      "details": [
+        "消息来自 PlayStation 官方博客 11/3 的发售准备指南。",
+        "据 VGC 等报道，Xbox Series X|S 版预载按格林尼治时间零点开放。",
+        "发售前 Rockstar 已公开发售图集（本台 11/6 报道过）。"
+      ],
+      "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+      "link": {
+        "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+        "title": "Grand Theft Auto VI pre-download begins November 10",
+        "site": "PlayStation.Blog",
+        "description": "GTA6 PS5 预载 11/10 开始，需 212GB",
+        "image": "https://blog.playstation.com/tachyon/2026/11/4933057538b60628e4c543923b03620ff4bbc25a.jpg"
+      },
+      "meta": {
+        "date": "2026-11-03 公布；预载 2026-11-10 起",
+        "region": "全球（各地当地时间）",
+        "platform": "PS5（Xbox Series X|S 另行开放）"
+      },
+      "verified_at": "2026-11-09T07:25+08:00",
+      "lines": [
+        {
+          "say": "第三条，提醒一下。《侠盗猎车手六》明天开始预载：已经预购的 PS5 玩家，从十一月十日当地时间零点起可以先下载。",
+          "show": "第三条（提醒）：《GTA6》明天起预载——已预购的 PS5 玩家 11/10 当地时间零点起可预先下载。"
+        },
+        {
+          "say": "PlayStation 官方建议至少腾出两百一十二 GB 空间。游戏十一月十九日正式发售。",
+          "show": "官方建议 PS5 至少腾出 212GB；游戏 11 月 19 日发售。"
+        }
+      ]
+    },
+    {
+      "label": "本周发售：《皮克敏 4》Switch 2 版、《暗喻幻想》Switch 2 版等 11/12 上市",
+      "points": [
+        "《ピクミン4 Nintendo Switch 2 Edition + ダンドリ検定》11/12，下载版 7500 日元",
+        "《暗喻幻想：ReFantazio》Switch 2 版 11/12，3990 日元",
+        "日本一《みんなでポイっと！プリニーすごろく》11/12，7678 日元"
+      ],
+      "details": [
+        "Switch 版《皮克敏 4》持有者可用 1000 日元升级包玩 Switch 2 版；新增语音指示和「ダンドリ検定」模式。",
+        "《暗喻幻想》PS5／PS4／Xbox／Steam 版 2024 年 10 月已发售。",
+        "以上为日本价格（含税），据 Fami 通 11 月 Switch 新作汇总与 Gematsu 本周发售表。"
+      ],
+      "url": "https://www.famitsu.com/article/202611/92320",
+      "link": {
+        "url": "https://www.famitsu.com/article/202611/92320",
+        "title": "【11月発売Switch/Switch2新作ゲーム】『ゼルダの伝説 時のオカリナ』『メタファー：リファンタジオ』 『ピクミン4』など最新作を紹介！",
+        "site": "ファミ通.com",
+        "description": "11 月 Switch／Switch 2 新作：皮克敏 4、暗喻幻想、普利尼双六等",
+        "image": "https://cimg.kgl-systems.io/camion/files/92320/thumbnail_vvhg.jpg?x=1280"
+      },
+      "meta": {
+        "date": "2026-11-12 发售（日本）",
+        "region": "日本（皮克敏、暗喻幻想为全球同步）",
+        "platform": "Switch 2／Switch／PS5／Steam"
+      },
+      "verified_at": "2026-11-09T07:25+08:00",
+      "lines": [
+        {
+          "say": "最后看本周发售。十一月十二日这天比较集中：《皮克敏四》的 Switch 2 版上市，加入语音指挥和新的挑战模式，老玩家可以花一千日元升级。",
+          "show": "最后是本周发售：11/12《ピクミン4》Switch 2 版上市，新增语音指挥与「ダンドリ検定」模式，Switch 版玩家 1000 日元可升级。"
+        },
+        {
+          "say": "同一天，《暗喻幻想》登陆 Switch 2，日本一的派对游戏《普利尼双六》也会发售。价格以日本区为准。",
+          "show": "同日《メタファー：リファンタジオ》登陆 Switch 2，日本一《プリニーすごろく》发售；价格为日本区。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天早上的二次元与游戏频道，原文链接都在节目下方，下午四点见。",
+      "show": "以上就是今天早上的二次元与游戏频道，原文链接在节目下方，下午 4 点见。"
+    }
+  ],
+  "highlight": 0
+}
