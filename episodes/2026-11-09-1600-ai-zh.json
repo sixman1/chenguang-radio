@@ -211,5 +211,140 @@
       "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 8 点见。"
     }
   ],
-  "highlight": 1
+  "highlight": 1,
+  "seconds": 183.87,
+  "audio": "audio/2026-11-09-1600-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.35,
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 9 日，星期一。",
+      "part": 0
+    },
+    {
+      "start": 6.57,
+      "end": 22.495,
+      "show": "本期根据 New Bot 今天的午报，选取五条已打开原文核实的消息。美国仍是周日夜间，上午以来各大实验室没有新的官方发布；未经证实的模型传闻本期不报。",
+      "part": 0
+    },
+    {
+      "start": 23.195,
+      "end": 39.97,
+      "show": "第一条：FT 周日报道，Anthropic 9 月下旬以约 34 亿美元买下 1.7 GW 重型燃气发电机的订单承诺，卖方为美国德州圣安东尼奥的 OnePWR。",
+      "part": 1
+    },
+    {
+      "start": 40.19,
+      "end": 57.79,
+      "show": "报道称 Anthropic 未收购该公司，但交易含安装所需的工程与施工能力，用于数据中心供电。目前为单一来源，两家公司未回应，路透社未能独立核实。",
+      "part": 1
+    },
+    {
+      "start": 58.49,
+      "end": 81.29,
+      "show": "第二条：Artificial Analysis 今早发布决策指数 v2，评测为文档做判断、抽取信息的决策模型。私有数据集占比由 25% 升至 45%，新总分兼看正确性与置信度校准。",
+      "part": 2
+    },
+    {
+      "start": 81.51,
+      "end": 99.11,
+      "show": "结果：Drex Max v1.1 与 GLiDE v1.2 以 73 分并列领先；通用模型 Claude Haiku 5.5 (Max) 77 分更高，但每百万任务 6240 美元，最便宜的 Celeris-1.1 Decision 仅 14 美元。",
+      "part": 2
+    },
+    {
+      "start": 99.81,
+      "end": 110.51,
+      "show": "第三条：Mistral 称在 AI Engineer Paris 用 Voxtral 3 Transcribe 实时转写了主舞台每一场演讲。",
+      "part": 3
+    },
+    {
+      "start": 110.73,
+      "end": 125.455,
+      "show": "提升准确率的方法是上下文偏置：预先把议程中的讲者姓名和技术术语提供给模型。Mistral 表示同样技术可用于用户自己的活动和应用。",
+      "part": 3
+    },
+    {
+      "start": 126.155,
+      "end": 141.18,
+      "show": "第四条，实用技巧：Simon Willison 最近把 AI 生成的 GitHub PR 说明大部分折叠进 <details><summary> 标签，GitHub Markdown 支持这种写法。",
+      "part": 4
+    },
+    {
+      "start": 141.4,
+      "end": 147.275,
+      "show": "他认为这能让审阅 AI 生成的长篇 PR 说明不那么累。",
+      "part": 4
+    },
+    {
+      "start": 147.975,
+      "end": 164.9,
+      "show": "最后一条，GitHub 趋势榜：开源桌面应用 OpenMausBot，侧边栏每个机器人都是本机运行的 Claude 或 Codex 智能体，各有性格、模型、云端电脑和连接的应用。",
+      "part": 5
+    },
+    {
+      "start": 165.12,
+      "end": 175.42,
+      "show": "项目采用 Apache-2.0 许可，约 1.88 万星标；作者说明为独立项目，与 xAI、Meta、OpenAI 无关。",
+      "part": 5
+    },
+    {
+      "start": 176.12,
+      "end": 183.17,
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 8 点见。",
+      "part": 6
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 23.195
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 23.195,
+      "end": 58.49
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 58.49,
+      "end": 99.81
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 99.81,
+      "end": 126.155
+    },
+    {
+      "kind": "news",
+      "index": 3,
+      "start": 126.155,
+      "end": 147.975
+    },
+    {
+      "kind": "news",
+      "index": 4,
+      "start": 147.975,
+      "end": 176.12
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 176.12,
+      "end": 183.87
+    }
+  ],
+  "made_at": "2026-11-09T07:13:38+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "b74af048ea9163f3"
 }
