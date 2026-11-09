@@ -1,0 +1,271 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-06-1600-acg",
+  "date": "2026-11-06",
+  "time": "16:00",
+  "timezone": "Asia/Taipei",
+  "column": "acg",
+  "column_name": "二次元／游戏",
+  "lang": "zh",
+  "title": "二次元／游戏｜《我心里危险的东西》第三季、GTA6 新截图与任天堂财报",
+  "opening": [
+    {
+      "say": "下午好，这里是晨光电台二次元与游戏频道，11月6日午后版。",
+      "show": "下午好，这里是晨光电台二次元与游戏频道，11月6日午后版。"
+    },
+    {
+      "say": "一条动画、一条新作、一条行业数据。",
+      "show": "一条动画、一条新作、一条行业数据。"
+    }
+  ],
+  "news": [
+    {
+      "label": "《我心里危险的东西》第三季 2027 年 4 月开播",
+      "points": [
+        "第三季先导视觉图与先导 PV 公开",
+        "2027 年 4 月起播出",
+        "制作：シンエイ動画"
+      ],
+      "details": [
+        "日本时间 11 月 6 日 0 点公布；视觉图为两人在夕阳公园荡秋千。",
+        "日本电视播出。",
+        "主演堀江瞬、羊宫妃那续演。"
+      ],
+      "url": "https://www.animatetimes.com/news/details.php?id=1793880259",
+      "meta": {
+        "date": "2026-11-06 00:00（日本时间）",
+        "region": "日本",
+        "platform": "日本电视播出"
+      },
+      "verified_at": "2026-11-06T18:05:00+08:00",
+      "lines": [
+        {
+          "say": "第一条，电视动画《我心里危险的东西》确定第三季将于2027年4月开播。",
+          "show": "第一条，TV 动画《我心里危险的东西》（僕ヤバ）第三季确定 2027 年 4 月开播。"
+        },
+        {
+          "say": "日本时间11月6日零点，官方公开了第三季的先导视觉图和先导PV。",
+          "show": "日本时间 11 月 6 日 0 点，官方公开第三季先导视觉图与先导 PV。"
+        },
+        {
+          "say": "主演堀江瞬和羊宫妃那继续出演，制作仍由新锐动画负责。",
+          "show": "主演堀江瞬、羊宫妃那续演，制作仍为 シンエイ動画。"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://bokuyaba-anime.com/",
+          "title": "TV动画官网"
+        }
+      ]
+    },
+    {
+      "label": "Rockstar 公开《GTA6》发售前图集",
+      "points": [
+        "数十张全新截图",
+        "聚焦 Jason 与 Lucia",
+        "11 月 19 日登陆 PS5、Xbox Series X|S"
+      ],
+      "details": [
+        "美国时间 11 月 5 日发布于 Rockstar 官网 Launch Gallery。",
+        "也展示罪恶都市、Leonida Keys 等地点。",
+        "据 Polygon，预载 11 月 10 日开始，需要 200GB 以上空间。"
+      ],
+      "url": "https://www.rockstargames.com/VI/launch-gallery",
+      "meta": {
+        "date": "2026-11-05（美国时间）",
+        "region": "全球",
+        "platform": "PS5、Xbox Series X|S"
+      },
+      "verified_at": "2026-11-06T18:05:00+08:00",
+      "lines": [
+        {
+          "say": "第二条，Rockstar 在官网公开《GTA6》发售前图集，一次放出数十张新截图。",
+          "show": "第二条，Rockstar 官网公开《GTA6》发售前图集，放出数十张新截图。"
+        },
+        {
+          "say": "画面聚焦两位主角 Jason 和 Lucia，也展示了罪恶都市等地点。",
+          "show": "画面聚焦两位主角 Jason 和 Lucia，也展示了罪恶都市等地点。"
+        },
+        {
+          "say": "游戏将于11月19日登陆 PS5 和 Xbox Series X|S，预载从11月10日开始。",
+          "show": "游戏 11 月 19 日登陆 PS5 与 Xbox Series X|S，预载 11 月 10 日开始。"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.polygon.com/gta-6-launch-update-screenshots-rockstar-games-nov-5/",
+          "title": "Polygon 报道（发售与预载日期）"
+        }
+      ]
+    },
+    {
+      "label": "任天堂财报：Switch 2 累计 2635 万台",
+      "points": [
+        "截至 9 月 30 日",
+        "Switch 累计 1.572 亿台",
+        "《马力欧赛车 世界》1648 万份"
+      ],
+      "details": [
+        "任天堂 11 月 5 日公布的财报数据。",
+        "7 到 9 月 Switch 2 硬件售出 267 万台。",
+        "Switch 2 游戏累计售出超过 7321 万份。"
+      ],
+      "url": "https://www.gematsu.com/2026/11/switch-2-worldwide-sales-top-26-35-million-switch-tops-157-20-million",
+      "meta": {
+        "date": "2026-11-05",
+        "region": "全球累计",
+        "platform": "Nintendo Switch 2、Nintendo Switch"
+      },
+      "verified_at": "2026-11-06T18:05:00+08:00",
+      "lines": [
+        {
+          "say": "第三条，任天堂11月5日公布财报。",
+          "show": "第三条，任天堂 11 月 5 日公布财报。"
+        },
+        {
+          "say": "截至9月30日，Switch 2 全球累计销量2635万台，初代 Switch 达到1.572亿台。",
+          "show": "截至 9 月 30 日，Switch 2 全球累计 2635 万台，初代 Switch 1.572 亿台。"
+        },
+        {
+          "say": "Switch 2 上最畅销的第一方游戏，是《马力欧赛车 世界》，1648万份。",
+          "show": "Switch 2 第一方最畅销：《马力欧赛车 世界》1648 万份。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天的二次元与游戏消息，原文链接都在节目页面里。",
+      "show": "以上就是今天的二次元与游戏消息，原文链接都在节目页面里。"
+    },
+    {
+      "say": "明早八点见。",
+      "show": "明早八点见。"
+    }
+  ],
+  "highlight": 0,
+  "seconds": 83.06,
+  "audio": "audio/2026-11-06-1600-acg-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.25,
+      "show": "下午好，这里是晨光电台二次元与游戏频道，11月6日午后版。",
+      "part": 0
+    },
+    {
+      "start": 6.47,
+      "end": 10.545,
+      "show": "一条动画、一条新作、一条行业数据。",
+      "part": 0
+    },
+    {
+      "start": 11.245,
+      "end": 18.245,
+      "show": "第一条，TV 动画《我心里危险的东西》（僕ヤバ）第三季确定 2027 年 4 月开播。",
+      "part": 1
+    },
+    {
+      "start": 18.465,
+      "end": 25.265,
+      "show": "日本时间 11 月 6 日 0 点，官方公开第三季先导视觉图与先导 PV。",
+      "part": 1
+    },
+    {
+      "start": 25.485,
+      "end": 31.285,
+      "show": "主演堀江瞬、羊宫妃那续演，制作仍为 シンエイ動画。",
+      "part": 1
+    },
+    {
+      "start": 31.985,
+      "end": 38.96,
+      "show": "第二条，Rockstar 官网公开《GTA6》发售前图集，放出数十张新截图。",
+      "part": 2
+    },
+    {
+      "start": 39.18,
+      "end": 44.955,
+      "show": "画面聚焦两位主角 Jason 和 Lucia，也展示了罪恶都市等地点。",
+      "part": 2
+    },
+    {
+      "start": 45.175,
+      "end": 52.525,
+      "show": "游戏 11 月 19 日登陆 PS5 与 Xbox Series X|S，预载 11 月 10 日开始。",
+      "part": 2
+    },
+    {
+      "start": 53.225,
+      "end": 57.3,
+      "show": "第三条，任天堂 11 月 5 日公布财报。",
+      "part": 3
+    },
+    {
+      "start": 57.52,
+      "end": 66.195,
+      "show": "截至 9 月 30 日，Switch 2 全球累计 2635 万台，初代 Switch 1.572 亿台。",
+      "part": 3
+    },
+    {
+      "start": 66.415,
+      "end": 73.365,
+      "show": "Switch 2 第一方最畅销：《马力欧赛车 世界》1648 万份。",
+      "part": 3
+    },
+    {
+      "start": 74.065,
+      "end": 80.09,
+      "show": "以上就是今天的二次元与游戏消息，原文链接都在节目页面里。",
+      "part": 4
+    },
+    {
+      "start": 80.31,
+      "end": 82.36,
+      "show": "明早八点见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 11.245
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 11.245,
+      "end": 31.985
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 31.985,
+      "end": 53.225
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 53.225,
+      "end": 74.065
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 74.065,
+      "end": 83.06
+    }
+  ],
+  "made_at": "2026-11-06T10:15:57+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "2f2c4a0ce821605b"
+}

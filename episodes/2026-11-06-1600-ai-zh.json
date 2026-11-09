@@ -1,0 +1,268 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-06-1600-ai",
+  "date": "2026-11-06",
+  "time": "16:00",
+  "timezone": "Asia/Taipei",
+  "column": "ai",
+  "column_name": "AI 日报",
+  "lang": "zh",
+  "title": "AI 日报｜DeepSeek Harness 日活 154 万、豆包工作接入三家模型、混元 Hy4 扩容十倍",
+  "opening": [
+    {
+      "say": "下午好，这里是晨光电台 AI 日报。今天是十一月六日，星期五。",
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 6 日，星期五。"
+    },
+    {
+      "say": "这一期根据今天的 AI 午报更新，今天上午没有新的前沿模型发布，我们看看国内产品的进展。",
+      "show": "本期根据今天的 AI 午报更新：上午没有新的前沿模型发布，来看国内产品进展。"
+    }
+  ],
+  "news": [
+    {
+      "label": "DeepSeek Harness 日活跃用户 154 万",
+      "points": [
+        "截至 11 月 4 日，日活 154 万",
+        "每天约消耗 92 万亿 Token",
+        "第三方插件约 3.5 万个，将建官方插件市场"
+      ],
+      "details": [
+        "统计范围为使用官方 API 的用户。Harness v0.1 于 8 月 13 日上线，桌面端 9 月 29 日发布。",
+        "数据由 DeepSeek Harness 官方在 11 月 5 日晚公布，IT之家报道。",
+        "约六成活跃用户制作或安装过至少一款插件；面向插件作者的支持计划（Token 激励等）规则尚未公布。"
+      ],
+      "url": "https://www.ithome.com/1/023/011.htm",
+      "link": {
+        "url": "https://www.ithome.com/1/023/011.htm",
+        "title": "DeepSeek Harness：日活跃用户达 154 万、日消耗 Token 约 92 万亿，将建设官方插件市场",
+        "site": "IT之家",
+        "description": "转述 DeepSeek Harness 官方公布的数据"
+      },
+      "meta": {
+        "date": "2026-11-05（北京时间晚间）",
+        "region": "中国 · 全球用户",
+        "platform": "DeepSeek Harness（官方 API）"
+      },
+      "verified_at": "2026-11-06T18:55+08:00",
+      "lines": [
+        {
+          "say": "第一条。DeepSeek 公布了智能体工具 Harness 的使用数据。",
+          "show": "第一条：DeepSeek 公布智能体工具 Harness 的使用数据。"
+        },
+        {
+          "say": "截至十一月四日，只算使用官方接口的用户，日活跃用户一百五十四万，每天大约消耗九十二万亿 Token。",
+          "show": "截至 11 月 4 日（仅统计官方 API 用户），日活 154 万，日耗约 92 万亿 Token。"
+        },
+        {
+          "say": "第三方插件已经有大约三万五千个，团队计划建设官方插件市场。",
+          "show": "第三方插件约 3.5 万个，团队计划建设官方插件市场。"
+        }
+      ]
+    },
+    {
+      "label": "豆包工作首次接入第三方模型",
+      "points": [
+        "首批：Kimi 3.1 Pro、GLM‑5.3、DeepSeek V4.1 Flash",
+        "仅限团队版和企业版",
+        "统一用豆包工作的 AI 点数计费"
+      ],
+      "details": [
+        "此前豆包工作只支持字节自研的豆包模型。",
+        "功能默认开启，企业无需另签各家模型的 API 合同。",
+        "管理员可按成员、部门和使用渠道开关各个模型。腾讯 WorkBuddy 此前已提供多模型选择。"
+      ],
+      "url": "https://www.51dns.com/info/detail/14582.html",
+      "link": {
+        "url": "https://www.51dns.com/info/detail/14582.html",
+        "title": "豆包工作首次接入第三方模型，首批上线Kimi、智谱与DeepSeek",
+        "site": "站长之家转载",
+        "description": "原载站长之家 chinaz.com"
+      },
+      "source_note": "https://www.chinaz.com/ainews/32104.shtml",
+      "meta": {
+        "date": "2026-11-06（报道时间）",
+        "region": "中国",
+        "platform": "豆包工作（团队版／企业版）"
+      },
+      "verified_at": "2026-11-06T18:55+08:00",
+      "lines": [
+        {
+          "say": "第二条。字节的豆包工作，第一次直接接入了其他公司的大模型。",
+          "show": "第二条：字节旗下豆包工作，首次原生接入第三方大模型。"
+        },
+        {
+          "say": "首批是月之暗面的 Kimi 3.1 Pro、智谱的 GLM 5.3，以及 DeepSeek V4.1 Flash。",
+          "show": "首批：Kimi 3.1 Pro、智谱 GLM‑5.3、DeepSeek V4.1 Flash。"
+        },
+        {
+          "say": "目前只对团队版和企业版开放，统一用 AI 点数计费。",
+          "show": "目前仅对团队版和企业版开放，统一使用 AI 点数计费。"
+        }
+      ]
+    },
+    {
+      "label": "混元 Hy4 上线首日调用激增，推理集群扩容十倍",
+      "points": [
+        "11 月 4 日在 WorkBuddy 首发接入",
+        "推理集群紧急扩容十倍，提高免费额度",
+        "Hy4 权重仍未公开"
+      ],
+      "details": [
+        "上线首日大量用户触及使用额度；腾讯称高峰时段仍可能限额，建议改用 Hy3 等模型。",
+        "WorkBuddy 上 Hy3 的限时免费延长到 11 月 15 日 23:59。",
+        "截至报道时，Hy4 的权重还没有放出。"
+      ],
+      "url": "https://www.eet-china.com/mp/a537325.html",
+      "link": {
+        "url": "https://www.eet-china.com/mp/a537325.html",
+        "title": "【每日瞰AI】OpenAI 发布 GPT-6 Cyber……混元 Hy4 上线首日调用激增，腾讯称扩容十倍",
+        "site": "电子工程专辑",
+        "description": "11 月 6 日每日瞰AI 第 4 条"
+      },
+      "meta": {
+        "date": "2026-11-06（报道时间）",
+        "region": "中国",
+        "platform": "腾讯 WorkBuddy"
+      },
+      "verified_at": "2026-11-06T18:55+08:00",
+      "lines": [
+        {
+          "say": "第三条。腾讯混元 Hy4 上线首日调用量激增。",
+          "show": "第三条：腾讯混元 Hy4 上线首日调用量激增。"
+        },
+        {
+          "say": "腾讯称已经把 Hy4 的推理集群紧急扩容十倍，并提高了免费额度；WorkBuddy 上 Hy3 的限时免费延长到十一月十五日。",
+          "show": "腾讯称 Hy4 推理集群紧急扩容十倍并提高免费额度；WorkBuddy 上 Hy3 限免延长至 11 月 15 日。"
+        },
+        {
+          "say": "不过，Hy4 的模型权重目前还没有公开。",
+          "show": "Hy4 的模型权重目前仍未公开。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天下午的 AI 日报。原文链接都在节目下方，我们明天早上八点见。",
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 08:00 见。"
+    }
+  ],
+  "highlight": 0,
+  "seconds": 88.09,
+  "audio": "audio/2026-11-06-1600-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.15,
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 6 日，星期五。",
+      "part": 0
+    },
+    {
+      "start": 6.37,
+      "end": 15.47,
+      "show": "本期根据今天的 AI 午报更新：上午没有新的前沿模型发布，来看国内产品进展。",
+      "part": 0
+    },
+    {
+      "start": 16.17,
+      "end": 21.045,
+      "show": "第一条：DeepSeek 公布智能体工具 Harness 的使用数据。",
+      "part": 1
+    },
+    {
+      "start": 21.265,
+      "end": 31.19,
+      "show": "截至 11 月 4 日（仅统计官方 API 用户），日活 154 万，日耗约 92 万亿 Token。",
+      "part": 1
+    },
+    {
+      "start": 31.41,
+      "end": 37.76,
+      "show": "第三方插件约 3.5 万个，团队计划建设官方插件市场。",
+      "part": 1
+    },
+    {
+      "start": 38.46,
+      "end": 44.385,
+      "show": "第二条：字节旗下豆包工作，首次原生接入第三方大模型。",
+      "part": 2
+    },
+    {
+      "start": 44.605,
+      "end": 52.13,
+      "show": "首批：Kimi 3.1 Pro、智谱 GLM‑5.3、DeepSeek V4.1 Flash。",
+      "part": 2
+    },
+    {
+      "start": 52.35,
+      "end": 57.85,
+      "show": "目前仅对团队版和企业版开放，统一使用 AI 点数计费。",
+      "part": 2
+    },
+    {
+      "start": 58.55,
+      "end": 63.375,
+      "show": "第三条：腾讯混元 Hy4 上线首日调用量激增。",
+      "part": 3
+    },
+    {
+      "start": 63.595,
+      "end": 74.72,
+      "show": "腾讯称 Hy4 推理集群紧急扩容十倍并提高免费额度；WorkBuddy 上 Hy3 限免延长至 11 月 15 日。",
+      "part": 3
+    },
+    {
+      "start": 74.94,
+      "end": 79.365,
+      "show": "Hy4 的模型权重目前仍未公开。",
+      "part": 3
+    },
+    {
+      "start": 80.065,
+      "end": 87.39,
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 08:00 见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 16.17
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 16.17,
+      "end": 38.46
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 38.46,
+      "end": 58.55
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 58.55,
+      "end": 80.065
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 80.065,
+      "end": 88.09
+    }
+  ],
+  "made_at": "2026-11-06T10:43:43+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "b3aded2800f802d4"
+}

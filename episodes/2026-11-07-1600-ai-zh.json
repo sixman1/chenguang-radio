@@ -1,0 +1,398 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-07-1600-ai",
+  "date": "2026-11-07",
+  "time": "16:00",
+  "timezone": "Asia/Taipei",
+  "column": "ai",
+  "column_name": "AI 日报",
+  "lang": "zh",
+  "title": "AI 日报｜Aaronson–Ambainis 获证、智能体终端入网与 OpenAI Showcase",
+  "opening": [
+    {
+      "say": "下午好，这里是晨光电台 AI 日报。今天是十一月七日，星期六。",
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 7 日，星期六。"
+    },
+    {
+      "say": "这一期以 New Bot 午报为主，并补两条今日早报已核实、但早间未播的官方产品消息；跳过早间已播内容与传闻。",
+      "show": "本期以 New Bot 午报为主，并补两条今日早报已核实、早间未播的官方产品消息；跳过早间已播内容与传闻。"
+    }
+  ],
+  "news": [
+    {
+      "label": "PSI：未公开 Anthropic 模型协助证明 Aaronson–Ambainis 猜想",
+      "points": [
+        "二零零八年提出的量子复杂性核心猜想现已获证",
+        "PSI 内部研究系统调用非公开 Anthropic 模型，第三天得到完整证明并经 Lean 验证",
+        "斯坦福相关团队称其为重大结果；尚未完整同行评审"
+      ],
+      "details": [
+        "猜想若成立，则在随机输入上量子算法至多多项式加速；现已证明该猜想。",
+        "系统随后又两次改进结论，Lean 均接受；Anthropic 未点名具体模型。",
+        "意义在于厘清量子指数加速更依赖问题结构，而非随机输入。"
+      ],
+      "url": "https://psi.inc/research/aaronson-ambainis/",
+      "link": {
+        "url": "https://psi.inc/research/aaronson-ambainis/",
+        "title": "A proof of the Aaronson-Ambainis conjecture",
+        "site": "PSI",
+        "description": "PSI 官方：内部研究系统用非公开 Anthropic 模型证明 Aaronson–Ambainis 猜想，Lean 已验证",
+        "image": "https://psi.inc/og/ring-arch-2.png"
+      },
+      "meta": {
+        "date": "2026-11-06（美国）",
+        "region": "全球 · 量子复杂性／AI 辅助证明",
+        "platform": "PSI 官方研究页"
+      },
+      "verified_at": "2026-11-07T15:10+08:00",
+      "lines": [
+        {
+          "say": "第一条。物理超智能公司 PSI 宣布，二零零八年提出的 Aaronson Ambainis 猜想已被证明。",
+          "show": "第一条：Physical Superintelligence（PSI）宣布，2008 年提出的 Aaronson–Ambainis 猜想已被证明。"
+        },
+        {
+          "say": "他们的内部研究系统调用了尚未公开的 Anthropic 模型，在第三天得到完整证明，并由 Lean 逐条核验。",
+          "show": "内部研究系统调用非公开 Anthropic 模型，第 3 天得到完整证明，并经 Lean 逐条核验。"
+        },
+        {
+          "say": "斯坦福相关团队称这是重大结果；官方也写明尚未完成完整同行评审，模型具体名称未公开。",
+          "show": "斯坦福相关团队称其为重大结果；官方写明尚未完整同行评审，模型名称未公开。"
+        }
+      ]
+    },
+    {
+      "label": "工信部：预装智能体的终端纳入入网管理",
+      "points": [
+        "预置智能体的手机、平板、可穿戴等纳入电信设备入网管理",
+        "要求加强适配验证、权限与数据安全，以及涉诈风险评估",
+        "OTA 现网升级须先报方案，结束后经专家评估方可正式服务"
+      ],
+      "details": [
+        "通知文号工信厅信管二〇二六四十二号；成文十月二十四日，十一月六日发布。",
+        "应用分发平台需公示适配列表；开发者应声明是否同意被智能体调用。",
+        "智能体应参考互联系列国标配备唯一身份码。"
+      ],
+      "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_5066b9dffa93405a988e266ff12bf674.html",
+      "link": {
+        "url": "https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_5066b9dffa93405a988e266ff12bf674.html",
+        "title": "工业和信息化部办公厅关于加强智能体终端设备进网管理的通知",
+        "site": "工业和信息化部",
+        "description": "工信厅信管〔2026〕42号：智能体终端进网、OTA 与分发管理要求"
+      },
+      "meta": {
+        "date": "2026-11-06（北京）",
+        "region": "中国大陆",
+        "platform": "工信部官网 · 信息通信管理局"
+      },
+      "verified_at": "2026-11-07T15:10+08:00",
+      "lines": [
+        {
+          "say": "第二条。中国工业和信息化部发布通知，加强智能体终端设备的进网管理。",
+          "show": "第二条：工信部发布通知，加强智能体终端设备进网管理。"
+        },
+        {
+          "say": "预装智能体的手机、平板和可穿戴设备，要在进网检测中做适配验证，并评估涉诈风险。",
+          "show": "预装智能体的手机、平板与可穿戴设备，须在进网检测中做适配验证并评估涉诈风险。"
+        },
+        {
+          "say": "通过在线升级推送智能体的，须先报现网升级方案；升级结束后经专家评估，才能正式向用户提供服务。",
+          "show": "OTA 推送智能体须先报现网升级方案；结束后经专家评估方可正式向用户提供服务。"
+        }
+      ]
+    },
+    {
+      "label": "OpenAI Developers：Showcase 入口与 ChatGPT 订户 API 额度",
+      "points": [
+        "开发者站点展示大量可用 API 入门与创意演示项目",
+        "符合条件的 ChatGPT Pro 与 Business 可领取月度 API 额度",
+        "Pro 按档位约一百到五百美元，Business 按席位且每工作区上限五百美元"
+      ],
+      "details": [
+        "Showcase 覆盖 agents、数据可视化、语音与创意工具等示例，可在 Codex 中打开改造。",
+        "官方文档写明订阅至少满七天、同一邮箱且须为组织所有者方可领取。",
+        "额度随账单周期发放，未用完不滚动；另有 Images 二点六 GIF 能力扩大可用范围的开发者动态。"
+      ],
+      "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
+      "link": {
+        "url": "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
+        "title": "API credits for ChatGPT subscribers",
+        "site": "OpenAI Developers",
+        "description": "ChatGPT Pro／Business 订户可领取的 API 额度说明；可配合 Showcase 演示入门"
+      },
+      "meta": {
+        "date": "2026-11-07（开发者动态／文档）",
+        "region": "全球 · 开发者",
+        "platform": "OpenAI Developers 文档与 Showcase"
+      },
+      "verified_at": "2026-11-07T15:10+08:00",
+      "lines": [
+        {
+          "say": "第三条。OpenAI 开发者侧强调 Showcase：一堆可直接打开改造的 agents、可视化和语音示例。",
+          "show": "第三条：OpenAI 开发者侧强调 Showcase——可打开改造的 agents、可视化与语音示例。"
+        },
+        {
+          "say": "同时，符合条件的 ChatGPT Pro 和 Business 订户，可在账单设置领取 API 额度。",
+          "show": "符合条件的 ChatGPT Pro／Business 订户，可在账单设置领取 API 额度。"
+        },
+        {
+          "say": "Pro 按档位每月大约一百到五百美元；Business 按席位累计，每个工作区每月上限五百美元，周期结束未用完不结转。",
+          "show": "Pro 按档位约 100–500 美元／月；Business 按席位，每工作区上限 500 美元，未用完不结转。"
+        }
+      ]
+    },
+    {
+      "label": "Meta：用 Muse Wonder 训练的专用模型上线 Muse／Meta AI",
+      "points": [
+        "把 Muse Wonder 能力蒸馏进面向更多用户的专用模型",
+        "Active Memory：关键信息遗忘约降二点四倍",
+        "Active Focus：突发阻碍下任务完成提升约百分之六十七"
+      ],
+      "details": [
+        "官方博文日期为二零二六年十一月六日；Personal Superintelligence Index 由百分之三十八升至百分之四十七。",
+        "Active Memory 评测正确使用关键上下文由百分之七十六升至百分之九十。",
+        "条目来自今日早报未播核实项，午报未再复述，下午补报。"
+      ],
+      "url": "https://research.meta.ai/blog/specialized-models-for-muse-and-metaai",
+      "link": {
+        "url": "https://research.meta.ai/blog/specialized-models-for-muse-and-metaai",
+        "title": "Bringing Specialized Models to Muse and Meta AI",
+        "site": "Meta AI Research",
+        "description": "用 Muse Wonder 训练的专用模型上线 Muse／Meta AI，含 Active Memory 与 Active Focus",
+        "image": "https://research.meta.ai/articles/powering-a-more-intelligent-capable-muse/images/social-v2.jpg"
+      },
+      "meta": {
+        "date": "2026-11-06（美国）",
+        "region": "全球 · 消费级 Agent",
+        "platform": "Meta AI Research 官方博客"
+      },
+      "verified_at": "2026-11-07T15:10+08:00",
+      "lines": [
+        {
+          "say": "第四条。Meta 把用 Muse Wonder 训练出的专用模型，推到了 Muse 和 Meta AI。",
+          "show": "第四条：Meta 将用 Muse Wonder 训练的专用模型推送到 Muse 与 Meta AI。"
+        },
+        {
+          "say": "Active Memory 让模型更会记住真正重要的信息，官方称关键信息遗忘大约降低二点四倍。",
+          "show": "Active Memory：关键信息遗忘约降 2.4×。"
+        },
+        {
+          "say": "Active Focus 则在遇到突发阻碍时，仍继续朝目标推进，日常任务完成率大约提升百分之六十七。",
+          "show": "Active Focus：突发阻碍下任务完成提升约 67%。"
+        }
+      ]
+    },
+    {
+      "label": "Google Antigravity 2.29：Remote Agents 与 Voice Mode",
+      "points": [
+        "付费 Pro／Ultra 可在云端独立虚拟机跑远程 Agent",
+        "Voice Mode 由 Gemini Live 驱动，可语音交办任务",
+        "官方变更日志与媒体报道均已核实"
+      ],
+      "details": [
+        "关闭笔电后云端任务可继续；可用 antigravity.google.com/remote 在手机侧管理。",
+        "变更日志标注二点二九点零，语音与远程能力逐步推送。",
+        "同为今日早报未播核实项，下午补报。"
+      ],
+      "url": "https://antigravity.google/docs/changelog/",
+      "link": {
+        "url": "https://antigravity.google/docs/changelog/",
+        "title": "Changelog | Google Antigravity Docs",
+        "site": "Google Antigravity",
+        "description": "v2.29：Voice Mode（Gemini Live）与 Remote Agents（Pro／Ultra）等",
+        "image": "https://antigravity.google/assets/image/sitecards/sitecard-documentation.png"
+      },
+      "meta": {
+        "date": "2026-11-03 起滚动；媒体约 11/6 报道",
+        "region": "全球 · 开发者工具",
+        "platform": "Google Antigravity 官方 Changelog"
+      },
+      "verified_at": "2026-11-07T15:10+08:00",
+      "lines": [
+        {
+          "say": "第五条。谷歌 Antigravity 二点二九带来远程智能体和语音模式。",
+          "show": "第五条：Google Antigravity 2.29 带来 Remote Agents 与 Voice Mode。"
+        },
+        {
+          "say": "付费的 Pro 和 Ultra 用户，可以在云端独立虚拟机里跑任务，合上笔电也能继续。",
+          "show": "付费 Pro／Ultra 可在云端独立 VM 跑任务，合上笔电也可继续。"
+        },
+        {
+          "say": "语音模式由 Gemini Live 驱动，可以直接说话把请求交给智能体；官方写明功能会逐步推送。",
+          "show": "Voice Mode 由 Gemini Live 驱动；官方写明功能逐步推送。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天下午的 AI 日报。原文链接都在节目下方，明天早上见。",
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早见。"
+    }
+  ],
+  "highlight": 0,
+  "seconds": 153.345,
+  "audio": "audio/2026-11-07-1600-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.25,
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 7 日，星期六。",
+      "part": 0
+    },
+    {
+      "start": 6.47,
+      "end": 17.245,
+      "show": "本期以 New Bot 午报为主，并补两条今日早报已核实、早间未播的官方产品消息；跳过早间已播内容与传闻。",
+      "part": 0
+    },
+    {
+      "start": 17.945,
+      "end": 25.17,
+      "show": "第一条：Physical Superintelligence（PSI）宣布，2008 年提出的 Aaronson–Ambainis 猜想已被证明。",
+      "part": 1
+    },
+    {
+      "start": 25.39,
+      "end": 34.74,
+      "show": "内部研究系统调用非公开 Anthropic 模型，第 3 天得到完整证明，并经 Lean 逐条核验。",
+      "part": 1
+    },
+    {
+      "start": 34.96,
+      "end": 44.335,
+      "show": "斯坦福相关团队称其为重大结果；官方写明尚未完整同行评审，模型名称未公开。",
+      "part": 1
+    },
+    {
+      "start": 45.035,
+      "end": 51.91,
+      "show": "第二条：工信部发布通知，加强智能体终端设备进网管理。",
+      "part": 2
+    },
+    {
+      "start": 52.13,
+      "end": 60.955,
+      "show": "预装智能体的手机、平板与可穿戴设备，须在进网检测中做适配验证并评估涉诈风险。",
+      "part": 2
+    },
+    {
+      "start": 61.175,
+      "end": 71.625,
+      "show": "OTA 推送智能体须先报现网升级方案；结束后经专家评估方可正式向用户提供服务。",
+      "part": 2
+    },
+    {
+      "start": 72.325,
+      "end": 80.25,
+      "show": "第三条：OpenAI 开发者侧强调 Showcase——可打开改造的 agents、可视化与语音示例。",
+      "part": 3
+    },
+    {
+      "start": 80.47,
+      "end": 87.27,
+      "show": "符合条件的 ChatGPT Pro／Business 订户，可在账单设置领取 API 额度。",
+      "part": 3
+    },
+    {
+      "start": 87.49,
+      "end": 98.24,
+      "show": "Pro 按档位约 100–500 美元／月；Business 按席位，每工作区上限 500 美元，未用完不结转。",
+      "part": 3
+    },
+    {
+      "start": 98.94,
+      "end": 104.99,
+      "show": "第四条：Meta 将用 Muse Wonder 训练的专用模型推送到 Muse 与 Meta AI。",
+      "part": 4
+    },
+    {
+      "start": 105.21,
+      "end": 113.235,
+      "show": "Active Memory：关键信息遗忘约降 2.4×。",
+      "part": 4
+    },
+    {
+      "start": 113.455,
+      "end": 122.455,
+      "show": "Active Focus：突发阻碍下任务完成提升约 67%。",
+      "part": 4
+    },
+    {
+      "start": 123.155,
+      "end": 128.93,
+      "show": "第五条：Google Antigravity 2.29 带来 Remote Agents 与 Voice Mode。",
+      "part": 5
+    },
+    {
+      "start": 129.15,
+      "end": 136.275,
+      "show": "付费 Pro／Ultra 可在云端独立 VM 跑任务，合上笔电也可继续。",
+      "part": 5
+    },
+    {
+      "start": 136.495,
+      "end": 145.245,
+      "show": "Voice Mode 由 Gemini Live 驱动；官方写明功能逐步推送。",
+      "part": 5
+    },
+    {
+      "start": 145.945,
+      "end": 152.645,
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早见。",
+      "part": 6
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 17.945
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 17.945,
+      "end": 45.035
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 45.035,
+      "end": 72.325
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 72.325,
+      "end": 98.94
+    },
+    {
+      "kind": "news",
+      "index": 3,
+      "start": 98.94,
+      "end": 123.155
+    },
+    {
+      "kind": "news",
+      "index": 4,
+      "start": 123.155,
+      "end": 145.945
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 145.945,
+      "end": 153.345
+    }
+  ],
+  "made_at": "2026-11-07T07:07:57+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "228f394202958d1e"
+}

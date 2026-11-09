@@ -1,0 +1,270 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-07-0800-acg",
+  "date": "2026-11-07",
+  "time": "08:00",
+  "timezone": "Asia/Taipei",
+  "column": "acg",
+  "column_name": "二次元／游戏",
+  "lang": "zh",
+  "title": "二次元／游戏｜《伤口与绷带》本 PV、咒术手游上线与 Temppal 开服日",
+  "opening": [
+    {
+      "say": "早上好，这里是晨光电台二次元与游戏频道，十一月七日早间版。",
+      "show": "早上好，这里是晨光电台二次元与游戏频道，11 月 7 日早间版。"
+    },
+    {
+      "say": "今天一条动画，两条游戏，都来自官方页面或发行商新闻稿。",
+      "show": "今天一条动画、两条游戏，均来自官方页面或发行商新闻稿。"
+    }
+  ],
+  "news": [
+    {
+      "label": "TV 动画《伤口与绷带》公开本 PV 与主视觉",
+      "points": [
+        "公开主视觉与本 PV，主创声优台词首秀",
+        "片头曲为 MIYAVI《Show Me All Your Pain》",
+        "2027 年 1 月 9 日 ABEMA 播映前特番"
+      ],
+      "details": [
+        "日本时间 2026-11-06 官方发布；追加声优含盆子原康、高梨谦吾，旁白杉田智和。",
+        "本 PV 首次公开主题曲片段。",
+        "特番时间：2027-01-09 20:00（日本）于 ABEMA。"
+      ],
+      "url": "https://houtaidoumei.com/news/37/",
+      "link": {
+        "url": "https://houtaidoumei.com/news/37/",
+        "title": "キービジュアル＆本PV公開！追加キャスト、MIYAVIによるOP主題歌＆ABEMA特番情報も解禁！",
+        "site": "TVアニメ『傷口と包帯』",
+        "description": "官方：本 PV、主视觉、OP 与特番信息",
+        "image": "https://houtaidoumei.com/wp-content/themes/houtaidoumei/assets/og/ogp3.jpg"
+      },
+      "meta": {
+        "date": "2026-11-06（日本）",
+        "region": "日本",
+        "platform": "日本电视动画 · ABEMA 特番"
+      },
+      "verified_at": "2026-11-07T07:09+08:00",
+      "lines": [
+        {
+          "say": "第一条，电视动画《伤口与绷带》官方公开了主视觉和本篇预告片。",
+          "show": "第一条：TV 动画《伤口与绷带》官方公开主视觉与本 PV。"
+        },
+        {
+          "say": "片头曲确定为 MIYAVI 的《Show Me All Your Pain》，预告片里放出了部分音源。",
+          "show": "片头曲为 MIYAVI《Show Me All Your Pain》，本 PV 放出部分音源。"
+        },
+        {
+          "say": "动画首播当天，也就是二零二七年一月九日晚上八点，ABEMA 会先播一档事前特别节目。",
+          "show": "2027 年 1 月 9 日 20:00，ABEMA 将播出事前特别节目。"
+        }
+      ]
+    },
+    {
+      "label": "《咒术回战 幻影夜行》手游今日正式上线",
+      "points": [
+        "官方预热页写明 11 月 7 日正式上线",
+        " bilibili 游戏国际发行页面确认",
+        "面向海外玩家的上线宣传"
+      ],
+      "details": [
+        "页面标题与主视觉均写 The game will be officially launched on November 7。",
+        "核实时间以台北 2026-11-07 上午为准。",
+        "具体分区上架以各应用商店页面为准。"
+      ],
+      "url": "https://jujutsuphanpara.biligames.com/ua/ob/kv001/ww/",
+      "link": {
+        "url": "https://jujutsuphanpara.biligames.com/ua/ob/kv001/ww/",
+        "title": "Jujutsu Kaisen Phantom Parade — Official Launch November 7",
+        "site": "bilibili Games",
+        "description": "官方上线预热页：11 月 7 日正式上线",
+        "image": "https://static-intl.biligame.net/jujutsuphanpara/ua/ob/kv001/images/en-US/bg.jpg"
+      },
+      "meta": {
+        "date": "2026-11-07",
+        "region": "国际服宣传页（分区以商店为准）",
+        "platform": "手机游戏 · bilibili Games"
+      },
+      "verified_at": "2026-11-07T07:09+08:00",
+      "lines": [
+        {
+          "say": "第二条，《咒术回战 幻影夜行》手游的官方页面确认，今天十一月七日正式上线。",
+          "show": "第二条：《咒术回战 幻影夜行》官方页面确认今天（11 月 7 日）正式上线。"
+        },
+        {
+          "say": "这是 bilibili 游戏放出的国际宣传页，主视觉直接写着上线日期。",
+          "show": "来自 bilibili 游戏国际宣传页，主视觉写明上线日期。"
+        },
+        {
+          "say": "各国家和地区的应用商店是否同步开放，还得以当地商店页面为准。",
+          "show": "各地区应用商店是否同步开放，以当地商店页面为准。"
+        }
+      ]
+    },
+    {
+      "label": "《TEMPPAL: OVERGEARED》11 月 26 日多地开服",
+      "points": [
+        "韩国、台湾、香港、澳门同日上线",
+        "改编自人气网漫／网文《Temppal》",
+        "PC 与手机双端，完整三维 MMORPG"
+      ],
+      "details": [
+        "Nexon 2026-11-06 10:10 新闻稿；开服按韩国时间 11 月 26 日。",
+        "开发为 GRAYGAMES，发行 Nexon Korea。",
+        "10 月 6 日起已在 Apple App Store 与 Google Play 接受预约。"
+      ],
+      "url": "https://prtimes.jp/main/html/rd/p/000000553.000014847.html",
+      "link": {
+        "url": "https://prtimes.jp/main/html/rd/p/000000553.000014847.html",
+        "title": "『TEMPPAL: OVERGEARED』、11月26日に韓国、台湾、香港、マカオで配信開始",
+        "site": "PR TIMES",
+        "description": "Nexon 新闻稿：11 月 26 日韩台港澳上线",
+        "image": "https://prcdn.freetls.fastly.net/release_image/14847/553/14847-553-63ee7a197c57e22c654f71d25a7ae2ba-1280x700.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260"
+      },
+      "meta": {
+        "date": "2026-11-06 10:10（日本发稿）；上线 2026-11-26（韩国时间）",
+        "region": "韩国、台湾、香港、澳门",
+        "platform": "PC · 手机 MMORPG"
+      },
+      "verified_at": "2026-11-07T07:09+08:00",
+      "lines": [
+        {
+          "say": "第三条，Nexon 确认《Temppal Overgeared》将在十一月二十六日于韩国、台湾、香港和澳门上线。",
+          "show": "第三条：Nexon 确认《TEMPPAL: OVERGEARED》11 月 26 日于韩国、台湾、香港、澳门上线。"
+        },
+        {
+          "say": "这是改编自网文和网漫《Temppal》的完整三维多人网游，电脑和手机都能玩。",
+          "show": "改编自网文／网漫《Temppal》的全 3D MMORPG，支持 PC 与手机。"
+        },
+        {
+          "say": "十月六日起已经在苹果和应用宝商店开放预约。",
+          "show": "10 月 6 日起已在 App Store 与 Google Play 开放预约。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天早上的二次元与游戏速报。原文链接在节目下方，下午四点见。",
+      "show": "以上就是今天早上的二次元与游戏速报。原文链接在节目下方，16:00 见。"
+    }
+  ],
+  "highlight": 0,
+  "seconds": 84.915,
+  "audio": "audio/2026-11-07-0800-acg-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.5,
+      "show": "早上好，这里是晨光电台二次元与游戏频道，11 月 7 日早间版。",
+      "part": 0
+    },
+    {
+      "start": 6.72,
+      "end": 12.57,
+      "show": "今天一条动画、两条游戏，均来自官方页面或发行商新闻稿。",
+      "part": 0
+    },
+    {
+      "start": 13.27,
+      "end": 19.445,
+      "show": "第一条：TV 动画《伤口与绷带》官方公开主视觉与本 PV。",
+      "part": 1
+    },
+    {
+      "start": 19.665,
+      "end": 26.04,
+      "show": "片头曲为 MIYAVI《Show Me All Your Pain》，本 PV 放出部分音源。",
+      "part": 1
+    },
+    {
+      "start": 26.26,
+      "end": 34.76,
+      "show": "2027 年 1 月 9 日 20:00，ABEMA 将播出事前特别节目。",
+      "part": 1
+    },
+    {
+      "start": 35.46,
+      "end": 42.435,
+      "show": "第二条：《咒术回战 幻影夜行》官方页面确认今天（11 月 7 日）正式上线。",
+      "part": 2
+    },
+    {
+      "start": 42.655,
+      "end": 48.755,
+      "show": "来自 bilibili 游戏国际宣传页，主视觉写明上线日期。",
+      "part": 2
+    },
+    {
+      "start": 48.975,
+      "end": 55.6,
+      "show": "各地区应用商店是否同步开放，以当地商店页面为准。",
+      "part": 2
+    },
+    {
+      "start": 56.3,
+      "end": 64.25,
+      "show": "第三条：Nexon 确认《TEMPPAL: OVERGEARED》11 月 26 日于韩国、台湾、香港、澳门上线。",
+      "part": 3
+    },
+    {
+      "start": 64.47,
+      "end": 71.195,
+      "show": "改编自网文／网漫《Temppal》的全 3D MMORPG，支持 PC 与手机。",
+      "part": 3
+    },
+    {
+      "start": 71.415,
+      "end": 76.29,
+      "show": "10 月 6 日起已在 App Store 与 Google Play 开放预约。",
+      "part": 3
+    },
+    {
+      "start": 76.99,
+      "end": 84.215,
+      "show": "以上就是今天早上的二次元与游戏速报。原文链接在节目下方，16:00 见。",
+      "part": 4
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 13.27
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 13.27,
+      "end": 35.46
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 35.46,
+      "end": 56.3
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 56.3,
+      "end": 76.99
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 76.99,
+      "end": 84.915
+    }
+  ],
+  "made_at": "2026-11-06T23:09:54+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "3c381348413b444e"
+}

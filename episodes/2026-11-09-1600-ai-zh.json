@@ -1,0 +1,350 @@
+{
+  "format": "monoradio/news-1",
+  "id": "2026-11-09-1600-ai",
+  "date": "2026-11-09",
+  "time": "16:00",
+  "timezone": "Asia/Taipei",
+  "column": "ai",
+  "column_name": "AI 日报",
+  "lang": "zh",
+  "title": "AI 日报｜Anthropic 34 亿美元发电机订单、AA 决策指数 v2 与 Voxtral 实时转写",
+  "opening": [
+    {
+      "say": "下午好，这里是晨光电台 AI 日报。今天是十一月九日，星期一。",
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 9 日，星期一。"
+    },
+    {
+      "say": "这一期根据 New Bot 今天下午的午报，挑五条打开原文核实过的消息。美国还是周日夜里，上午之后各大实验室没有新的官方发布；没有证实的模型传闻，这期不报。",
+      "show": "本期根据 New Bot 今天的午报，选取五条已打开原文核实的消息。美国仍是周日夜间，上午以来各大实验室没有新的官方发布；未经证实的模型传闻本期不报。"
+    }
+  ],
+  "news": [
+    {
+      "label": "FT：Anthropic 约 34 亿美元买下 1.7 吉瓦燃气发电机订单",
+      "points": [
+        "约 34 亿美元买下 1.7 GW 重型燃气发电机的订单承诺，9 月下旬签约",
+        "卖方为美国德州圣安东尼奥的 OnePWR Solutions；未收购公司本身",
+        "单一来源报道：Anthropic、OnePWR 未回应，路透社未能独立核实"
+      ],
+      "details": [
+        "CNBC 转述《金融时报》2026-11-08 报道；交易包含安装发电机所需的工程与施工能力，用于数据中心供电。",
+        "报道称 OnePWR 员工没有转入 Anthropic。",
+        "路透社 9 月曾报道 Anthropic 预计未来 10 年在 AI 基础设施上投入逾 5000 亿美元。"
+      ],
+      "url": "https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html",
+      "link": {
+        "url": "https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html",
+        "title": "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
+        "site": "CNBC",
+        "description": "FT：Anthropic 约 34 亿美元买下 1.7 GW 燃气发电机订单承诺",
+        "image": null
+      },
+      "meta": {
+        "date": "FT 报道 2026-11-08（美东）；交易签于 2026-09 下旬",
+        "region": "美国",
+        "platform": "Financial Times／CNBC（媒体报道）"
+      },
+      "verified_at": "2026-11-09T15:25+08:00",
+      "lines": [
+        {
+          "say": "第一条。英国《金融时报》周日报道，Anthropic 九月下旬花了大约三十四亿美元，买下一点七吉瓦重型燃气发电机的订单承诺，卖方是美国德州圣安东尼奥的设备商 OnePWR。",
+          "show": "第一条：FT 周日报道，Anthropic 9 月下旬以约 34 亿美元买下 1.7 GW 重型燃气发电机的订单承诺，卖方为美国德州圣安东尼奥的 OnePWR。"
+        },
+        {
+          "say": "报道说，Anthropic 没有收购这家公司，但交易包含安装发电机所需的工程和施工能力，用来给数据中心供电。目前只有这一家媒体的说法，两家公司都没有回应，路透社也没能独立核实。",
+          "show": "报道称 Anthropic 未收购该公司，但交易含安装所需的工程与施工能力，用于数据中心供电。目前为单一来源，两家公司未回应，路透社未能独立核实。"
+        }
+      ]
+    },
+    {
+      "label": "Artificial Analysis 发布决策指数 v2：更看重校准与私有数据",
+      "points": [
+        "私有数据集占比由 25% 提高到 45%；新总分同时看正确性与置信度校准",
+        "决策模型中 Drex Max v1.1、GLiDE v1.2 以 73 分并列领先",
+        "Claude Haiku 5.5 (Max) 77 分，但每百万任务 6240 美元；最便宜的 Celeris-1.1 Decision 仅 14 美元"
+      ],
+      "details": [
+        "新增私有基准 AA-Paperclip（1500 份简历、收据、发票、论文等文档）和 AA-Symmetry（120 题、440 个变体，测换序、换标签、否定问法下是否一致）。",
+        "Mammoth 27B 以 72 分紧随其后。",
+        "GPT-6 Luna (Max) 76 分、每百万任务 1530 美元；单次耗时 Celeris-1.1 Decision 56 毫秒，Claude Haiku 5.5 (Max) 32.65 秒。"
+      ],
+      "url": "https://x.com/ArtificialAnlys/status/2119578471559213411",
+      "link": {
+        "url": "https://x.com/ArtificialAnlys/status/2119578471559213411",
+        "title": "Introducing the Artificial Analysis Decision Index v2",
+        "site": "X @ArtificialAnlys",
+        "description": "决策指数 v2：新私有评测、更新基准与奖励校准的新总分",
+        "image": null
+      },
+      "meta": {
+        "date": "2026-11-09 07:51（台北时间）",
+        "region": "全球",
+        "platform": "Artificial Analysis 官方 X"
+      },
+      "verified_at": "2026-11-09T15:25+08:00",
+      "lines": [
+        {
+          "say": "第二条。独立评测机构 Artificial Analysis 今天早上发布了决策指数第二版，专门评测替文档做判断、抽取信息的决策模型。私有数据集的比重从百分之二十五提高到百分之四十五，新的总分不只看答对，还看模型对自己答案的把握是否靠谱。",
+          "show": "第二条：Artificial Analysis 今早发布决策指数 v2，评测为文档做判断、抽取信息的决策模型。私有数据集占比由 25% 升至 45%，新总分兼看正确性与置信度校准。"
+        },
+        {
+          "say": "结果是，Drex Max 一点一和 GLiDE 一点二以七十三分并列领先；通用模型 Claude Haiku 五点五拿到七十七分更高，但每一百万次任务要六千二百四十美元，而最便宜的 Celeris 一点一只要十四美元。",
+          "show": "结果：Drex Max v1.1 与 GLiDE v1.2 以 73 分并列领先；通用模型 Claude Haiku 5.5 (Max) 77 分更高，但每百万任务 6240 美元，最便宜的 Celeris-1.1 Decision 仅 14 美元。"
+        }
+      ]
+    },
+    {
+      "label": "Mistral：用 Voxtral 3 Transcribe 实时转写 AI Engineer Paris 主舞台",
+      "points": [
+        "主舞台每场演讲都用 Voxtral 3 Transcribe 实时转写",
+        "用上下文偏置提高准确率：预先提供讲者姓名与技术术语",
+        "Mistral 表示同样技术可用于用户自己的活动和应用"
+      ],
+      "details": [
+        "官方帖附约 44 秒的现场演示视频。",
+        "术语来自大会议程，适合专有名词多的直播字幕场景。",
+        null
+      ],
+      "url": "https://x.com/MistralAI/status/2119651192737259701",
+      "link": {
+        "url": "https://x.com/MistralAI/status/2119651192737259701",
+        "title": "What does real-time transcription look like in a live setting?",
+        "site": "X @MistralAI",
+        "description": "Voxtral 3 Transcribe 在 AI Engineer Paris 主舞台实时转写",
+        "image": null
+      },
+      "meta": {
+        "date": "2026-11-09 12:40（台北时间）",
+        "region": "法国巴黎 · 全球",
+        "platform": "Mistral AI 官方 X"
+      },
+      "verified_at": "2026-11-09T15:25+08:00",
+      "lines": [
+        {
+          "say": "第三条。Mistral 说，他们在巴黎的 AI Engineer 大会上，用 Voxtral 三 Transcribe 把主舞台每一场演讲都做了实时转写。",
+          "show": "第三条：Mistral 称在 AI Engineer Paris 用 Voxtral 3 Transcribe 实时转写了主舞台每一场演讲。"
+        },
+        {
+          "say": "提高准确率的办法叫上下文偏置，就是事先把议程里的讲者名字和技术术语交给模型。Mistral 表示，同样的技术也能用在大家自己的活动和应用里。",
+          "show": "提升准确率的方法是上下文偏置：预先把议程中的讲者姓名和技术术语提供给模型。Mistral 表示同样技术可用于用户自己的活动和应用。"
+        }
+      ]
+    },
+    {
+      "label": "Simon Willison：把 AI 生成的 PR 说明折叠进 <details>",
+      "points": [
+        "把大部分 AI 生成的 GitHub PR 说明放进 <details><summary> 折叠块",
+        "GitHub Markdown 支持该 HTML 标签",
+        "作者认为能让审阅「PR 垃圾文字」不那么累"
+      ],
+      "details": [
+        "保留简短的人写摘要在外面，长文点开才看（New Bot 午报归纳）。",
+        null,
+        null
+      ],
+      "url": "https://x.com/simonw/status/2119650353142747181",
+      "link": {
+        "url": "https://x.com/simonw/status/2119650353142747181",
+        "title": "Simon Willison on collapsing AI-generated PR descriptions",
+        "site": "X @simonw",
+        "description": "把 AI 生成的 PR 说明折叠进 <details> 标签",
+        "image": null
+      },
+      "meta": {
+        "date": "2026-11-09 12:36（台北时间）",
+        "region": "全球",
+        "platform": "X @simonw／GitHub"
+      },
+      "verified_at": "2026-11-09T15:25+08:00",
+      "lines": [
+        {
+          "say": "第四条，一个实用小技巧。开发者 Simon Willison 说，他最近把 AI 生成的 GitHub PR 说明，大部分折叠进 details 和 summary 这对 HTML 标签里，GitHub 的 Markdown 正好支持。",
+          "show": "第四条，实用技巧：Simon Willison 最近把 AI 生成的 GitHub PR 说明大部分折叠进 <details><summary> 标签，GitHub Markdown 支持这种写法。"
+        },
+        {
+          "say": "他认为，这样能让审阅这类 AI 堆出来的长篇说明，没那么累人。",
+          "show": "他认为这能让审阅 AI 生成的长篇 PR 说明不那么累。"
+        }
+      ]
+    },
+    {
+      "label": "GitHub 趋势：开源多智能体聊天应用 OpenMausBot",
+      "points": [
+        "Electron 桌面应用，侧边栏每个机器人都是在本机运行的 Claude 或 Codex 智能体",
+        "每个机器人有自己的性格、模型、云端电脑和连接的应用",
+        "约 1.88 万星标，Apache-2.0；自称独立项目，与 xAI、Meta、OpenAI 无关"
+      ],
+      "details": [
+        "支持 macOS、Windows、Ubuntu；需要用户自带智能体与模型。",
+        null,
+        "星标数为核实时 GitHub API 数据；午报称当天新增约 1439。"
+      ],
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "link": {
+        "url": "https://github.com/milind-soni/OpenMausBot",
+        "title": "milind-soni/OpenMausBot",
+        "site": "GitHub",
+        "description": "开源的多机器人聊天应用，每个机器人是一个本地智能体",
+        "image": null
+      },
+      "meta": {
+        "date": "2026-11-09 GitHub 趋势榜",
+        "region": "全球",
+        "platform": "GitHub · macOS／Windows／Ubuntu"
+      },
+      "verified_at": "2026-11-09T15:25+08:00",
+      "lines": [
+        {
+          "say": "最后一条，来自 GitHub 趋势榜。开源项目 OpenMausBot 是一个桌面聊天应用，侧边栏里的每个机器人，都是在本机运行的 Claude 或 Codex 智能体，各有自己的性格、模型、云端电脑和连接的应用。",
+          "show": "最后一条，GitHub 趋势榜：开源桌面应用 OpenMausBot，侧边栏每个机器人都是本机运行的 Claude 或 Codex 智能体，各有性格、模型、云端电脑和连接的应用。"
+        },
+        {
+          "say": "项目采用 Apache 二点零许可，星标约一万八千八百，作者说明它是独立项目，和 xAI、Meta、OpenAI 都没有关系。",
+          "show": "项目采用 Apache-2.0 许可，约 1.88 万星标；作者说明为独立项目，与 xAI、Meta、OpenAI 无关。"
+        }
+      ]
+    }
+  ],
+  "closing": [
+    {
+      "say": "以上就是今天下午的 AI 日报。原文链接都在节目下方，明天早上八点见。",
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 8 点见。"
+    }
+  ],
+  "highlight": 1,
+  "seconds": 183.87,
+  "audio": "audio/2026-11-09-1600-ai-zh.mp3",
+  "lines_timed": [
+    {
+      "start": 0.4,
+      "end": 6.35,
+      "show": "下午好，这里是晨光电台 AI 日报。11 月 9 日，星期一。",
+      "part": 0
+    },
+    {
+      "start": 6.57,
+      "end": 22.495,
+      "show": "本期根据 New Bot 今天的午报，选取五条已打开原文核实的消息。美国仍是周日夜间，上午以来各大实验室没有新的官方发布；未经证实的模型传闻本期不报。",
+      "part": 0
+    },
+    {
+      "start": 23.195,
+      "end": 39.97,
+      "show": "第一条：FT 周日报道，Anthropic 9 月下旬以约 34 亿美元买下 1.7 GW 重型燃气发电机的订单承诺，卖方为美国德州圣安东尼奥的 OnePWR。",
+      "part": 1
+    },
+    {
+      "start": 40.19,
+      "end": 57.79,
+      "show": "报道称 Anthropic 未收购该公司，但交易含安装所需的工程与施工能力，用于数据中心供电。目前为单一来源，两家公司未回应，路透社未能独立核实。",
+      "part": 1
+    },
+    {
+      "start": 58.49,
+      "end": 81.29,
+      "show": "第二条：Artificial Analysis 今早发布决策指数 v2，评测为文档做判断、抽取信息的决策模型。私有数据集占比由 25% 升至 45%，新总分兼看正确性与置信度校准。",
+      "part": 2
+    },
+    {
+      "start": 81.51,
+      "end": 99.11,
+      "show": "结果：Drex Max v1.1 与 GLiDE v1.2 以 73 分并列领先；通用模型 Claude Haiku 5.5 (Max) 77 分更高，但每百万任务 6240 美元，最便宜的 Celeris-1.1 Decision 仅 14 美元。",
+      "part": 2
+    },
+    {
+      "start": 99.81,
+      "end": 110.51,
+      "show": "第三条：Mistral 称在 AI Engineer Paris 用 Voxtral 3 Transcribe 实时转写了主舞台每一场演讲。",
+      "part": 3
+    },
+    {
+      "start": 110.73,
+      "end": 125.455,
+      "show": "提升准确率的方法是上下文偏置：预先把议程中的讲者姓名和技术术语提供给模型。Mistral 表示同样技术可用于用户自己的活动和应用。",
+      "part": 3
+    },
+    {
+      "start": 126.155,
+      "end": 141.18,
+      "show": "第四条，实用技巧：Simon Willison 最近把 AI 生成的 GitHub PR 说明大部分折叠进 <details><summary> 标签，GitHub Markdown 支持这种写法。",
+      "part": 4
+    },
+    {
+      "start": 141.4,
+      "end": 147.275,
+      "show": "他认为这能让审阅 AI 生成的长篇 PR 说明不那么累。",
+      "part": 4
+    },
+    {
+      "start": 147.975,
+      "end": 164.9,
+      "show": "最后一条，GitHub 趋势榜：开源桌面应用 OpenMausBot，侧边栏每个机器人都是本机运行的 Claude 或 Codex 智能体，各有性格、模型、云端电脑和连接的应用。",
+      "part": 5
+    },
+    {
+      "start": 165.12,
+      "end": 175.42,
+      "show": "项目采用 Apache-2.0 许可，约 1.88 万星标；作者说明为独立项目，与 xAI、Meta、OpenAI 无关。",
+      "part": 5
+    },
+    {
+      "start": 176.12,
+      "end": 183.17,
+      "show": "以上就是今天下午的 AI 日报。原文链接在节目下方，明早 8 点见。",
+      "part": 6
+    }
+  ],
+  "segments": [
+    {
+      "kind": "opening",
+      "index": null,
+      "start": 0.0,
+      "end": 23.195
+    },
+    {
+      "kind": "news",
+      "index": 0,
+      "start": 23.195,
+      "end": 58.49
+    },
+    {
+      "kind": "news",
+      "index": 1,
+      "start": 58.49,
+      "end": 99.81
+    },
+    {
+      "kind": "news",
+      "index": 2,
+      "start": 99.81,
+      "end": 126.155
+    },
+    {
+      "kind": "news",
+      "index": 3,
+      "start": 126.155,
+      "end": 147.975
+    },
+    {
+      "kind": "news",
+      "index": 4,
+      "start": 147.975,
+      "end": 176.12
+    },
+    {
+      "kind": "closing",
+      "index": null,
+      "start": 176.12,
+      "end": 183.87
+    }
+  ],
+  "made_at": "2026-11-09T07:13:38+00:00",
+  "voice": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M-v1.1-zh",
+    "name": "zf_001",
+    "speed": 1.0,
+    "license": "Apache-2.0"
+  },
+  "speech_hash": "b74af048ea9163f3"
+}
